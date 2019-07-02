@@ -3,11 +3,11 @@
   <title>faithlch</title>
   
   
-  <link href="/blog/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="http://faithlch.com/blog/"/>
+  <link href="http://faithlch.com/"/>
   <updated>2019-07-02T02:46:02.033Z</updated>
-  <id>http://faithlch.com/blog/</id>
+  <id>http://faithlch.com/</id>
   
   <author>
     <name>Faith</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>我的第一篇博文</title>
-    <link href="http://faithlch.com/blog/2019/07/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/"/>
-    <id>http://faithlch.com/blog/2019/07/01/我的第一篇博文/</id>
+    <link href="http://faithlch.com/2019/07/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/"/>
+    <id>http://faithlch.com/2019/07/01/我的第一篇博文/</id>
     <published>2019-07-01T13:55:04.000Z</published>
     <updated>2019-07-02T02:46:02.033Z</updated>
     
@@ -40,8 +40,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://faithlch.com/blog/2019/06/30/hello-world/"/>
-    <id>http://faithlch.com/blog/2019/06/30/hello-world/</id>
+    <link href="http://faithlch.com/2019/06/30/hello-world/"/>
+    <id>http://faithlch.com/2019/06/30/hello-world/</id>
     <published>2019-06-30T13:17:38.155Z</published>
     <updated>2019-07-02T02:45:25.266Z</updated>
     
