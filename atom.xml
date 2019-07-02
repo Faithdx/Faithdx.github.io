@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>faithlch</title>
+  
+  <subtitle>Faith can move mountains.</subtitle>
+  <link href="/s/atom.xml" rel="self"/>
+  
+  <link href="http://faithlch.com/"/>
+  <updated>2019-07-02T02:46:02.033Z</updated>
+  <id>http://faithlch.com/</id>
+  
+  <author>
+    <name>Faith</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的第一篇博文</title>
+    <link href="http://faithlch.com/2019/07/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/"/>
+    <id>http://faithlch.com/2019/07/01/我的第一篇博文/</id>
+    <published>2019-07-01T13:55:04.000Z</published>
+    <updated>2019-07-02T02:46:02.033Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="添加分享文章功能"><a href="#添加分享文章功能" class="headerlink" title="添加分享文章功能"></a>添加分享文章功能</h2><p>这里我们使用AddThis，为什么呢，晒一下我的样式你就知道了：</p><p>具体选择什么样式可以在AddThis网站上面设置。<br>首先注册账号（需要科学上网），注册后找到该位置：</p><h2 id="添加文章评分功能"><a href="#添加文章评分功能" class="headerlink" title="添加文章评分功能"></a>添加文章评分功能</h2><p>首先注册账号，添加新站点，填入网站名称和域名地址，点击添加：</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;添加分享文章功能&quot;&gt;&lt;a href=&quot;#添加分享文章功能&quot; class=&quot;headerlink&quot; title=&quot;添加分享文章功能&quot;&gt;&lt;/a&gt;添加分享文章功能&lt;/h2&gt;&lt;p&gt;这里我们使用AddThis，为什么呢，晒一下我的样式你就知道了：&lt;/p&gt;
+&lt;p&gt;具体选择什么
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://faithlch.com/2019/06/30/hello-world/"/>
+    <id>http://faithlch.com/2019/06/30/hello-world/</id>
+    <published>2019-06-30T13:17:38.155Z</published>
+    <updated>2019-07-02T02:45:25.266Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[我的第一篇博文]]></title>
+    <url>%2Fs%2F2019%2F07%2F01%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87%2F</url>
+    <content type="text"><![CDATA[添加分享文章功能这里我们使用AddThis，为什么呢，晒一下我的样式你就知道了： 具体选择什么样式可以在AddThis网站上面设置。首先注册账号（需要科学上网），注册后找到该位置： 添加文章评分功能首先注册账号，添加新站点，填入网站名称和域名地址，点击添加：]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Fs%2F2019%2F06%2F30%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
