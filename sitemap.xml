@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.faithlch.com/link/index.html</loc>
+    
+    <lastmod>2019-11-18T15:31:27.078Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.faithlch.com/categories/index.html</loc>
+    
+    <lastmod>2019-11-18T15:27:10.316Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.faithlch.com/tags/index.html</loc>
+    
+    <lastmod>2019-11-18T15:26:56.669Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.faithlch.com/%E6%88%91%E4%B9%9F%E4%B8%8D%E7%9F%A5%E9%81%93%E5%9C%A8%E5%86%99%E4%BB%80%E4%B9%88.html</loc>
     
     <lastmod>2019-08-05T15:00:41.979Z</lastmod>
@@ -54,20 +75,6 @@
     <loc>http://www.faithlch.com/schedule/index.html</loc>
     
     <lastmod>2019-07-03T08:45:16.429Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.faithlch.com/categories/index.html</loc>
-    
-    <lastmod>2019-07-03T08:44:16.003Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.faithlch.com/tags/index.html</loc>
-    
-    <lastmod>2019-07-03T08:42:57.400Z</lastmod>
     
   </url>
   
