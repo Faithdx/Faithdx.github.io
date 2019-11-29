@@ -3,5 +3,5 @@ http://www.faithlch.com/hello-world.html
 http://www.faithlch.com/我也不知道在写什么.html
 http://www.faithlch.com/JavaScript面试题收藏.html
 http://www.faithlch.com/Coding-Pages申请SSL-TLS证书错误.html
-http://www.faithlch.com/尼玛死了.html
 http://www.faithlch.com/我的第一篇博文.html
+http://www.faithlch.com/尼玛死了.html
