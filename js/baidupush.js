@@ -1,12 +1,3 @@
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
+// build time:Mon Dec 02 2019 22:30:59 GMT+0800 (中国标准时间)
+(function(){var t=document.createElement("script");var e=window.location.protocol.split(":")[0];if(e==="https"){t.src="https://zz.bdstatic.com/linksubmit/push.js"}else{t.src="http://push.zhanzhang.baidu.com/push.js"}var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)})();
+//rebuild by neat 
