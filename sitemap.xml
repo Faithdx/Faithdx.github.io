@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.faithlch.com/music/index.html</loc>
+    <loc>http://www.faithlch.com/schedule/index.html</loc>
     
-    <lastmod>2019-12-05T10:32:59.024Z</lastmod>
+    <lastmod>2019-12-06T10:45:13.523Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.faithlch.com/photos/index.html</loc>
     
-    <lastmod>2019-12-05T07:19:32.138Z</lastmod>
+    <lastmod>2019-12-06T04:33:45.623Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.faithlch.com/music/index.html</loc>
+    
+    <lastmod>2019-12-06T03:11:12.401Z</lastmod>
     
   </url>
   
@@ -103,13 +110,6 @@
     <loc>http://www.faithlch.com/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87.html</loc>
     
     <lastmod>2019-07-12T10:01:18.788Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.faithlch.com/schedule/index.html</loc>
-    
-    <lastmod>2019-07-03T08:45:16.429Z</lastmod>
     
   </url>
   
