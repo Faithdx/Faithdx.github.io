@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.faithlch.com/about/index.html</loc>
+    
+    <lastmod>2019-12-09T10:12:01.330Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.faithlch.com/change_log/index.html</loc>
+    
+    <lastmod>2019-12-09T09:41:53.947Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.faithlch.com/books/index.html</loc>
     
     <lastmod>2019-12-09T09:14:43.214Z</lastmod>
@@ -12,20 +26,6 @@
     <loc>http://www.faithlch.com/movies/index.html</loc>
     
     <lastmod>2019-12-09T08:25:03.967Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.faithlch.com/change_log/index.html</loc>
-    
-    <lastmod>2019-12-09T08:18:55.666Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.faithlch.com/about/index.html</loc>
-    
-    <lastmod>2019-12-09T08:08:15.503Z</lastmod>
     
   </url>
   
