@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.faithlch.com/about/index.html</loc>
+    
+    <lastmod>2019-12-10T09:58:04.869Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.faithlch.com/books/index.html</loc>
     
     <lastmod>2019-12-10T09:19:41.385Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://www.faithlch.com/change_log/index.html</loc>
     
     <lastmod>2019-12-10T09:19:31.938Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.faithlch.com/about/index.html</loc>
-    
-    <lastmod>2019-12-10T09:19:29.042Z</lastmod>
     
   </url>
   
