@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.faithlch.com/categories/index.html</loc>
+    
+    <lastmod>2019-12-11T10:17:01.778Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.faithlch.com/about/index.html</loc>
     
-    <lastmod>2019-12-10T09:58:04.869Z</lastmod>
+    <lastmod>2019-12-11T10:08:14.841Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.faithlch.com/movies/index.html</loc>
+    
+    <lastmod>2019-12-11T10:05:27.990Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.faithlch.com/books/index.html</loc>
     
-    <lastmod>2019-12-10T09:19:41.385Z</lastmod>
+    <lastmod>2019-12-11T10:05:17.563Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.faithlch.com/schedule/index.html</loc>
+    
+    <lastmod>2019-12-11T08:27:59.130Z</lastmod>
     
   </url>
   
@@ -19,13 +40,6 @@
     <loc>http://www.faithlch.com/change_log/index.html</loc>
     
     <lastmod>2019-12-10T09:19:31.938Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.faithlch.com/movies/index.html</loc>
-    
-    <lastmod>2019-12-09T08:25:03.967Z</lastmod>
     
   </url>
   
@@ -54,13 +68,6 @@
     <loc>http://www.faithlch.com/Markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.html</loc>
     
     <lastmod>2019-12-09T07:30:49.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.faithlch.com/schedule/index.html</loc>
-    
-    <lastmod>2019-12-06T10:45:13.523Z</lastmod>
     
   </url>
   
@@ -96,13 +103,6 @@
     <loc>http://www.faithlch.com/tags/index.html</loc>
     
     <lastmod>2019-11-24T02:20:16.427Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.faithlch.com/categories/index.html</loc>
-    
-    <lastmod>2019-11-24T02:19:32.941Z</lastmod>
     
   </url>
   
