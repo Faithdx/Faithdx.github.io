@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>faithlch</title>
+  <title>Dylan He</title>
   
   <subtitle>路漫漫其修远兮，吾将上下而求索~</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>http://www.faithlch.com/</id>
   
   <author>
-    <name>Faith</name>
+    <name>Dylan</name>
     
   </author>
   
