@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.faithlch.com/"/>
-  <updated>2019-12-24T10:22:55.188Z</updated>
+  <updated>2019-12-25T10:12:51.758Z</updated>
   <id>http://www.faithlch.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>移动端适配方案</title>
+    <link href="http://www.faithlch.com/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88.html"/>
+    <id>http://www.faithlch.com/移动端适配方案.html</id>
+    <published>2019-12-25T10:01:16.000Z</published>
+    <updated>2019-12-25T10:12:51.758Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="移动端自适应布局配置-vw-rem"><a href="#移动端自适应布局配置-vw-rem" class="headerlink" title="移动端自适应布局配置 vw + rem"></a>移动端自适应布局配置 vw + rem</h2><blockquote><p>当我们写移动端页面时，会遇到自适应和兼容性等方面的问题，单纯的l指示利用<strong>rem</strong>或者<strong>vw/vh</strong>都不尽人意，有幸看见大神的设计思路，感觉很厉害，由此记录学习~</p></blockquote><h3 id="1-原理"><a href="#1-原理" class="headerlink" title="1. 原理"></a>1. 原理</h3><h4 id="1-1-rem布局与vw-vh"><a href="#1-1-rem布局与vw-vh" class="headerlink" title="1.1 rem布局与vw/vh"></a>1.1 rem布局与vw/vh</h4><ul><li><p><strong>rem：</strong>相对于<strong>根元素html</strong>的字体大小的单位</p></li><li><p><strong>rem布局原理：</strong>根据屏幕分辨率的不同，动态修改根字体的大小，让所有用<strong>rem</strong>为单位的元素跟着屏幕尺寸一起缩放，从而达到自适应的效果。</p></li><li><blockquote><p>例如：宽度为750px的设计稿，尺寸可以这样设定</p></blockquote></li><li><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">    font-size: calc(100vw / 7.5);//除以的7.5是根据设计稿的屏幕宽度来定的，这样750px宽度下根元素字体大小则为750px/7.5=100px=1rem</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><h4 id="1-2-设计思路"><a href="#1-2-设计思路" class="headerlink" title="1.2 设计思路"></a>1.2 设计思路</h4><p><strong>根据设计稿将html的gont-size设置为100px；比如750px的设计稿就除以7.5。此时100px=1rem，后续计算起来会方便很多。</strong></p><blockquote><p>以上设计思路的<strong>最大优点</strong>就是：<strong>方便计算</strong>。</p></blockquote><h3 id="2-优化"><a href="#2-优化" class="headerlink" title="2. 优化"></a>2. 优化</h3><h4 id="2-1-重置默认字体"><a href="#2-1-重置默认字体" class="headerlink" title="2.1 重置默认字体"></a>2.1 重置默认字体</h4><p><strong>考虑到不改变浏览器默认字体大小的展示，因此要重置页面页面字体大小为浏览器默认的大小</strong></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="built_in">calc</span>(100vw / 7.5);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#app</span> &#123;</span><br><span class="line">    font-size: initial; //重置页面字体大小恢复为浏览器默认16px，否则就显示成50px了</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="2-2-限制根元素字体大小的最大值、最小值"><a href="#2-2-限制根元素字体大小的最大值、最小值" class="headerlink" title="2.2 限制根元素字体大小的最大值、最小值"></a>2.2 限制根元素字体大小的最大值、最小值</h4><p><strong><code>上面的设计的页面虽然看起来适配得很好，但是你会发现它会无限制放大，在大屏上很不好看。可以通过给根元素字体大小限制最大最小值，以及 body 也增加最大最小宽度限制，这样就可以改善用户体验了。</code></strong></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">    </span><br><span class="line">    //设置根字体大小单位为vw，页面元素的尺寸单位都设为rem，搭配vw和rem，可实现布局根据视口变化而变化</span><br><span class="line">    font-size: calc(100vw / 7.5);</span><br><span class="line">    // 同时，通过Media Queries 限制根元素字体最大最小值</span><br><span class="line">    @<span class="keyword">media</span> screen and (max-width: <span class="number">320px</span>) &#123;</span><br><span class="line">        <span class="selector-tag">font-size</span>: 64<span class="selector-tag">px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    @<span class="keyword">media</span> screen and (min-width: <span class="number">540px</span>) &#123;</span><br><span class="line">        <span class="selector-tag">font-size</span>: 108<span class="selector-tag">px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">// body 也增加最大最小宽度限制，避免默认100%宽度的 block 元素跟随 body 而过大过小</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">max-width</span>: <span class="number">540px</span>;</span><br><span class="line">    <span class="attribute">min-width</span>: <span class="number">320px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#app</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: initial;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h3><blockquote><p>该设计方法简介方便，增加了最大最小宽度的限制，用户视觉体验更好。</p></blockquote><hr><h3 id="原文链接："><a href="#原文链接：" class="headerlink" title="原文链接："></a>原文链接：</h3><ul><li><a href="https://juejin.im/post/5de72b1f51882512360d3910#heading-13" target="_blank" rel="noopener">基于Vue的移动端h5项目总结</a></li><li><a href="https://aotu.io/notes/2017/04/28/2017-4-28-CSS-viewport-units/index.html" target="_blank" rel="noopener">利用视口单位实现适配布局</a></li></ul><p># </p>]]></content>
+    
+    <summary type="html">
+    
+      移动端适配方案
+    
+    </summary>
+    
+      <category term="大前端..." scheme="http://www.faithlch.com/categories/%E5%A4%A7%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="2019" scheme="http://www.faithlch.com/tags/2019/"/>
+    
+      <category term="H5" scheme="http://www.faithlch.com/tags/H5/"/>
+    
+      <category term="大前端" scheme="http://www.faithlch.com/tags/%E5%A4%A7%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="移动端" scheme="http://www.faithlch.com/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>缘来，你也走过这里</title>
@@ -104,9 +132,9 @@
     
       <category term="hexo" scheme="http://www.faithlch.com/tags/hexo/"/>
     
-      <category term="2019" scheme="http://www.faithlch.com/tags/2019/"/>
-    
       <category term="blog" scheme="http://www.faithlch.com/tags/blog/"/>
+    
+      <category term="2019" scheme="http://www.faithlch.com/tags/2019/"/>
     
       <category term="指令" scheme="http://www.faithlch.com/tags/%E6%8C%87%E4%BB%A4/"/>
     
