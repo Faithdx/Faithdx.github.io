@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.faithlch.com/"/>
-  <updated>2019-12-26T01:10:33.292Z</updated>
+  <updated>2019-12-27T10:12:30.172Z</updated>
   <id>http://www.faithlch.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我有属于我的天</title>
+    <link href="http://www.faithlch.com/%E6%88%91%E6%9C%89%E5%B1%9E%E4%BA%8E%E6%88%91%E7%9A%84%E5%A4%A9.html"/>
+    <id>http://www.faithlch.com/我有属于我的天.html</id>
+    <published>2019-12-27T09:48:50.000Z</published>
+    <updated>2019-12-27T10:12:30.172Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="百度百科"><a href="#百度百科" class="headerlink" title="百度百科"></a>百度百科</h3><blockquote><p>《蜗牛》是周杰伦在自己事业处于低潮时所创作的，当时周杰伦还未正式出道，整天就是帮其他人写歌，心情非常不好，于是决定写一首歌勉励一下自己，同时也为了鼓励年轻人能够像蜗牛一样为了自己的目标一步一步往前爬。之后许茹芸听了周杰伦为别人所创作的作品，感觉很特别，就联络公司跟周杰伦邀歌，于是周杰伦就把这首《蜗牛》给了许茹芸演唱。</p></blockquote><hr><p><strong>《蜗牛》</strong></p><p><strong>作词：周杰伦</strong></p><p><strong>作曲：周杰伦</strong></p><p><strong>演唱：周杰伦</strong> </p><p><strong>该不该搁下重重的壳</strong></p><p><strong>寻找到底哪里有蓝天</strong></p><p><strong>随着轻轻的风轻轻的飘</strong></p><p><strong>历经的伤都不感觉疼</strong></p><p><strong>我要一步一步往上爬</strong></p><p><strong>等待阳光静静看着它的脸</strong></p><p><strong>小小的天有大大的梦想</strong></p><p><strong>重重的壳挂着轻轻的仰望</strong></p><p><strong>我要一步一步往上爬</strong></p><p><strong>在最高点乘着叶片往前飞</strong></p><p><strong>小小的天流过的泪和汗</strong></p><p><strong>总有一天我有属于我的天</strong></p><p><strong>我要一步一步往上爬</strong></p><p><strong>在最高点乘着叶片往前飞</strong></p><p><strong>任风吹干流过的泪和汗</strong></p><p><strong>我要一步一步往上爬</strong></p><p><strong>等待阳光静静看着它的脸</strong></p><p><strong>小小的天有大大的梦想</strong></p><p><strong>我有属于我的天</strong></p><p><strong>任风吹干流过的泪和汗</strong></p><p><strong>总有一天我有属于我的天</strong></p><p><img alt="我伦😊" data-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/20191227181155.jpg" class="lazyload"></p>]]></content>
+    
+    <summary type="html">
+    
+      念旧的人是不是都这样呢......
+    
+    </summary>
+    
+      <category term="生活随笔" scheme="http://www.faithlch.com/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="Jay music" scheme="http://www.faithlch.com/tags/Jay-music/"/>
+    
+  </entry>
   
   <entry>
     <title>移动端适配方案</title>
@@ -130,9 +152,9 @@
       <category term="blog" scheme="http://www.faithlch.com/categories/blog/"/>
     
     
-      <category term="hexo" scheme="http://www.faithlch.com/tags/hexo/"/>
-    
       <category term="blog" scheme="http://www.faithlch.com/tags/blog/"/>
+    
+      <category term="hexo" scheme="http://www.faithlch.com/tags/hexo/"/>
     
       <category term="2019" scheme="http://www.faithlch.com/tags/2019/"/>
     
