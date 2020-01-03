@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.faithlch.com/"/>
-  <updated>2020-01-02T08:35:15.306Z</updated>
+  <updated>2020-01-03T10:16:47.917Z</updated>
   <id>http://www.faithlch.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WPF学习笔记(一)入门基础</title>
+    <link href="http://www.faithlch.com/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80-%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80.html"/>
+    <id>http://www.faithlch.com/WPF学习笔记-一-入门基础.html</id>
+    <published>2020-01-03T10:12:00.000Z</published>
+    <updated>2020-01-03T10:16:47.917Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="WPF学习笔记-一-入门基础"><a href="#WPF学习笔记-一-入门基础" class="headerlink" title="WPF学习笔记(一)入门基础"></a>WPF学习笔记(一)入门基础</h1><h2 id="一、WPF概述"><a href="#一、WPF概述" class="headerlink" title="一、WPF概述"></a>一、WPF概述</h2><blockquote><p>为Windows创建具有视觉效果的用户体验的桌面客户端应用程序</p><p>WPF通过一系列全面的应用程序开发功能扩展了核心，这些功能包括可扩展应用程序标记语言（XAML），控件，数据绑定，布局，2D和3D图形，动画，样式，模板，文档，媒体，文本和版式</p></blockquote><h3 id="1-WPF项目生成的项目文件结构"><a href="#1-WPF项目生成的项目文件结构" class="headerlink" title="1. WPF项目生成的项目文件结构"></a>1. WPF项目生成的项目文件结构</h3><p><strong>打开Visual Studio2019 创建“WPF应用程序”，默认生成的文件结构如下图：</strong></p><p><img alt="文件结构" data-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/s.png" class="lazyload"></p><p><strong>在App.xaml中的“StartupUri”属性可以指定项目运行时的启动窗体。还可以定义我们需要的系统资源以及引入程序集等如下图：</strong></p><p><img alt data-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/Snipaste_2020-01-03_16-19-01.png" class="lazyload"></p><h3 id="2-命名空间"><a href="#2-命名空间" class="headerlink" title="2. 命名空间"></a>2. 命名空间</h3><blockquote><p>XAML 命名空间实际上是 XML 命名空间概念的扩展。 指定 XAML 命名空间的方法依赖于 XML 命名空间语法、将 URI 用作命名空间标识符以及使用前缀提供从相同标记源引用多个命名空间等约定。</p></blockquote><p>在许多 XAML 文件的根标记中的命名空间声明内，通常可看到两个 XML 命名空间声明。 第一个声明默认映射整个 WPF 客户端/框架 XAML 命名空间：默认是没有前缀的</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span><br></pre></td></tr></table></figure><p>第二个声明映射单独的 XAML 命名空间，（通常）将其映射到 <code>x:</code> 前缀。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span><br></pre></td></tr></table></figure><p>用于映射 XAML 语言内部函数支持的 <code>x:</code> 前缀约定后跟项目模板、示例代码和此 SDK 中的语言功能的文档。 XAML 命名空间定义许多常用功能，即使对于基本 WPF 应用程序而言，这些功能也是必需的。 例如，若要通过分部类将任何代码隐藏加入到 XAML 文件，必须将该类命名为相关 XAML 文件根元素中的 <code>x:Class</code> 属性。 或者，XAML 页面中定义的任何要作为键控资源访问的元素都应在当前元素上设置 <code>x:Key</code> 属性。 有关 XAML 的这些方面和其他方面的详细信息，请参阅 <a href="https://docs.microsoft.com/zh-cn/dotnet/desktop-wpf/fundamentals/xaml" target="_blank" rel="noopener">XAML 概述 (WPF)</a> 或 <a href="https://docs.microsoft.com/zh-cn/dotnet/framework/wpf/advanced/xaml-syntax-in-detail" target="_blank" rel="noopener">XAML 语法详述</a>。</p><h2 id="二、WPF中的XAML"><a href="#二、WPF中的XAML" class="headerlink" title="二、WPF中的XAML"></a>二、WPF中的XAML</h2><blockquote><ol><li>XAML是基于XML的声明性标记语言，作为编程代码实例化和初始化对象</li><li>Xamarin.Forms 开发人员可以定义用户界面用作所有 Xamarin.Forms 视图、 布局和页面，以及自定义类。 可以编译或可执行文件中嵌入的 XAML 文件</li></ol></blockquote><h3 id="1-XAML的优缺点"><a href="#1-XAML的优缺点" class="headerlink" title="1. XAML的优缺点"></a>1. XAML的优缺点</h3><p>（1）优点：</p><ul><li>更简洁和可读性</li><li>XML中固有的父-子层次结构</li><li>可以轻松手动编写，也可以通过可视化设计工具生成      </li></ul><p>（2）缺点        </p><ol><li>XAML 不能包含代码。 必须在代码文件中定义所有事件处理程序。         </li><li>XAML 不能包含重复处理的循环。 (但是，最值得注意的是 ListView 可以生成多个子级中的对象基于其 ItemsSource 集合。)         </li><li>XAML 不能包含有条件处理（但是，数据绑定可以引用，可有效地处理某些条件的代码基于绑定转换器。         </li><li>XAML 通常无法实例化类未定义无参数构造函数。（但是，有时会解决此限制问题的方法。）         </li><li>XAML 通常不能调用方法。（同样，此限制可以有时克服。）</li></ol><h3 id="2-为对象属性赋值的方式"><a href="#2-为对象属性赋值的方式" class="headerlink" title="2. 为对象属性赋值的方式"></a>2. 为对象属性赋值的方式</h3><ul><li><p>利用Attribute=value的形式</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//直接写在标签内</span><br><span class="line">&lt;Button Width=&quot;120&quot; Height=&quot;30&quot; Grid.Row=&quot;3&quot; &gt;</span><br><span class="line">    &lt;Rectangle  Width=&quot;20&quot; Height=&quot;20&quot; Stroke=&quot;DarkBlue&quot; Fill=&quot;LawnGreen&quot; /&gt;</span><br><span class="line">&lt;/Button&gt;</span><br></pre></td></tr></table></figure></li><li><p>属性标签的形式</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;Window.Resources&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    ...</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/Window.Resources&gt;</span><br><span class="line">//</span><br><span class="line">&lt;Grid&gt;</span><br><span class="line">     &lt;Grid.ColumnDefinitions&gt; </span><br><span class="line">         &lt;ColumnDefinition /&gt;</span><br><span class="line">     &lt;/Grid.ColumnDefinitions&gt;</span><br><span class="line">&lt;/Grid&gt;</span><br></pre></td></tr></table></figure></li></ul><ul><li><p><code>标签扩展</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;TextBlock x:Name=&quot;tb&quot; Text=&quot;&#123;Binding ElementName=sld,Path=Value&#125;&quot; /&gt;</span><br><span class="line">&lt;Slider x:Name=&quot;sld&quot; Grid.Row=&quot;4&quot; Value=&quot;50&quot; Maximum=&quot;100&quot; Minimum=&quot;0&quot; /&gt;</span><br></pre></td></tr></table></figure></li></ul><h2 id="三、学习中……"><a href="#三、学习中……" class="headerlink" title="三、学习中……"></a>三、学习中……</h2>]]></content>
+    
+    <summary type="html">
+    
+      WPF学习笔记
+    
+    </summary>
+    
+      <category term="Microsoft" scheme="http://www.faithlch.com/categories/Microsoft/"/>
+    
+      <category term="WPF" scheme="http://www.faithlch.com/categories/Microsoft/WPF/"/>
+    
+    
+      <category term="Microsoft" scheme="http://www.faithlch.com/tags/Microsoft/"/>
+    
+      <category term="WPF" scheme="http://www.faithlch.com/tags/WPF/"/>
+    
+      <category term="XAML" scheme="http://www.faithlch.com/tags/XAML/"/>
+    
+  </entry>
   
   <entry>
     <title>2019 料你也不想再过一次</title>
@@ -176,11 +204,11 @@
       <category term="blog" scheme="http://www.faithlch.com/categories/blog/"/>
     
     
-      <category term="hexo" scheme="http://www.faithlch.com/tags/hexo/"/>
+      <category term="blog" scheme="http://www.faithlch.com/tags/blog/"/>
     
       <category term="2019" scheme="http://www.faithlch.com/tags/2019/"/>
     
-      <category term="blog" scheme="http://www.faithlch.com/tags/blog/"/>
+      <category term="hexo" scheme="http://www.faithlch.com/tags/hexo/"/>
     
       <category term="指令" scheme="http://www.faithlch.com/tags/%E6%8C%87%E4%BB%A4/"/>
     
@@ -191,7 +219,7 @@
     <link href="http://www.faithlch.com/%E5%BE%AE%E8%BD%AFBlazor%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80.html"/>
     <id>http://www.faithlch.com/微软Blazor框架学习笔记-一.html</id>
     <published>2019-10-08T11:35:09.000Z</published>
-    <updated>2020-01-02T09:54:49.567Z</updated>
+    <updated>2020-01-03T10:16:04.811Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="微软Blazor框架学习笔记-一"><a href="#微软Blazor框架学习笔记-一" class="headerlink" title="微软Blazor框架学习笔记(一)"></a>微软Blazor框架学习笔记(一)</h2><h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><p><strong>Blazor是一个用于使用 .NET生成交互式客户端 Web UI 的框架：</strong></p><ul><li>使用C#代替JavaScript来创建丰富的交互式UI；</li><li>共享使用.NET编写的服务器端和客户端应用逻辑；</li><li>将UI呈现为HTML和CSS，以支持众多浏览器，其中包括移动浏览器。</li></ul><p><strong>使用.NET进行客户端web开发可提供以下优势</strong>：</p><ul><li>使用C#代替JavaScript来编写代码；</li><li>利用现有的.NET的性能、可靠性和安全性；</li><li>始终高效支持Windows、Linux、macOS上的Visual Studio；</li><li>以一组稳定、功能丰富且易用的通用语言、框架和工具为基础来生成。</li></ul><h2 id="二、托管模型"><a href="#二、托管模型" class="headerlink" title="二、托管模型"></a>二、托管模型</h2><h3 id="Blazor-WebAssembly"><a href="#Blazor-WebAssembly" class="headerlink" title="Blazor WebAssembly"></a>Blazor WebAssembly</h3><ul><li>是一个单页面应用框架，用于使用 .NET 生成交互式客户端 Web 应用。 Blazor WebAssembly 使用开放的 Web 标准（没有插件或代码转换），并且适用于所有新式 Web 浏览器（包括移动浏览器）</li><li>Blazor 的主体托管模型在 WebAssembly 上的浏览器中运行客户端Blazor WebAssembly 托管模型具有以下几个优点：<ul><li>没有 .NET 服务器端依赖项。 应用在下载到客户端之后完全正常运行。</li><li>完全利用客户端资源和功能。</li><li>工作从服务器卸载到客户端。</li><li>不需要 <a href="http://asp.net/" target="_blank" rel="noopener">ASP.NET</a> Core web 服务器来托管应用程序。 无服务器部署方案可能（例如，通过 CDN 提供应用）。</li></ul></li><li>Blazor WebAssembly 托管的缺点：<ul><li>应用程序限制为浏览器的功能。</li><li>需要支持的客户端硬件和软件（例如，WebAssembly 支持）。</li><li>下载大小较大，应用需要较长时间才能加载。</li><li>.NET 运行时和工具支持不太成熟。 例如， .NET Standard支持和调试中存在限制。</li></ul></li></ul><h3 id="Blazor-服务器"><a href="#Blazor-服务器" class="headerlink" title="Blazor 服务器"></a>Blazor 服务器</h3><ul><li>使用 Blazor 服务器托管模型，可在服务器上从 <a href="http://asp.net/" target="_blank" rel="noopener">ASP.NET</a> Core 应用中执行应用。 UI 更新、事件处理和 JavaScript 调用是通过 SignalR 连接进行处理。</li><li>Blazor 服务器托管模型具有以下几个优点：<ul><li>下载大小明显小于 Blazor WebAssembly 应用，且应用加载速度快得多。</li><li>应用充分利用服务器功能，包括使用任何与 .NET Core 兼容的 Api。</li><li>服务器上的 .NET Core 用于运行应用程序，因此现有的 .NET 工具（如调试）可按预期方式工作。</li><li>支持瘦客户端。 例如，Blazor 服务器应用程序适用于不支持 WebAssembly 的浏览器以及资源受限设备上的浏览器。</li><li>应用程序的 .NET/C#代码库（包括应用程序的组件代码）不会提供给客户端。</li></ul></li><li>Blazor 服务器托管的缺点：<ul><li>通常存在较高的延迟。 每个用户交互都涉及网络跃点。</li><li>无脱机支持。 如果客户端连接失败，应用将停止工作。</li><li>对于包含多个用户的应用而言，可伸缩性非常困难。 服务器必须管理多个客户端连接并处理客户端状态。</li><li>为应用提供服务需要 <a href="http://asp.net/" target="_blank" rel="noopener">ASP.NET</a> Core 服务器。 不可能的无服务器部署方案（例如，通过 CDN 为应用提供服务）。</li></ul></li></ul><h2 id="三、Razor-Components"><a href="#三、Razor-Components" class="headerlink" title="三、Razor Components"></a>三、Razor Components</h2><h3 id="Blazor-应用基于组件"><a href="#Blazor-应用基于组件" class="headerlink" title="Blazor 应用基于组件"></a>Blazor 应用基于组件</h3><ul><li>定义灵活的 UI 呈现逻辑。</li><li>处理用户事件。</li><li>可以嵌套和重用。</li><li>可以作为 Razor 类库或 NuGet 包共享和分发。</li></ul><h3 id="组件类"><a href="#组件类" class="headerlink" title="组件类"></a>组件类</h3><ul><li>在razor组件文件中，使用HTML和C#的组合实现了组件</li><li>Blazor中的组件成为Razor组件组件名称必须以大写字符开头</li><li>组件是普通的C#类，可以放在项目中任何位置</li><li>若要从页面和视图呈现组件：使用<strong>RenderComponentAsync</strong> HTML方法</li><li>若要在组件中通过分部视图使用逻辑，请将分部视图逻辑分解为一个组件。</li></ul><h3 id="生成组件"><a href="#生成组件" class="headerlink" title="生成组件"></a>生成组件</h3><ul><li><p>在网页中添加计数器通常使用JavaScript，但是用Blazor时，可以使用C#</p></li><li><p>浏览器对各组建的请求（由顶部的@page指令指定）导致该组件呈现其内容</p></li><li><p>在<strong>＠code</strong>块中定义组件状态（属性、字段）和方法用于处理事件或定义其他逻辑</p></li></ul><h3 id="使用组件"><a href="#使用组件" class="headerlink" title="使用组件"></a>使用组件</h3><ul><li>使用HTML语法可以将组件添加到其他组件中</li><li>使用特性或子内容来指定组件参数，这些参数允许你设置子组件的属性</li></ul><h3 id="组件参数"><a href="#组件参数" class="headerlink" title="组件参数"></a>组件参数</h3><ul><li>由具有<strong>［Parameter］</strong>的组件类上的公共属性定义</li></ul><h3 id="子内容"><a href="#子内容" class="headerlink" title="子内容"></a>子内容</h3><ul><li>组件可以设置另一个组件的内容；分配组件提供用于指定组件标记之间的内容</li></ul><h3 id="路由到组件"><a href="#路由到组件" class="headerlink" title="路由到组件"></a>路由到组件</h3><ul><li><p>由＠page指令指定该组件为路由终结点</p></li><li><p>如果没有<strong>＠page</strong>指令，组件将无法处理路由的请求，但该组件仍可以被其他组件使用</p></li></ul><h3 id="依赖关系注入"><a href="#依赖关系注入" class="headerlink" title="依赖关系注入"></a>依赖关系注入</h3><ul><li>Blzor Server应用程序，在 Startup.ConfigureServices 中注册为<a href="https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-3.0#service-lifetimes" target="_blank" rel="noopener">单一实例</a><ul><li><strong>＠inject</strong>指令用于将服务实例注入到所需组件中</li><li>组件使用注入的服务来检索对象中的数组</li></ul></li><li>blazor WebAssembly应用，则注入了HttpClient</li></ul><h3 id="数据绑定"><a href="#数据绑定" class="headerlink" title="数据绑定"></a>数据绑定</h3><ul><li>对组件和DOM元素都是通过<strong>＠bind</strong>属性来完成的</li><li>通过使用<strong>@bind:formatDateTime</strong>格式字符串，现在还不能使用其他格式的表达式，如货币或数字格式</li></ul><h3 id="事件处理"><a href="#事件处理" class="headerlink" title="事件处理"></a>事件处理</h3><ul><li>@on{event}格式：onclick、onsubmit、onchange</li><li><img alt="image.png" data-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/Image.png" class="lazyload"></li><li><strong>Lambda表达式</strong></li><li><img alt="image2.png" data-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/Image2.png" class="lazyload"></li></ul><h3 id="链式绑定"><a href="#链式绑定" class="headerlink" title="链式绑定"></a>链式绑定</h3><h3 id="捕获对组件的引用"><a href="#捕获对组件的引用" class="headerlink" title="捕获对组件的引用"></a>捕获对组件的引用</h3><blockquote><p>组件引用提供了一种方法来引用组件实例，以便可以向该实例发出命令。捕获组件引用：</p></blockquote><ul><li>向子组件添加@ref属性</li><li>定义与子组件类型相同的字段</li></ul><h3 id="在外部调用组件方法以更新状态"><a href="#在外部调用组件方法以更新状态" class="headerlink" title="在外部调用组件方法以更新状态"></a>在外部调用组件方法以更新状态</h3><ul><li>Blazor 使用 SynchronizationContext 来强制执行单个逻辑线程。此 SynchronizationContext 上将执行 Blazor 引发的组件生命周期方法和任何事件回调。 如果必须根据外部事件（如计时器或其他通知）更新组件，请使用 InvokeAsync 方法，该方法将调度到 Blazor 的 SynchronizationContext。</li></ul><h2 id="持续更新中…"><a href="#持续更新中…" class="headerlink" title="持续更新中…"></a>持续更新中…</h2>]]></content>
     
@@ -201,14 +229,16 @@
     
     </summary>
     
-      <category term="学习笔记" scheme="http://www.faithlch.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="Microsoft" scheme="http://www.faithlch.com/categories/Microsoft/"/>
     
+      <category term="Asp.NET Core" scheme="http://www.faithlch.com/categories/Microsoft/Asp-NET-Core/"/>
+    
+    
+      <category term="Microsoft" scheme="http://www.faithlch.com/tags/Microsoft/"/>
     
       <category term="2019" scheme="http://www.faithlch.com/tags/2019/"/>
     
       <category term="Blazor" scheme="http://www.faithlch.com/tags/Blazor/"/>
-    
-      <category term="Microsoft" scheme="http://www.faithlch.com/tags/Microsoft/"/>
     
   </entry>
   
@@ -245,7 +275,7 @@
     <link href="http://www.faithlch.com/%E6%88%91%E4%B9%9F%E4%B8%8D%E7%9F%A5%E9%81%93%E5%9C%A8%E5%86%99%E4%BB%80%E4%B9%88.html"/>
     <id>http://www.faithlch.com/我也不知道在写什么.html</id>
     <published>2019-08-05T14:39:33.000Z</published>
-    <updated>2019-12-19T10:35:41.225Z</updated>
+    <updated>2020-01-03T06:12:54.609Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="Singleton与Static的区别"><a href="#Singleton与Static的区别" class="headerlink" title="Singleton与Static的区别"></a>Singleton与Static的区别</h3><h3 id="1-singleton"><a href="#1-singleton" class="headerlink" title="1. singleton"></a>1. singleton</h3><ul><li><p>单例模式</p><ul><li>单例模式，单例模式是一种被广泛使用的设计模式。指的是在应用整个生命周期内只能存在一个实例。在它的核心结构中只包含一个被称为单例的特殊类。通过单例模式可以保证系统中一个类只有一个实例。即一个类只有一个对象实例。</li></ul></li><li><p>单例模式的特点</p><ul><li>单例类只能有一个实例。</li><li>单例类必须自己创建自己的唯一实例。</li><li>单例类必须给所有其它对象提供这一实例。</li></ul></li><li><p>单例模式的好处</p><ul><li>使用单例模式可以限制对象实例的个数，除了返回实例的操作之外不能被new出来。这在某些需要限制对象访问的场合下是有用的。使用static的话并不能限制对象实例的个数。</li><li>在很多的操作中，比如说是<strong>建立目录、数据库操作</strong>等都需要这样的单线程操作。</li><li>最显而易见的好处是<strong>节约开销</strong>，比如数据库单例的好处是，每次你只需要去获取那个数据库的示例就好，不用每次都去创建一个实例。</li></ul></li></ul><h3 id="2-static"><a href="#2-static" class="headerlink" title="2. static"></a>2. static</h3><ul><li>静态类<ul><li>静态类就是一个类里面都是静态方法和静态field，构造器被private修饰，因此不能被实例化。Math类就是一个静态类。</li></ul></li><li>静态类的特点<ul><li>只包含静态成员。</li><li>无法进行实例化。也就是无法使用new运算符创建类类型的变量，因此可以通过<strong>类名.变量名</strong>直接引用，而不需要new出一个类来</li><li>静态方法通常用于创建实用程序函数。不能包含实例构造函数。静态方法的调用直接在类上进行，不能在类的实例上调用。</li><li>会进行密封，因此不能继承。 它们不能继承自任何类（除了Object）</li></ul></li><li>静态类的好处<ul><li>static类有更好的效率。</li><li>编译器可以进行检查。</li></ul></li></ul><h3 id="3-区别"><a href="#3-区别" class="headerlink" title="3. 区别"></a>3. 区别</h3><ul><li>静态方法只能直接访问本类中的静态成员（通过实例化对象）可以访问到的其它类中的所有成员（包括静态和非静态）</li><li>static有更好的访问效率，如果你的singleton不维持任何状态，仅仅是提供全局的访问，这个时候就适合用static，这样速度的也快；</li><li>静态类中只能有静态成员，不可以有非静态字段；</li><li>单例模式的<strong>灵活性更高</strong>，方法可以被<strong>override</strong>，因为静态类都是静态方法，所以不能被override；</li><li>单例模式会提供给你一个<strong>全局唯一的对象</strong>，静态类只是提供给你很多静态方法，这些方法不用创建对象，通过类就可以直接调用；</li><li>单例模式最大的好处就是节省内存空间，提高效率，因为他永远都只有一个实例！而static还是有可能被new出多个实例的，而这多个实例在用完之后也许就没用了，还要等待垃圾回收机制来回收，所以效率自然不如单例；</li><li>如果是一个非常重的对象，<strong>单例模式可以懒加载，静态类就无法做到</strong>；</li></ul><hr><p><strong>什么是进程？</strong></p><ul><li>当一个程序开始运行时，它就是一个进程，进程包括运行中的程序和程序所使用到的内存和系统资源。而一个进程又是由多个线程所组成的。</li></ul><p><strong>什么是线程</strong></p><ul><li>线程是程序中的一个执行流，每个线程都有自己的专有寄存器(栈指针、程序计数器等)，但代码区是共享的，即不同的线程可以执行同样的函数。</li></ul><p><strong>什么是多线程？</strong></p><ul><li>多线程是指程序中包含多个执行流，即在一个程序中可以同时运行多个不同的线程来执行不同的任务，也就是说允许单个程序创建多个并行执行的线程来完成各自的任务。</li></ul><p><strong>多线程的好处：</strong></p><ul><li>可以提高CPU的利用率。在多线程程序中，一个线程必须等待的时候，CPU可以运行其它的线程而不是等待，这样就大大提高了程序的效率。 </li></ul><p><strong>多线程的不利方面：</strong></p><ul><li>线程也是程序，所以线程需要占用内存，线程越多占用内存也越多； </li><li>多线程需要协调和管理，所以需要CPU时间跟踪线程； </li><li>线程之间对共享资源的访问会相互影响，必须解决竞用共享资源的问题；</li><li>线程太多会导致控制太复杂，最终可能造成很多Bug。</li></ul><hr><p>参考链接：<a href="https://www.cnblogs.com/scotth/p/10450891.html" target="_blank" rel="noopener">https://www.cnblogs.com/scotth/p/10450891.html</a></p>]]></content>
     
@@ -260,9 +290,7 @@
       <category term="C#" scheme="http://www.faithlch.com/categories/Microsoft/C/"/>
     
     
-      <category term="singleton" scheme="http://www.faithlch.com/tags/singleton/"/>
-    
-      <category term="static" scheme="http://www.faithlch.com/tags/static/"/>
+      <category term="singleton - static" scheme="http://www.faithlch.com/tags/singleton-static/"/>
     
   </entry>
   
