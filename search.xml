@@ -93,9 +93,9 @@
         <category>blog</category>
       </categories>
       <tags>
-        <tag>blog</tag>
-        <tag>2019</tag>
         <tag>hexo</tag>
+        <tag>2019</tag>
+        <tag>blog</tag>
         <tag>指令</tag>
       </tags>
   </entry>
@@ -108,8 +108,8 @@
         <category>Asp.NET Core</category>
       </categories>
       <tags>
-        <tag>Microsoft</tag>
         <tag>2019</tag>
+        <tag>Microsoft</tag>
         <tag>Blazor</tag>
       </tags>
   </entry>
