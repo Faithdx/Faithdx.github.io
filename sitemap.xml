@@ -2,23 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.faithlch.com/CSS%E6%8A%80%E5%B7%A7-%E4%B8%80-%E4%B9%8B%E9%9A%90%E8%97%8F%E6%BB%9A%E5%8A%A8%E6%9D%A1.html</loc>
+    <loc>http://www.faithlch.com/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E8%B5%84%E6%BA%90%E4%B8%8E%E8%A7%A6%E5%8F%91%E5%99%A8.html</loc>
     
-    <lastmod>2020-01-06T02:11:21.596Z</lastmod>
+    <lastmod>2020-01-06T10:25:59.422Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.faithlch.com/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80-%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80.html</loc>
     
-    <lastmod>2020-01-06T02:11:11.144Z</lastmod>
+    <lastmod>2020-01-06T10:25:11.865Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.faithlch.com/JavaScript%E9%9D%A2%E8%AF%95%E9%A2%98%E6%94%B6%E8%97%8F.html</loc>
+    
+    <lastmod>2020-01-06T04:35:04.468Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.faithlch.com/SASS%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-%E4%B8%80.html</loc>
+    
+    <lastmod>2020-01-06T04:34:24.172Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.faithlch.com/CSS%E6%8A%80%E5%B7%A7-%E4%B8%80-%E4%B9%8B%E9%9A%90%E8%97%8F%E6%BB%9A%E5%8A%A8%E6%9D%A1.html</loc>
+    
+    <lastmod>2020-01-06T04:33:46.102Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.faithlch.com/Markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.html</loc>
+    
+    <lastmod>2020-01-06T04:29:04.741Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.faithlch.com/hello-world.html</loc>
+    
+    <lastmod>2020-01-06T04:29:03.457Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.faithlch.com/hexo%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4.html</loc>
+    
+    <lastmod>2020-01-06T04:28:39.253Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.faithlch.com/%E5%BE%AE%E8%BD%AFBlazor%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80.html</loc>
     
-    <lastmod>2020-01-03T10:16:04.811Z</lastmod>
+    <lastmod>2020-01-06T04:18:27.886Z</lastmod>
     
   </url>
   
@@ -65,30 +107,9 @@
   </url>
   
   <url>
-    <loc>http://www.faithlch.com/Markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.html</loc>
-    
-    <lastmod>2019-12-19T09:34:56.906Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.faithlch.com/hexo%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4.html</loc>
-    
-    <lastmod>2019-12-19T09:07:42.697Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.faithlch.com/change_log/index.html</loc>
     
     <lastmod>2019-12-17T10:14:30.916Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.faithlch.com/SASS%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-%E4%B8%80.html</loc>
-    
-    <lastmod>2019-12-17T10:14:06.789Z</lastmod>
     
   </url>
   
@@ -142,13 +163,6 @@
   </url>
   
   <url>
-    <loc>http://www.faithlch.com/JavaScript%E9%9D%A2%E8%AF%95%E9%A2%98%E6%94%B6%E8%97%8F.html</loc>
-    
-    <lastmod>2019-12-09T07:31:26.577Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.faithlch.com/photos/index.html</loc>
     
     <lastmod>2019-12-06T04:33:45.623Z</lastmod>
@@ -159,13 +173,6 @@
     <loc>http://www.faithlch.com/music/index.html</loc>
     
     <lastmod>2019-12-06T03:11:12.401Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.faithlch.com/hello-world.html</loc>
-    
-    <lastmod>2019-12-02T10:26:18.135Z</lastmod>
     
   </url>
   
