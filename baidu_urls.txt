@@ -1,3 +1,4 @@
+http://www.faithlch.com/前端性能优化.html
 http://www.faithlch.com/WPF学习笔记-三-WPF模板.html
 http://www.faithlch.com/WPF学习笔记-二-资源与触发器.html
 http://www.faithlch.com/WPF学习笔记-一-入门基础.html
