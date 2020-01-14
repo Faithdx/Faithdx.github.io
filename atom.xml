@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.faithlch.com/"/>
-  <updated>2020-01-10T10:24:52.026Z</updated>
+  <updated>2020-01-14T08:09:01.737Z</updated>
   <id>http://www.faithlch.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>WPF学习笔记(四)字体图标的使用</title>
+    <link href="http://www.faithlch.com/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E5%9B%9B)%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E7%9A%84%E4%BD%BF%E7%94%A8.html"/>
+    <id>http://www.faithlch.com/WPF学习笔记(四)字体图标的使用.html</id>
+    <published>2020-01-12T04:27:38.000Z</published>
+    <updated>2020-01-14T08:09:01.737Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="WPF中字体图标的使用"><a href="#WPF中字体图标的使用" class="headerlink" title="WPF中字体图标的使用"></a>WPF中字体图标的使用</h2><h3 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h3><blockquote><p>目前，前端开发，比如Android、Web等，对于图标字体运用是越来越广泛。本人目前因某些原因(生活所迫…😔)，不得不自学WPF，在这期间用到了这些知识，所以本文就WPF中字体图标的使用进行阐述。</p></blockquote><h3 id="二、图标字体"><a href="#二、图标字体" class="headerlink" title="二、图标字体"></a>二、图标字体</h3><h3 id="2-1-图标字体的优劣势"><a href="#2-1-图标字体的优劣势" class="headerlink" title="2.1 图标字体的优劣势"></a>2.1 图标字体的优劣势</h3><ul><li><p>优势</p><ol><li><p>轻量级：一个图标字体要比一系列的图像要小。一旦字体加载了，图标就会马上渲染出来，不需要下载一个个图像。这样可以减少HTTP的请求数量，而且和HTML5的离线存储配合，可以对性能做出优化。</p></li><li><p>灵活性：不调字体可以像页面中的文字一样，通过font-size属性来对其进行大小的设置，而且还可以添加各种文字效果，如color、hover、filter、text-shadow、transform等效果。灵活的简直不像话！</p></li><li><p>兼容性：图标字体支持现代浏览器，甚至是低版本的IE浏览器，所以可以放心的使用它。</p></li><li><p>相比于位图放大图片会出现失真、缩小又会浪费掉像素点，图标字体不会出现这种情况。</p></li></ol></li><li><p>劣势</p><ol><li>图标字体只能被渲染成单色，或者是CSS3的渐变色</li><li>版权上也有着对应的限制，当然还是有很多免费的图标字体可以供我们下载。</li><li>当自己创作图标字体的时候，是比较耗费时间的，重构人员的后期维护成本也比较高</li></ol><blockquote><p>字体图标其实就是将矢量图打包到字体文件中，就像使用一般外置字体一样来使用，因此在WinForm、WPF中也是可以使用的。所以，开干…</p></blockquote></li></ul><h3 id="三、WPF中使用字体图标"><a href="#三、WPF中使用字体图标" class="headerlink" title="三、WPF中使用字体图标"></a>三、WPF中使用字体图标</h3><blockquote><p>开源字体图标很多，很容易获取，项目开发中需要的绝大部分图标都可以找到，像<a href="http://www.fontawesome.com.cn/" target="_blank" rel="noopener">Font Awesome</a>，<a href="https://www.iconfont.cn/" target="_blank" rel="noopener">Iconfont</a>，<a href="https://material.io/resources/icons/?style=baseline" target="_blank" rel="noopener">Material Design</a>等….</p></blockquote><h3 id="3-1-如何使用"><a href="#3-1-如何使用" class="headerlink" title="3.1 如何使用"></a>3.1 如何使用</h3><ol><li><p>创建字体资源项目</p><p><img alt data-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/icon-2.png" class="lazyload"></p></li><li><p>将字体文件加入到项目资源</p><p>下载所需要的字体文件(后缀为.tff的文件)，添加到项目中，并设置生成操作为”Resource”，如下图：</p></li></ol><p><img alt data-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/icon-1.png" class="lazyload"></p><h3 id="3-2-使用方式"><a href="#3-2-使用方式" class="headerlink" title="3.2 使用方式"></a>3.2 使用方式</h3><ol><li><p>定义样式</p><p>使用TextBlock作为图标显示的容器，因此定义一个TextBlock的样式即可，其中iconfont为字体名称，可在创建字体图标项目时修改</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--Ficon--&gt;</span><br><span class="line">&lt;Style x:Key=&quot;Ficon&quot; TargetType=&quot;&#123;x:Type TextBlock&#125;&quot;&gt;</span><br><span class="line">    &lt;Setter Property=&quot;FontFamily&quot; Value=&quot;Resources/Fonts/#iconfont&quot;/&gt;</span><br><span class="line">    &lt;Setter Property=&quot;FontSize&quot; Value=&quot;26&quot;/&gt;</span><br><span class="line">    &lt;Setter Property=&quot;VerticalContentAlignment&quot; Value=&quot;Center&quot;/&gt;</span><br><span class="line">    &lt;Setter Property=&quot;HorizontalContentAlignment&quot; Value=&quot;Left&quot;/&gt;</span><br><span class="line">    &lt;Setter Property=&quot;BorderBrush&quot; Value=&quot;Transparent&quot;/&gt;</span><br><span class="line">&lt;/Style&gt;</span><br></pre></td></tr></table></figure></li></ol><ol start="2"><li><p>XAML中使用</p><p>直接在TextBlock 中使用即可：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;</span><br><span class="line">    &lt;TextBlock Text=&quot;&amp;#xe624;&quot; FontSize=&quot;50&quot; FontFamily=&quot;Resources/Fonts/#iconfont&quot;    Margin=&quot;50 0 0 0&quot; VerticalAlignment=&quot;Center&quot; Foreground=&quot;Red&quot; /&gt;</span><br><span class="line"></span><br><span class="line">    &lt;TextBlock Text=&quot;&amp;#xe6e1;&quot; FontSize=&quot;50&quot; FontFamily=&quot;Resources/Fonts/#iconfont&quot;    Margin=&quot;50 0 0 0&quot; VerticalAlignment=&quot;Center&quot; Foreground=&quot;Black&quot;/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;TextBlock Text=&quot;&amp;#xe623;&quot; FontSize=&quot;40&quot; FontFamily=&quot;Resources/Fonts/#iconfont&quot;    Margin=&quot;50 0 0 0&quot; VerticalAlignment=&quot;Center&quot; Foreground=&quot;Green&quot;/&gt;</span><br><span class="line">&lt;/StackPanel&gt;</span><br></pre></td></tr></table></figure><p>效果如下：</p><p><img alt data-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/icon-4.png" class="lazyload"></p></li></ol><ol start="3"><li><p>C#代码使用示例</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//代码设置字体图标</span><br><span class="line">this .ticon1.Text = &quot;&amp;#xe624;&quot; ;</span><br><span class="line">this .ticon2.Text = &quot;&amp;#xe624;&quot; ;</span><br></pre></td></tr></table></figure></li></ol><h3 id="四、如何下载字体文件"><a href="#四、如何下载字体文件" class="headerlink" title="四、如何下载字体文件"></a>四、如何下载字体文件</h3><blockquote><p>以Iconfont来举例说明</p></blockquote><h3 id="4-1关于Iconfont"><a href="#4-1关于Iconfont" class="headerlink" title="4.1关于Iconfont"></a>4.1关于Iconfont</h3><blockquote><p>IconFont-阿里巴巴体验团队倾力打造，功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。</p><p>官网链接：<a href="https://www.iconfont.cn/" target="_blank" rel="noopener">https://www.iconfont.cn/</a></p></blockquote><h3 id="4-2-基本操作"><a href="#4-2-基本操作" class="headerlink" title="4.2 基本操作"></a>4.2 基本操作</h3><ol><li>登录Iconfont官网：<a href="https://www.iconfont.cn/" target="_blank" rel="noopener">https://www.iconfont.cn/</a></li><li>新建项目，将自己所需的icon添加到项目</li><li>然后下载到本地</li><li>将后缀为.tff的文件引入WPF项目</li></ol><h3 id="五、总结…"><a href="#五、总结…" class="headerlink" title="五、总结…"></a>五、总结…</h3><blockquote><p>前端路茫茫，我还是好好学习吧…😭</p><p>本站点所有内容仅记录自己一路走来的学习历程，如有错误，请多指正…😊</p></blockquote><h3 id="【参考链接】"><a href="#【参考链接】" class="headerlink" title="【参考链接】"></a>【参考链接】</h3><ul><li><a href="https://blog.csdn.net/mybelief321/article/details/102461597" target="_blank" rel="noopener">WPF使用教程</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      WPF中字体图白哦的使用
+    
+    </summary>
+    
+      <category term="Microsoft之旅" scheme="http://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/"/>
+    
+      <category term="WPF" scheme="http://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/WPF/"/>
+    
+    
+      <category term="WPF" scheme="http://www.faithlch.com/tags/WPF/"/>
+    
+      <category term="Iconfont" scheme="http://www.faithlch.com/tags/Iconfont/"/>
+    
+  </entry>
+  
+  <entry>
     <title>前端性能优化</title>
     <link href="http://www.faithlch.com/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.html"/>
     <id>http://www.faithlch.com/前端性能优化.html</id>
     <published>2020-01-10T10:23:37.000Z</published>
-    <updated>2020-01-10T10:24:52.026Z</updated>
+    <updated>2020-01-14T04:48:46.506Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="WEB前端性能优化总结"><a href="#WEB前端性能优化总结" class="headerlink" title="WEB前端性能优化总结"></a>WEB前端性能优化总结</h2><blockquote><p>各种前端性能优化问题</p></blockquote><h3 id="1-图片优化"><a href="#1-图片优化" class="headerlink" title="1. 图片优化"></a>1. 图片优化</h3><ul><li><p>在保证图片质量的情况下，压缩图片，减少图片大小</p></li><li><p>使用Css3、svg、iconfont代替图片</p></li><li><p>首次加载不大于1024KB的图片</p></li><li><p>图片宽不大于640px(移动端)</p></li></ul><h3 id="2-脚本优化"><a href="#2-脚本优化" class="headerlink" title="2. 脚本优化"></a>2. 脚本优化</h3><ul><li><p>减少重回和回流操作</p></li><li><p>使用事件委托，避免批量绑定事件</p></li><li><p>尽量使用ID选择器</p></li><li><p>使用touch事件代替click事件</p></li><li><p>使用节流函数减少性能消耗</p></li></ul><h3 id="3-HTML优化"><a href="#3-HTML优化" class="headerlink" title="3. HTML优化"></a>3. HTML优化</h3><ul><li><p>css文件写在头部，javascript放在尾部</p></li><li><p>避免层级深嵌套</p></li><li><p>避免img、iframe、a等元素的空src</p></li><li><p>避免行内样式和事件绑定</p></li><li><p>大图片避免使用base64</p></li></ul><h3 id="4-CSS优化"><a href="#4-CSS优化" class="headerlink" title="4. CSS优化"></a>4. CSS优化</h3><ul><li>移除空的css规则</li><li>正确使用display的属性</li><li>不滥用float</li><li>不声明过多的font-size</li><li>值为0时不要使用单位</li><li>标准化各种浏览器前缀</li></ul><h3 id="4-渲染优化"><a href="#4-渲染优化" class="headerlink" title="4. 渲染优化"></a>4. 渲染优化</h3><ul><li>HTML使用viewport(移动端)</li><li>减少DOM节点</li><li>尽量使用CSS3 3d动画来触发GPU渲染</li><li>使用requestAnimationFrame代替setTimeInter和setTimeout</li><li>适当使用canvas动画</li><li>对于resize、mousemove事件使用节流处理，较少DOM回流和重绘次数</li></ul><h3 id="5-优化网络链接"><a href="#5-优化网络链接" class="headerlink" title="5. 优化网络链接"></a>5. 优化网络链接</h3><ul><li>使用CDN</li><li>使用DNA预解析</li></ul><h3 id="6-资源加载时机"><a href="#6-资源加载时机" class="headerlink" title="6. 资源加载时机"></a>6. 资源加载时机</h3><ol><li><p>异步script标签</p><ul><li>defer: 异步加载，在HTML解析完成后执行。defer的实际效果与将代码放在body底部类似</li><li>async: 异步加载，加载完成后立即执行</li></ul></li><li><p>模块按需加载</p><ul><li>在SPA等业务逻辑比较复杂的系统中，需要根据路由来加载当前页面需要的业务模块</li><li>按需加载，是一种很好的优化网页或应用的方式。这种方式实际上是先把代码在一些逻辑断点处分离开，然后在一些<br>代码块中完成某些操作后，立即引用或即将引用另外一些新的代码块。这样加快了应用的初始加载速度，减轻了它的总体体积，因为某些代码块可能永远不会被加载</li><li>webpack 提供了两个类似的技术，优先选择的方式是使用符合 ECMAScript 提案 的 import() 语法。第二种则是使用 webpack 特定的 require.ensure</li></ul></li><li><p>使用资源预加载preload和资源预读取prefetch</p><ul><li>preload让浏览器提前加载指定资源，需要执行时再执行，可以加速本页面的加载速度</li><li>prefetch告诉浏览器加载下一页面可能会用到的资源，可以加速下一个页面的加载速度</li></ul></li><li><p>资源懒加载与资源预加载</p><ul><li>资源延迟加载也称为懒加载，延迟加载资源或符合某些条件时才加载某些资源</li><li>资源预加载是提前加载用户所需的资源，保证良好的用户体验</li><li>资源懒加载和资源预加载都是一种错峰操作，在浏览器忙碌的时候不做操作，浏览器空间时，再加载资源，优化了网络性能</li></ul></li></ol><h3 id="【参考】"><a href="#【参考】" class="headerlink" title="【参考】"></a>【参考】</h3><ul><li><a href="https://www.cnblogs.com/xiaohuochai/p/9178390.html" target="_blank" rel="noopener">前端性能优化的七大手段</a></li></ul>]]></content>
     
@@ -34,7 +60,9 @@
       <category term="大前端" scheme="http://www.faithlch.com/categories/%E5%A4%A7%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="2020 WEB" scheme="http://www.faithlch.com/tags/2020-WEB/"/>
+      <category term="2020" scheme="http://www.faithlch.com/tags/2020/"/>
+    
+      <category term="WEB" scheme="http://www.faithlch.com/tags/WEB/"/>
     
   </entry>
   
@@ -310,9 +338,9 @@
       <category term="Asp.NET Core" scheme="http://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/Asp-NET-Core/"/>
     
     
-      <category term="2019" scheme="http://www.faithlch.com/tags/2019/"/>
-    
       <category term="Microsoft" scheme="http://www.faithlch.com/tags/Microsoft/"/>
+    
+      <category term="2019" scheme="http://www.faithlch.com/tags/2019/"/>
     
       <category term="Blazor" scheme="http://www.faithlch.com/tags/Blazor/"/>
     
