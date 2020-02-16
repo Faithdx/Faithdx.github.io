@@ -116,9 +116,9 @@
       <category term="WPF" scheme="http://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/WPF/"/>
     
     
-      <category term="WPF" scheme="http://www.faithlch.com/tags/WPF/"/>
-    
       <category term="Microsoft" scheme="http://www.faithlch.com/tags/Microsoft/"/>
+    
+      <category term="WPF" scheme="http://www.faithlch.com/tags/WPF/"/>
     
   </entry>
   
@@ -143,9 +143,9 @@
       <category term="WPF" scheme="http://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/WPF/"/>
     
     
-      <category term="WPF" scheme="http://www.faithlch.com/tags/WPF/"/>
-    
       <category term="Microsoft" scheme="http://www.faithlch.com/tags/Microsoft/"/>
+    
+      <category term="WPF" scheme="http://www.faithlch.com/tags/WPF/"/>
     
   </entry>
   
@@ -170,9 +170,9 @@
       <category term="WPF" scheme="http://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/WPF/"/>
     
     
-      <category term="WPF" scheme="http://www.faithlch.com/tags/WPF/"/>
-    
       <category term="Microsoft" scheme="http://www.faithlch.com/tags/Microsoft/"/>
+    
+      <category term="WPF" scheme="http://www.faithlch.com/tags/WPF/"/>
     
       <category term="XAML" scheme="http://www.faithlch.com/tags/XAML/"/>
     
@@ -185,7 +185,7 @@
     <published>2019-12-31T23:13:53.000Z</published>
     <updated>2020-02-15T12:30:51.470Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>    <div id="aplayer-xvnKfbya" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="574919767" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="auto" data-theme="#a672b5" data-volume="0.2" data-loop="all"></div><h3 id="2019-料你也不想再过一次"><a href="#2019-料你也不想再过一次" class="headerlink" title="2019 料你也不想再过一次"></a>2019 料你也不想再过一次</h3><hr><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote><p>在我们为2020跨年而狂欢的时候，不知道还记不记得2019年初立的flag。第一批90后已经步入了三十岁的乐园😔，我们也该不远了!</p><p>我觉得在2020来临之际，应该静下心来想想，从毕业到进入社会这么些年来，自己到底真正做了多少有意义的事？有多少的时间是用来提升自己，努力成长的，又有多少的时间是用来挥霍、虚度的。</p><p>存款多少？或者欠款多少？一年到头，看着当初立里的flag，可能四分之一都没有完成的时候，或许自己应该是提不起来什么兴致跨年狂欢…</p></blockquote><p><a href="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/2020.png" data-fancybox="group" data-caption="life" class="fancybox"><img alt="life" title="life" data-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/2020.png" class="lazyload"></a></p><h3 id="2019回顾"><a href="#2019回顾" class="headerlink" title="2019回顾"></a>2019回顾</h3><blockquote><p>对我而言，2019依然很平淡，并没有月薪过万，依然没有存款，但不容置疑这是2017-2019这三年以来最好的一年了。从西安到北京，再到天津，一路坎坷，但总归有了好转的苗头，虽然与心中预期的相差甚远，但正在路上，虽然缓慢，但一切都在往好的方向发展……</p></blockquote><h4 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h4><p>17年毕业，选了一条之前自己从未做过、也没想过的路，“程序员”—-这个折腾了我一年多的职业。</p><p>在这之前毫无编程基础，掉头转战IT。刚毕业的我，身无分文，带着一张信用卡就孤身一人去了北京，进了培训班（此处省略一万字…）。</p><p>那段时间是我最难熬时候，每个月房租、花呗、信用卡、学费，得支出好一大笔钱，然而零收入(应该是负收入…)的我是怎么度过来的，这些不想再提，但期间资助过我的人，会牢记在心里，来日必当重谢！<br>但凡经历过的，都不会是平白无故，总会让你有所成长，特别是在牵扯到钱的时候，会让你合理的清理朋友圈，我觉得的这是个好现象！</p><p>2019三月份离职，折腾了两个来月，也没什么起色，一度的以为自己就是天煞孤星啊，又恰逢互联网寒冬，内心的火好像就要被这寒风吹灭了…</p><p>七月份，不甘的离开北京，来到了天津，她的城市，当时的我不知道内心是忧还是喜。幸好，有公司愿意接纳我，我呢也就这么迷迷糊糊的去了。奈何公司技术栈是微软全家桶😔，Blazor、WPF、WinForm、Xamarin.Forms一大堆，两个字总结我当时的心情 — — 卧槽！怎么办呢，学呗。怎么学呢？啃官网呗，我×××……，只能说网上找点新文章，教程真的好难😭</p><p>好好的一前端(虽然很菜…)，莫名其妙搞.NET总感觉很别扭。尽管微软真的很厉害，尽管东西是好东西，但直到今天还是心心念念我的vue/react，想学的Flutter还是没来得及学。<br>搞得我精神恍惚，这种身在曹营心在汉的境地让我很是不舒服！</p><p>工作虽不顺利，但至少后半年有了起色，唯一能让我欣慰的大概就是还清了我北京的学费吧。希望2020年，一路向前！</p><h4 id="感情"><a href="#感情" class="headerlink" title="感情"></a>感情</h4><p>很难想象像我这种情况还有女生愿意陪着我，一直很感激！❤❤❤</p><p>这一年，只能说时运不济，在我最没资格谈情说爱的时间，却留了你一席之地，也许注定就会是个悲剧吧。</p><p>没有预料中的跨年计划，没有任何的仪式感，当心中所预计的，看着一点点的变得不可能，我觉得强颜欢笑是件很难的事……</p><p>给我的教训，当你连你自己都养不活的时候，别想那些没用的，努力让自己变得有钱才是正道！！</p><h3 id="2020展望"><a href="#2020展望" class="headerlink" title="2020展望"></a>2020展望</h3><blockquote><p>展望不展望的倒不是很重要，关键是2020年第一天，不能显得太孤立，总得融入一下潮流嘛！Flag就暂时先不立了，因为打脸总会来的太快…</p><p>感情方面，就希望我们能有一个好的结局吧，不管是好聚好散，还是修成成果，我们都能笑脸相迎，坦然面对…</p><p>工作上，就祝我不在重复2019年的状态，不忘初心，一路前行！</p><p>最后的最后，祝她越来越优秀，变成自己心中理想的模样！</p></blockquote><hr><p><a href="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/%E5%A5%B3%E7%94%9F%E7%99%BD%E8%89%B2%E8%A1%AC%E8%A1%AB4k.jpg" data-fancybox="group" data-caption="2020" class="fancybox"><img alt="2020" title="2020" data-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/%E5%A5%B3%E7%94%9F%E7%99%BD%E8%89%B2%E8%A1%AC%E8%A1%AB4k.jpg" class="lazyload"></a></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>    <div id="aplayer-SPVBlDON" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="574919767" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="auto" data-theme="#a672b5" data-volume="0.2" data-loop="all"></div><h3 id="2019-料你也不想再过一次"><a href="#2019-料你也不想再过一次" class="headerlink" title="2019 料你也不想再过一次"></a>2019 料你也不想再过一次</h3><hr><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote><p>在我们为2020跨年而狂欢的时候，不知道还记不记得2019年初立的flag。第一批90后已经步入了三十岁的乐园😔，我们也该不远了!</p><p>我觉得在2020来临之际，应该静下心来想想，从毕业到进入社会这么些年来，自己到底真正做了多少有意义的事？有多少的时间是用来提升自己，努力成长的，又有多少的时间是用来挥霍、虚度的。</p><p>存款多少？或者欠款多少？一年到头，看着当初立里的flag，可能四分之一都没有完成的时候，或许自己应该是提不起来什么兴致跨年狂欢…</p></blockquote><p><a href="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/2020.png" data-fancybox="group" data-caption="life" class="fancybox"><img alt="life" title="life" data-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/2020.png" class="lazyload"></a></p><h3 id="2019回顾"><a href="#2019回顾" class="headerlink" title="2019回顾"></a>2019回顾</h3><blockquote><p>对我而言，2019依然很平淡，并没有月薪过万，依然没有存款，但不容置疑这是2017-2019这三年以来最好的一年了。从西安到北京，再到天津，一路坎坷，但总归有了好转的苗头，虽然与心中预期的相差甚远，但正在路上，虽然缓慢，但一切都在往好的方向发展……</p></blockquote><h4 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h4><p>17年毕业，选了一条之前自己从未做过、也没想过的路，“程序员”—-这个折腾了我一年多的职业。</p><p>在这之前毫无编程基础，掉头转战IT。刚毕业的我，身无分文，带着一张信用卡就孤身一人去了北京，进了培训班（此处省略一万字…）。</p><p>那段时间是我最难熬时候，每个月房租、花呗、信用卡、学费，得支出好一大笔钱，然而零收入(应该是负收入…)的我是怎么度过来的，这些不想再提，但期间资助过我的人，会牢记在心里，来日必当重谢！<br>但凡经历过的，都不会是平白无故，总会让你有所成长，特别是在牵扯到钱的时候，会让你合理的清理朋友圈，我觉得的这是个好现象！</p><p>2019三月份离职，折腾了两个来月，也没什么起色，一度的以为自己就是天煞孤星啊，又恰逢互联网寒冬，内心的火好像就要被这寒风吹灭了…</p><p>七月份，不甘的离开北京，来到了天津，她的城市，当时的我不知道内心是忧还是喜。幸好，有公司愿意接纳我，我呢也就这么迷迷糊糊的去了。奈何公司技术栈是微软全家桶😔，Blazor、WPF、WinForm、Xamarin.Forms一大堆，两个字总结我当时的心情 — — 卧槽！怎么办呢，学呗。怎么学呢？啃官网呗，我×××……，只能说网上找点新文章，教程真的好难😭</p><p>好好的一前端(虽然很菜…)，莫名其妙搞.NET总感觉很别扭。尽管微软真的很厉害，尽管东西是好东西，但直到今天还是心心念念我的vue/react，想学的Flutter还是没来得及学。<br>搞得我精神恍惚，这种身在曹营心在汉的境地让我很是不舒服！</p><p>工作虽不顺利，但至少后半年有了起色，唯一能让我欣慰的大概就是还清了我北京的学费吧。希望2020年，一路向前！</p><h4 id="感情"><a href="#感情" class="headerlink" title="感情"></a>感情</h4><p>很难想象像我这种情况还有女生愿意陪着我，一直很感激！❤❤❤</p><p>这一年，只能说时运不济，在我最没资格谈情说爱的时间，却留了你一席之地，也许注定就会是个悲剧吧。</p><p>没有预料中的跨年计划，没有任何的仪式感，当心中所预计的，看着一点点的变得不可能，我觉得强颜欢笑是件很难的事……</p><p>给我的教训，当你连你自己都养不活的时候，别想那些没用的，努力让自己变得有钱才是正道！！</p><h3 id="2020展望"><a href="#2020展望" class="headerlink" title="2020展望"></a>2020展望</h3><blockquote><p>展望不展望的倒不是很重要，关键是2020年第一天，不能显得太孤立，总得融入一下潮流嘛！Flag就暂时先不立了，因为打脸总会来的太快…</p><p>感情方面，就希望我们能有一个好的结局吧，不管是好聚好散，还是修成成果，我们都能笑脸相迎，坦然面对…</p><p>工作上，就祝我不在重复2019年的状态，不忘初心，一路前行！</p><p>最后的最后，祝她越来越优秀，变成自己心中理想的模样！</p></blockquote><hr><p><a href="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/%E5%A5%B3%E7%94%9F%E7%99%BD%E8%89%B2%E8%A1%AC%E8%A1%AB4k.jpg" data-fancybox="group" data-caption="2020" class="fancybox"><img alt="2020" title="2020" data-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/%E5%A5%B3%E7%94%9F%E7%99%BD%E8%89%B2%E8%A1%AC%E8%A1%AB4k.jpg" class="lazyload"></a></p>]]></content>
     
     <summary type="html">
     
@@ -317,9 +317,9 @@
     </summary>
     
     
-      <category term="大前端..." scheme="http://www.faithlch.com/categories/%E5%A4%A7%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="CSS" scheme="http://www.faithlch.com/categories/CSS/"/>
+    
+      <category term="大前端..." scheme="http://www.faithlch.com/categories/%E5%A4%A7%E5%89%8D%E7%AB%AF/"/>
     
       <category term="CSS技巧收录" scheme="http://www.faithlch.com/categories/CSS/CSS%E6%8A%80%E5%B7%A7%E6%94%B6%E5%BD%95/"/>
     
@@ -402,18 +402,18 @@
     </summary>
     
     
-      <category term="大前端..." scheme="http://www.faithlch.com/categories/%E5%A4%A7%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="CSS" scheme="http://www.faithlch.com/categories/CSS/"/>
     
+      <category term="大前端..." scheme="http://www.faithlch.com/categories/%E5%A4%A7%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="CSS" scheme="http://www.faithlch.com/tags/CSS/"/>
     
       <category term="语法" scheme="http://www.faithlch.com/tags/%E8%AF%AD%E6%B3%95/"/>
     
       <category term="2019" scheme="http://www.faithlch.com/tags/2019/"/>
     
       <category term="Sass" scheme="http://www.faithlch.com/tags/Sass/"/>
-    
-      <category term="CSS" scheme="http://www.faithlch.com/tags/CSS/"/>
     
   </entry>
   
