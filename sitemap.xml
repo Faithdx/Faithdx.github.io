@@ -277,13 +277,6 @@
   </url>
   
   <url>
-    <loc>https://www.faithlch.com/tags/blog/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.faithlch.com/tags/SSL-TLS/</loc>
     <lastmod>2021-04-20</lastmod>
     <changefreq>daily</changefreq>
@@ -291,35 +284,14 @@
   </url>
   
   <url>
+    <loc>https://www.faithlch.com/tags/blog/</loc>
+    <lastmod>2021-04-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.faithlch.com/tags/JavaScript-%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.faithlch.com/tags/WPF/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.faithlch.com/tags/Iconfont/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.faithlch.com/tags/Microsoft/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.faithlch.com/tags/XAML/</loc>
     <lastmod>2021-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -354,6 +326,41 @@
   </url>
   
   <url>
+    <loc>https://www.faithlch.com/tags/WPF/</loc>
+    <lastmod>2021-04-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.faithlch.com/tags/Iconfont/</loc>
+    <lastmod>2021-04-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.faithlch.com/tags/Microsoft/</loc>
+    <lastmod>2021-04-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.faithlch.com/tags/XAML/</loc>
+    <lastmod>2021-04-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.faithlch.com/tags/%E6%8C%87%E4%BB%A4/</loc>
+    <lastmod>2021-04-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.faithlch.com/tags/WEB/</loc>
     <lastmod>2021-04-20</lastmod>
     <changefreq>daily</changefreq>
@@ -368,6 +375,13 @@
   </url>
   
   <url>
+    <loc>https://www.faithlch.com/tags/singleton-static/</loc>
+    <lastmod>2021-04-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.faithlch.com/tags/Jay/</loc>
     <lastmod>2021-04-20</lastmod>
     <changefreq>daily</changefreq>
@@ -376,13 +390,6 @@
   
   <url>
     <loc>https://www.faithlch.com/tags/music/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.faithlch.com/tags/singleton-static/</loc>
     <lastmod>2021-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -423,13 +430,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://www.faithlch.com/tags/%E6%8C%87%E4%BB%A4/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   
   <url>
@@ -447,13 +447,6 @@
   </url>
   
   <url>
-    <loc>https://www.faithlch.com/categories/Blog/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.faithlch.com/categories/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2021-04-20</lastmod>
     <changefreq>daily</changefreq>
@@ -461,7 +454,7 @@
   </url>
   
   <url>
-    <loc>https://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/</loc>
+    <loc>https://www.faithlch.com/categories/Blog/</loc>
     <lastmod>2021-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -475,14 +468,7 @@
   </url>
   
   <url>
-    <loc>https://www.faithlch.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.faithlch.com/categories/%E5%A4%A7%E5%89%8D%E7%AB%AF/</loc>
+    <loc>https://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/</loc>
     <lastmod>2021-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -496,21 +482,14 @@
   </url>
   
   <url>
-    <loc>https://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/Asp-NET-Core/</loc>
+    <loc>https://www.faithlch.com/categories/%E5%A4%A7%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2021-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/WPF/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/C/</loc>
+    <loc>https://www.faithlch.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2021-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -525,6 +504,27 @@
   
   <url>
     <loc>https://www.faithlch.com/categories/%E5%A4%A7%E5%89%8D%E7%AB%AF/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</loc>
+    <lastmod>2021-04-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/WPF/</loc>
+    <lastmod>2021-04-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/Asp-NET-Core/</loc>
+    <lastmod>2021-04-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/C/</loc>
     <lastmod>2021-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
