@@ -2,9 +2,9 @@
 <search>
   <entry>
     <title>2019 料你也不想再过一次</title>
-    <url>/Faithdx/2019-%E6%96%99%E4%BD%A0%E4%B9%9F%E4%B8%8D%E6%83%B3%E5%86%8D%E8%BF%87%E4%B8%80%E6%AC%A1.html</url>
+    <url>/2019-%E6%96%99%E4%BD%A0%E4%B9%9F%E4%B8%8D%E6%83%B3%E5%86%8D%E8%BF%87%E4%B8%80%E6%AC%A1.html</url>
     <content><![CDATA[
-    <div id="aplayer-pIQRhFjx" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-IErVrLpa" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="574919767" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="auto" data-theme="#a672b5" data-volume="0.2" data-loop="all"
     ></div>
 <h3 id="2019-料你也不想再过一次"><a href="#2019-料你也不想再过一次" class="headerlink" title="2019 料你也不想再过一次"></a>2019 料你也不想再过一次</h3><hr>
@@ -13,7 +13,7 @@
 <p>我觉得在2020来临之际，应该静下心来想想，从毕业到进入社会这么些年来，自己到底真正做了多少有意义的事？有多少的时间是用来提升自己，努力成长的，又有多少的时间是用来挥霍、虚度的。</p>
 <p>存款多少？或者欠款多少？一年到头，看着当初立里的flag，可能四分之一都没有完成的时候，或许自己应该是提不起来什么兴致跨年狂欢…</p>
 </blockquote>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/2020.png" alt="life"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/2020.png" alt="life"></p>
 <h3 id="2019回顾"><a href="#2019回顾" class="headerlink" title="2019回顾"></a>2019回顾</h3><blockquote>
 <p>对我而言，2019依然很平淡，并没有月薪过万，依然没有存款，但不容置疑这是2017-2019这三年以来最好的一年了。从西安到北京，再到天津，一路坎坷，但总归有了好转的苗头，虽然与心中预期的相差甚远，但正在路上，虽然缓慢，但一切都在往好的方向发展……</p>
 </blockquote>
@@ -35,7 +35,7 @@
 <p>最后的最后，祝她越来越优秀，变成自己心中理想的模样！</p>
 </blockquote>
 <hr>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/%E5%A5%B3%E7%94%9F%E7%99%BD%E8%89%B2%E8%A1%AC%E8%A1%AB4k.jpg" alt="2020"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/%E5%A5%B3%E7%94%9F%E7%99%BD%E8%89%B2%E8%A1%AC%E8%A1%AB4k.jpg" alt="2020"></p>
 ]]></content>
       <categories>
         <category>生活随笔</category>
@@ -46,7 +46,7 @@
   </entry>
   <entry>
     <title>CSS技巧(一)之隐藏滚动条</title>
-    <url>/Faithdx/CSS%E6%8A%80%E5%B7%A7-%E4%B8%80-%E4%B9%8B%E9%9A%90%E8%97%8F%E6%BB%9A%E5%8A%A8%E6%9D%A1.html</url>
+    <url>/CSS%E6%8A%80%E5%B7%A7-%E4%B8%80-%E4%B9%8B%E9%9A%90%E8%97%8F%E6%BB%9A%E5%8A%A8%E6%9D%A1.html</url>
     <content><![CDATA[<h1 id="CSS实现隐藏滚动条的同时还可以滚动的三种方式"><a href="#CSS实现隐藏滚动条的同时还可以滚动的三种方式" class="headerlink" title="CSS实现隐藏滚动条的同时还可以滚动的三种方式"></a>CSS实现隐藏滚动条的同时还可以滚动的三种方式</h1><h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h2><blockquote>
 <p>平时会遇到很多有关CSS的特殊用法以及技巧，等哪天自己有用到了，就找不到是在哪儿见过，所以在此单独做一分类，专门将它们收藏在一起，方便自己日后翻阅调用…</p>
 </blockquote>
@@ -83,7 +83,7 @@
   </entry>
   <entry>
     <title>Coding Pages申请SSL/TLS证书错误</title>
-    <url>/Faithdx/Coding-Pages%E7%94%B3%E8%AF%B7SSL-TLS%E8%AF%81%E4%B9%A6%E9%94%99%E8%AF%AF.html</url>
+    <url>/Coding-Pages%E7%94%B3%E8%AF%B7SSL-TLS%E8%AF%81%E4%B9%A6%E9%94%99%E8%AF%AF.html</url>
     <content><![CDATA[<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>今天由于某种原因，我将我的个人站点部署到了Coding Pages上面，需要申请SSL/TLS证书，但是当我登陆进入Coding Pages服务的后台并点击申请证书时，竟然报错了！！！</p>
 <p>我重新点了申请，几秒后依然报错，并提示我半小时只能申请一次。我查看了下报错的提示信息，如下：</p>
 <blockquote>
@@ -106,7 +106,7 @@
 <h3 id="其他的申请错误"><a href="#其他的申请错误" class="headerlink" title="其他的申请错误"></a>其他的申请错误</h3><p>个人暂时就遇到这一个问题，有其他问题的伙伴可自行查阅官方文件<a href="https://coding.net/help/faq/pages/coding-pages-faq.html">Coding Pages 常见问题</a>。</p>
 <hr>
 <p>明日<a href="https://www.bilibili.com/bangumi/play/ep277090?spm_id_from=333.334.b_63686965665f7265636f6d6d656e64.7">灵笼</a>上线，喜欢的小伙伴一起啊~~</p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-img-1259503129.cos.ap-beijing.myqcloud.com/%E7%81%B5%E7%AC%BC.jpg" alt="重磅来袭"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-img-1259503129.cos.ap-beijing.myqcloud.com/%E7%81%B5%E7%AC%BC.jpg" alt="重磅来袭"></p>
 <h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><ol>
 <li>Coding Pages的官方文件：<a href="https://coding.net/help/faq/pages/coding-pages-faq.html">Coding Pages 常见问题</a></li>
 <li><a href="https://www.cnblogs.com/yulinlewis/p/9595362.html">https://www.cnblogs.com/yulinlewis/p/9595362.html</a></li>
@@ -121,64 +121,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo博客升级</title>
-    <url>/Faithdx/Hexo%E5%8D%9A%E5%AE%A2%E5%8D%87%E7%BA%A7.html</url>
-    <content><![CDATA[<h2 id="Hexo博客升级"><a href="#Hexo博客升级" class="headerlink" title="Hexo博客升级"></a>Hexo博客升级</h2><blockquote>
-<p>上周看到自己一直在用的主题更新了，于是顺手执行了<code>git pull</code>，然后就GG了😔…</p>
-<p>于是乎一整天什么都没干，就折腾这玩意儿了！！！</p>
-</blockquote>
-<h3 id="升级Butterfly"><a href="#升级Butterfly" class="headerlink" title="升级Butterfly"></a>升级Butterfly</h3><blockquote>
-<p>关于该主题的安装以及升级，主题作者说的很清楚，这里就不赘述了，具体可查看这里：<a href="https://jerryc.me/posts/21cfbf15/#%E4%BB%A3%E7%A2%BC%E9%AB%98%E4%BA%AE%E4%B8%BB%E9%A1%8C">Butterfly主题安装和升级</a>。</p>
-</blockquote>
-<h4 id="git-pull"><a href="#git-pull" class="headerlink" title="git pull"></a>git pull</h4><ul>
-<li>Butterfly使用了<a href="https://hexo.io/docs/data-files.html">data file</a>特性，可直接使用<code>git pull</code>直接升级</li>
-<li>之后运行<code>hexo-clean &amp;&amp; hexo-g &amp;&amp; hexo-s,</code>查看结果</li>
-<li>如果更新成功，在Butterfly.yml文件中修改新配置，简单粗暴</li>
-</ul>
-<h3 id="升级Hexo"><a href="#升级Hexo" class="headerlink" title="升级Hexo"></a>升级Hexo</h3><blockquote>
-<p>升级之前，记得先把npm和node升级了</p>
-</blockquote>
-<h4 id="升级Hexo-cli"><a href="#升级Hexo-cli" class="headerlink" title="升级Hexo-cli"></a>升级Hexo-cli</h4><p>在博客文件夹执行</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm i Hexo-cli -g</span><br></pre></td></tr></table></figure>
-<p>然后执行</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm update</span><br></pre></td></tr></table></figure>
-<p>之后输入<code>Hexo -v</code>查看版本结果</p>
-<p>正常情况下，这样应该已经可以了，不过怎能以常理来对待它…，按照上述操作来，hexo会报一些莫名其妙的错误~</p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/5-1G230223Z3531.jpg"></p>
-<p><strong><code>所以应该采取下面这种做法，可保万无一失...😱</code></strong></p>
-<h4 id="正经步骤"><a href="#正经步骤" class="headerlink" title="正经步骤"></a>正经步骤</h4><ol>
-<li><p>升级Hexo-cli：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm i Hexo-cli -g</span><br></pre></td></tr></table></figure></li>
-<li><p>npm-check检查更新：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm install -g npm-check     #先安装</span><br><span class="line">npm-check</span><br></pre></td></tr></table></figure></li>
-<li><p>npm-upgrade更新包，一路回车就ok：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm install -g npm-upgrade   #先安装 </span><br><span class="line">npm-upgrade</span><br></pre></td></tr></table></figure></li>
-<li><p>更新全局包：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm update -g</span><br></pre></td></tr></table></figure></li>
-<li><p>更新生产环境依赖包：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm update --save</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>到此更新就已经结束了，如果输入<code>hexo--v</code>，如果更新成功，会显示如下结果：</p>
-</blockquote>
-</li>
-</ol>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://user-gold-cdn.xitu.io/2020/1/20/16fc1173ae4640c9?w=722&h=410&f=png&s=19384" alt="UTOOLS1579492522049.png"></p>
-<h3 id="很重要"><a href="#很重要" class="headerlink" title="很重要"></a>很重要</h3><blockquote>
-<p>如果你没有对博客进行版本控制的话，升级之前切记一定要备份，否则后果会很残忍…😼</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Blog</category>
-      </categories>
-      <tags>
-        <tag>2020</tag>
-        <tag>hexo</tag>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaScript面试题收藏（持续更新中...）</title>
-    <url>/Faithdx/JavaScript%E9%9D%A2%E8%AF%95%E9%A2%98%E6%94%B6%E8%97%8F.html</url>
+    <url>/JavaScript%E9%9D%A2%E8%AF%95%E9%A2%98%E6%94%B6%E8%97%8F.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文仅记录平时学习过程中遇到的知识点，只实现了相应方法的核心原理，部分边界细节并未处理。为了防止日后遗忘，特此记录，方便日后记忆，学习之用！</p>
 </blockquote>
@@ -216,8 +160,64 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo博客升级</title>
+    <url>/Hexo%E5%8D%9A%E5%AE%A2%E5%8D%87%E7%BA%A7.html</url>
+    <content><![CDATA[<h2 id="Hexo博客升级"><a href="#Hexo博客升级" class="headerlink" title="Hexo博客升级"></a>Hexo博客升级</h2><blockquote>
+<p>上周看到自己一直在用的主题更新了，于是顺手执行了<code>git pull</code>，然后就GG了😔…</p>
+<p>于是乎一整天什么都没干，就折腾这玩意儿了！！！</p>
+</blockquote>
+<h3 id="升级Butterfly"><a href="#升级Butterfly" class="headerlink" title="升级Butterfly"></a>升级Butterfly</h3><blockquote>
+<p>关于该主题的安装以及升级，主题作者说的很清楚，这里就不赘述了，具体可查看这里：<a href="https://jerryc.me/posts/21cfbf15/#%E4%BB%A3%E7%A2%BC%E9%AB%98%E4%BA%AE%E4%B8%BB%E9%A1%8C">Butterfly主题安装和升级</a>。</p>
+</blockquote>
+<h4 id="git-pull"><a href="#git-pull" class="headerlink" title="git pull"></a>git pull</h4><ul>
+<li>Butterfly使用了<a href="https://hexo.io/docs/data-files.html">data file</a>特性，可直接使用<code>git pull</code>直接升级</li>
+<li>之后运行<code>hexo-clean &amp;&amp; hexo-g &amp;&amp; hexo-s,</code>查看结果</li>
+<li>如果更新成功，在Butterfly.yml文件中修改新配置，简单粗暴</li>
+</ul>
+<h3 id="升级Hexo"><a href="#升级Hexo" class="headerlink" title="升级Hexo"></a>升级Hexo</h3><blockquote>
+<p>升级之前，记得先把npm和node升级了</p>
+</blockquote>
+<h4 id="升级Hexo-cli"><a href="#升级Hexo-cli" class="headerlink" title="升级Hexo-cli"></a>升级Hexo-cli</h4><p>在博客文件夹执行</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm i Hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p>然后执行</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm update</span><br></pre></td></tr></table></figure>
+<p>之后输入<code>Hexo -v</code>查看版本结果</p>
+<p>正常情况下，这样应该已经可以了，不过怎能以常理来对待它…，按照上述操作来，hexo会报一些莫名其妙的错误~</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/5-1G230223Z3531.jpg"></p>
+<p><strong><code>所以应该采取下面这种做法，可保万无一失...😱</code></strong></p>
+<h4 id="正经步骤"><a href="#正经步骤" class="headerlink" title="正经步骤"></a>正经步骤</h4><ol>
+<li><p>升级Hexo-cli：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm i Hexo-cli -g</span><br></pre></td></tr></table></figure></li>
+<li><p>npm-check检查更新：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm install -g npm-check     #先安装</span><br><span class="line">npm-check</span><br></pre></td></tr></table></figure></li>
+<li><p>npm-upgrade更新包，一路回车就ok：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm install -g npm-upgrade   #先安装 </span><br><span class="line">npm-upgrade</span><br></pre></td></tr></table></figure></li>
+<li><p>更新全局包：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm update -g</span><br></pre></td></tr></table></figure></li>
+<li><p>更新生产环境依赖包：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm update --save</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>到此更新就已经结束了，如果输入<code>hexo--v</code>，如果更新成功，会显示如下结果：</p>
+</blockquote>
+</li>
+</ol>
+<p><img src= "/img/loading.gif" data-lazy-src="https://user-gold-cdn.xitu.io/2020/1/20/16fc1173ae4640c9?w=722&h=410&f=png&s=19384" alt="UTOOLS1579492522049.png"></p>
+<h3 id="很重要"><a href="#很重要" class="headerlink" title="很重要"></a>很重要</h3><blockquote>
+<p>如果你没有对博客进行版本控制的话，升级之前切记一定要备份，否则后果会很残忍…😼</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+      <tags>
+        <tag>2020</tag>
+        <tag>hexo</tag>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown基础语法</title>
-    <url>/Faithdx/Markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.html</url>
+    <url>/Markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.html</url>
     <content><![CDATA[<h1 id="Markdown基础语法"><a href="#Markdown基础语法" class="headerlink" title="Markdown基础语法"></a>Markdown基础语法</h1><hr>
 <h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><blockquote>
 <p>Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
@@ -305,7 +305,7 @@
 <p>​        示例：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![图片](https:&#x2F;&#x2F;picgo-img-1259503129.cos.ap-beijing.myqcloud.com&#x2F;c31f7fdc1bb4d377e6e11073240bdcfc.jpg)</span><br></pre></td></tr></table></figure>
 <p>​        效果如下：</p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-img-1259503129.cos.ap-beijing.myqcloud.com/c31f7fdc1bb4d377e6e11073240bdcfc.jpg" alt="图片"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-img-1259503129.cos.ap-beijing.myqcloud.com/c31f7fdc1bb4d377e6e11073240bdcfc.jpg" alt="图片"></p>
 <h3 id="2-6-超链接"><a href="#2-6-超链接" class="headerlink" title="2.6 超链接"></a>2.6 超链接</h3><p>​        语法：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[超链接名](超链接地址 &quot;超链接title&quot;)</span><br><span class="line">title可加可不加</span><br></pre></td></tr></table></figure>
 <p>​        示例：</p>
@@ -397,7 +397,7 @@
   </entry>
   <entry>
     <title>SASS语法基础篇</title>
-    <url>/Faithdx/SASS%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-%E4%B8%80.html</url>
+    <url>/SASS%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-%E4%B8%80.html</url>
     <content><![CDATA[<h2 id="SASS基础语法学习"><a href="#SASS基础语法学习" class="headerlink" title="SASS基础语法学习"></a>SASS基础语法学习</h2><h3 id="一-引言"><a href="#一-引言" class="headerlink" title="一. 引言"></a>一. 引言</h3><blockquote>
 <p>本文仅仅记录自己的学习历程，作为自己日后翻阅复习之用，并无什么高深的见解，只为温故而知新…</p>
 </blockquote>
@@ -561,7 +561,7 @@
   </entry>
   <entry>
     <title>WPF学习笔记(四)字体图标的使用</title>
-    <url>/Faithdx/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E5%9B%9B)%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E7%9A%84%E4%BD%BF%E7%94%A8.html</url>
+    <url>/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E5%9B%9B)%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E7%9A%84%E4%BD%BF%E7%94%A8.html</url>
     <content><![CDATA[<h2 id="WPF中字体图标的使用"><a href="#WPF中字体图标的使用" class="headerlink" title="WPF中字体图标的使用"></a>WPF中字体图标的使用</h2><h3 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h3><blockquote>
 <p>目前，前端开发，比如Android、Web等，对于图标字体运用是越来越广泛。本人目前因某些原因(生活所迫…😔)，不得不自学WPF，在这期间用到了这些知识，所以本文就WPF中字体图标的使用进行阐述。</p>
 </blockquote>
@@ -594,13 +594,13 @@
 </blockquote>
 <h3 id="3-1-如何使用"><a href="#3-1-如何使用" class="headerlink" title="3.1 如何使用"></a>3.1 如何使用</h3><ol>
 <li><p>创建字体资源项目</p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/icon-2.png"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/icon-2.png"></p>
 </li>
 <li><p>将字体文件加入到项目资源</p>
 <p>下载所需要的字体文件(后缀为.tff的文件)，添加到项目中，并设置生成操作为”Resource”，如下图：</p>
 </li>
 </ol>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/icon-1.png"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/icon-1.png"></p>
 <h3 id="3-2-使用方式"><a href="#3-2-使用方式" class="headerlink" title="3.2 使用方式"></a>3.2 使用方式</h3><ol>
 <li><p>定义样式</p>
 <p>使用TextBlock作为图标显示的容器，因此定义一个TextBlock的样式即可，其中iconfont为字体名称，可在创建字体图标项目时修改</p>
@@ -614,7 +614,7 @@
 <p>直接在TextBlock 中使用即可：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;StackPanel Orientation&#x3D;&quot;Horizontal&quot;&gt;</span><br><span class="line">    &lt;TextBlock Text&#x3D;&quot;&amp;#xe624;&quot; FontSize&#x3D;&quot;50&quot; FontFamily&#x3D;&quot;Resources&#x2F;Fonts&#x2F;#iconfont&quot; Margin&#x3D;&quot;50 0 0 0&quot; VerticalAlignment&#x3D;&quot;Center&quot; Foreground&#x3D;&quot;Red&quot; &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;TextBlock Text&#x3D;&quot;&amp;#xe6e1;&quot; FontSize&#x3D;&quot;50&quot; FontFamily&#x3D;&quot;Resources&#x2F;Fonts&#x2F;#iconfont&quot; Margin&#x3D;&quot;50 0 0 0&quot; VerticalAlignment&#x3D;&quot;Center&quot; Foreground&#x3D;&quot;Black&quot;&#x2F;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;TextBlock Text&#x3D;&quot;&amp;#xe623;&quot; FontSize&#x3D;&quot;40&quot; FontFamily&#x3D;&quot;Resources&#x2F;Fonts&#x2F;#iconfont&quot; Margin&#x3D;&quot;50 0 0 0&quot; VerticalAlignment&#x3D;&quot;Center&quot; Foreground&#x3D;&quot;Green&quot;&#x2F;&gt;</span><br><span class="line">&lt;&#x2F;StackPanel&gt;</span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/icon-4.png"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/icon-4.png"></p>
 </li>
 </ol>
 <ol start="3">
@@ -654,15 +654,15 @@
   </entry>
   <entry>
     <title>WPF学习笔记(一)入门基础</title>
-    <url>/Faithdx/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80-%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80.html</url>
+    <url>/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80-%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80.html</url>
     <content><![CDATA[<h1 id="WPF学习笔记-一-入门基础"><a href="#WPF学习笔记-一-入门基础" class="headerlink" title="WPF学习笔记(一)入门基础"></a>WPF学习笔记(一)入门基础</h1><h2 id="一、WPF概述"><a href="#一、WPF概述" class="headerlink" title="一、WPF概述"></a>一、WPF概述</h2><blockquote>
 <p>为Windows创建具有视觉效果的用户体验的桌面客户端应用程序</p>
 <p>WPF通过一系列全面的应用程序开发功能扩展了核心，这些功能包括可扩展应用程序标记语言（XAML），控件，数据绑定，布局，2D和3D图形，动画，样式，模板，文档，媒体，文本和版式</p>
 </blockquote>
 <h3 id="1-WPF项目生成的项目文件结构"><a href="#1-WPF项目生成的项目文件结构" class="headerlink" title="1. WPF项目生成的项目文件结构"></a>1. WPF项目生成的项目文件结构</h3><p><strong>打开Visual Studio2019 创建“WPF应用程序”，默认生成的文件结构如下图：</strong></p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/s.png" alt="文件结构"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/s.png" alt="文件结构"></p>
 <p><strong>在App.xaml中的“StartupUri”属性可以指定项目运行时的启动窗体。还可以定义我们需要的系统资源以及引入程序集等如下图：</strong></p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/Snipaste_2020-01-03_16-19-01.png"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/Snipaste_2020-01-03_16-19-01.png"></p>
 <h3 id="2-命名空间"><a href="#2-命名空间" class="headerlink" title="2. 命名空间"></a>2. 命名空间</h3><p>在许多 XAML 文件的根标记中的命名空间声明内，通常可看到两个 XML 命名空间声明。 第一个声明默认映射整个 WPF 客户端/框架 XAML 命名空间：默认是没有前缀的</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xmlns&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&#x2F;presentation&quot;</span><br></pre></td></tr></table></figure>
 <p>第二个声明映射单独的 XAML 命名空间，（通常）将其映射到 <code>x:</code> 前缀。</p>
@@ -753,7 +753,7 @@
   </entry>
   <entry>
     <title>WPF学习笔记(三)WPF模板</title>
-    <url>/Faithdx/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%89-WPF%E6%A8%A1%E6%9D%BF.html</url>
+    <url>/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%89-WPF%E6%A8%A1%E6%9D%BF.html</url>
     <content><![CDATA[<h1 id="WPF学习笔记-三-WPF模板"><a href="#WPF学习笔记-三-WPF模板" class="headerlink" title="WPF学习笔记(三)WPF模板"></a>WPF学习笔记(三)WPF模板</h1><blockquote>
 <p>WPF模板其实都是外观的表现形式，不管是控件模板、数据模板还是面板模板，其都是改变控件的表现形式。只不过这三种控件的作用点不一样罢了。</p>
 <p>控件模板是针对于控件本身，修改它可以改变控件本身表现的样子；</p>
@@ -771,7 +771,7 @@
 <p><strong>示例：</strong>制作一个圆形的按钮，当鼠标移入按钮后，会通过触发器使按钮背景变为红色</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> &lt;!--定义控件模板，并用key标记--&gt;</span><br><span class="line">&lt;ControlTemplate x:Key&#x3D;&quot;ButtonTemplate&quot; TargetType&#x3D;&quot;Button&quot;&gt;</span><br><span class="line">    &lt;Grid&gt;</span><br><span class="line">        &lt;Ellipse x:Name&#x3D;&quot;ell&quot; Fill&#x3D;&quot;Orange&quot; Height&#x3D;&quot;100&quot; Width&#x3D;&quot;100&quot; &#x2F;&gt;</span><br><span class="line">        &lt;!--使用模板绑定来绑定按钮的内容--&gt;</span><br><span class="line">        &lt;ContentPresenter Content&#x3D;&quot;&#123;TemplateBinding Button.Content&#125;&quot; 						  					  VerticalAlignment&#x3D;&quot;Center&quot; HorizontalAlignment&#x3D;&quot;Center&quot; &#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;Grid&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--定义模板触发器--&gt;</span><br><span class="line">    &lt;ControlTemplate.Triggers&gt;</span><br><span class="line">        &lt;Trigger Property&#x3D;&quot;IsMouseOver&quot; Value&#x3D;&quot;True&quot;&gt;</span><br><span class="line">            &lt;Setter TargetName&#x3D;&quot;ell&quot; Property&#x3D;&quot;Fill&quot; Value&#x3D;&quot;Red&quot; &#x2F;&gt;</span><br><span class="line">            &lt;Setter Property&#x3D;&quot;FontSize&quot; Value&#x3D;&quot;30&quot; &#x2F;&gt;</span><br><span class="line">            &lt;Setter Property&#x3D;&quot;Foreground&quot; Value&#x3D;&quot;White&quot; &#x2F;&gt;</span><br><span class="line">        &lt;&#x2F;Trigger&gt;</span><br><span class="line">    &lt;&#x2F;ControlTemplate.Triggers&gt;</span><br><span class="line">&lt;&#x2F;ControlTemplate&gt;</span><br><span class="line"></span><br><span class="line"> &lt;!--引用--&gt;</span><br><span class="line"> &lt;Button Grid.Row&#x3D;&quot;1&quot; Name&#x3D;&quot;btn2&quot;                 </span><br><span class="line">         Content&#x3D;&quot;WPF&quot;                </span><br><span class="line">         Template&#x3D;&quot;&#123;StaticResource ButtonTemplate&#125;&quot;&gt;                </span><br><span class="line">&lt;&#x2F;Button&gt;</span><br></pre></td></tr></table></figure>
 <p><strong>效果如下所示：</strong></p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/wpf-controll.png"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/wpf-controll.png"></p>
 <blockquote>
 <p><strong>使用控件模板非常简单：</strong></p>
 <ul>
@@ -784,7 +784,7 @@
 <li>列表控件，即继承自ItemsControl类的控件，通过ItemPlate属性支持数据模板。该模板用于显示由ItemSource提供集合中的每一项。</li>
 </ul>
 <h3 id="2-常用控件的三种类型"><a href="#2-常用控件的三种类型" class="headerlink" title="2. 常用控件的三种类型"></a>2. 常用控件的三种类型</h3><p><strong>如下图所示：</strong></p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/DataTemplate-0.png" alt="类型"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/DataTemplate-0.png" alt="类型"></p>
 <ol>
 <li>Grid这种列表表格中修改Cell的数据格式, CellTemplate可以修改单元格的展示数据的方式。</li>
 <li>针对列表类型的控件, 例如树形控件，下拉列表，列表控件, 可以修改其中的ItemTemplate。</li>
@@ -795,14 +795,14 @@
 <p>在后台构造函数中进行该DataGrid进行数据绑定：</p>
 <figure class="highlight c#"><table><tr><td class="code"><pre><span class="line">List&lt;Student&gt; students = <span class="keyword">new</span> List&lt;Student&gt;();</span><br><span class="line"></span><br><span class="line">students.Add(<span class="keyword">new</span> Student() &#123; UserName = <span class="string">&quot;小王&quot;</span>, ClassName = <span class="string">&quot;高二三班&quot;</span>, Address = <span class="string">&quot;广州市&quot;</span> &#125;);</span><br><span class="line">students.Add(<span class="keyword">new</span> Student() &#123; UserName = <span class="string">&quot;小李&quot;</span>, ClassName = <span class="string">&quot;高三六班&quot;</span>, Address = <span class="string">&quot;清远市&quot;</span> &#125;);</span><br><span class="line">students.Add(<span class="keyword">new</span> Student() &#123; UserName = <span class="string">&quot;小张&quot;</span>, ClassName = <span class="string">&quot;高一一班&quot;</span>, Address = <span class="string">&quot;深圳市&quot;</span> &#125;);</span><br><span class="line">students.Add(<span class="keyword">new</span> Student() &#123; UserName = <span class="string">&quot;小黑&quot;</span>, ClassName = <span class="string">&quot;高一三班&quot;</span>, Address = <span class="string">&quot;赣州市&quot;</span> &#125;);</span><br><span class="line">gd.ItemsSource = students;</span><br></pre></td></tr></table></figure>
 <p>最终的效果, 在数据表格的最后一列, 将会在一列中分别生成 两个普通按钮：</p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/Data-Cell8.png"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/Data-Cell8.png"></p>
 <h3 id="2-2-ItemTemplate-模板"><a href="#2-2-ItemTemplate-模板" class="headerlink" title="2.2 ItemTemplate 模板"></a>2.2 ItemTemplate 模板</h3><p>在列表的控件中, 常常会出现一些需求, 类似在下拉控件或树控件中添加一个 CheckBox选择框, 一个图标或图片, 这个时候, 我们就可以利用自定义的DataTemplate 来实现这个功能,</p>
 <p>该示例来简单演示其功能, 利用 ListBox 和 ComboBox来绑定一个颜色代码列表, 同时展示其颜色。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Page.Resources&gt;</span><br><span class="line">    &lt;DataTemplate x:Key&#x3D;&quot;comTemplate&quot;&gt;</span><br><span class="line">        &lt;StackPanel Orientation&#x3D;&quot;Horizontal&quot; Margin&#x3D;&quot;5,0&quot;&gt;</span><br><span class="line">            &lt;Border Width&#x3D;&quot;10&quot; Height&#x3D;&quot;10&quot; Background&#x3D;&quot;&#123;Binding Code&#125;&quot;&#x2F;&gt;</span><br><span class="line">            &lt;TextBlock Text&#x3D;&quot;&#123;Binding Code&#125;&quot; Margin&#x3D;&quot;5,0&quot;&#x2F;&gt;</span><br><span class="line">        &lt;&#x2F;StackPanel&gt;</span><br><span class="line">    &lt;&#x2F;DataTemplate&gt;</span><br><span class="line">&lt;&#x2F;Page.Resources&gt;</span><br><span class="line">&lt;Grid&gt;</span><br><span class="line">    &lt;StackPanel Orientation&#x3D;&quot;Horizontal&quot; HorizontalAlignment&#x3D;&quot;Center&quot;&gt;</span><br><span class="line">        &lt;ComboBox Name&#x3D;&quot;cob&quot; Width&#x3D;&quot;120&quot; Height&#x3D;&quot;30&quot; ItemTemplate&#x3D;&quot;&#123;StaticResource comTemplate&#125;&quot;&#x2F;&gt;</span><br><span class="line">        &lt;ListBox Name&#x3D;&quot;lib&quot; Width&#x3D;&quot;120&quot; Height&#x3D;&quot;100&quot; Margin&#x3D;&quot;5,0&quot;  </span><br><span class="line">                 ItemTemplate&#x3D;&quot;&#123;StaticResource 		comTemplate&#125;&quot;&#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;StackPanel&gt;</span><br><span class="line">&lt;&#x2F;Grid&gt;</span><br></pre></td></tr></table></figure>
 <p>后台绑定代码如下：</p>
 <figure class="highlight c#"><table><tr><td class="code"><pre><span class="line">List&lt;Color&gt; ColorList = <span class="keyword">new</span> List&lt;Color&gt;();</span><br><span class="line">ColorList.Add(<span class="keyword">new</span> Color() &#123; Code = <span class="string">&quot;#FF8C00&quot;</span> &#125;);</span><br><span class="line">ColorList.Add(<span class="keyword">new</span> Color() &#123; Code = <span class="string">&quot;#FF7F50&quot;</span> &#125;);</span><br><span class="line">ColorList.Add(<span class="keyword">new</span> Color() &#123; Code = <span class="string">&quot;#FF6EB4&quot;</span> &#125;);</span><br><span class="line">ColorList.Add(<span class="keyword">new</span> Color() &#123; Code = <span class="string">&quot;#FF4500&quot;</span> &#125;);</span><br><span class="line">ColorList.Add(<span class="keyword">new</span> Color() &#123; Code = <span class="string">&quot;#FF3030&quot;</span> &#125;);</span><br><span class="line">ColorList.Add(<span class="keyword">new</span> Color() &#123; Code = <span class="string">&quot;#CD5B45&quot;</span> &#125;);</span><br><span class="line"></span><br><span class="line">cob.ItemsSource = ColorList;</span><br><span class="line">lib.ItemsSource = ColorList;</span><br></pre></td></tr></table></figure>
 <p>最终测试效果如下：</p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/ItemTemplate.gif"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/ItemTemplate.gif"></p>
 <h3 id="2-3-ItemsControl"><a href="#2-3-ItemsControl" class="headerlink" title="2.3 ItemsControl"></a>2.3 ItemsControl</h3><blockquote>
 <p>定义ItemsControl 主要分两个步骤: </p>
 <ol>
@@ -813,7 +813,7 @@
 <p><strong>示例代码：</strong></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;ItemsControl Name&#x3D;&quot;ic&quot;&gt;</span><br><span class="line">    &lt;ItemsControl.ItemsPanel&gt;</span><br><span class="line">        &lt;ItemsPanelTemplate&gt;</span><br><span class="line">            &lt;WrapPanel Orientation&#x3D;&quot;Horizontal&quot;&#x2F;&gt;</span><br><span class="line">        &lt;&#x2F;ItemsPanelTemplate&gt;</span><br><span class="line">    &lt;&#x2F;ItemsControl.ItemsPanel&gt;</span><br><span class="line">&lt;!--ItemsControl的数据模板--&gt;</span><br><span class="line">	&lt;ItemsControl.ItemTemplate&gt;</span><br><span class="line">        &lt;DataTemplate&gt;</span><br><span class="line">            &lt;Button Width&#x3D;&quot;50&quot; Height&#x3D;&quot;50&quot; Content&#x3D;&quot;&#123;Binding Code&#125;&quot;&#x2F;&gt;</span><br><span class="line">        &lt;&#x2F;DataTemplate&gt;</span><br><span class="line">    &lt;&#x2F;ItemsControl.ItemTemplate&gt;</span><br><span class="line">&lt;&#x2F;ItemsControl&gt;</span><br></pre></td></tr></table></figure>
 <p>最终效果：</p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/ItemControl.png"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/ItemControl.png"></p>
 <blockquote>
 <p><strong>通过以上示例可知，使用DataTemplate很简单：</strong></p>
 <ul>
@@ -829,7 +829,7 @@
 <p><strong>示例，部分代码如下：</strong> </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Grid Grid.Row&#x3D;&quot;2&quot;&gt;</span><br><span class="line">    &lt;ItemsControl ItemsSource&#x3D;&quot;&#123;Binding MenuModels&#125;&quot;&gt;</span><br><span class="line">        &lt;!--创建面板模板--&gt;</span><br><span class="line">        &lt;ItemsControl.ItemsPanel&gt;</span><br><span class="line">            &lt;ItemsPanelTemplate&gt;</span><br><span class="line">                &lt;StackPanel &#x2F;&gt;</span><br><span class="line">            &lt;&#x2F;ItemsPanelTemplate&gt;</span><br><span class="line">        &lt;&#x2F;ItemsControl.ItemsPanel&gt;</span><br><span class="line">        &lt;!--数据模板--&gt;</span><br><span class="line">        &lt;ItemsControl.ItemTemplate&gt;</span><br><span class="line">            &lt;DataTemplate&gt;</span><br><span class="line">                &lt;Border CornerRadius&#x3D;&quot;3&quot; Margin&#x3D;&quot;40 2 40 0&quot; Background&#x3D;&quot;White&quot; Height&#x3D;&quot;50&quot;&gt;</span><br><span class="line">                    &lt;Grid&gt;</span><br><span class="line">                        &lt;Grid.ColumnDefinitions&gt;</span><br><span class="line">                            &lt;ColumnDefinition Width&#x3D;&quot;50&quot; &#x2F;&gt;</span><br><span class="line">                            &lt;ColumnDefinition &#x2F;&gt;</span><br><span class="line">                            &lt;ColumnDefinition Width&#x3D;&quot;50&quot; &#x2F;&gt;</span><br><span class="line">                        &lt;&#x2F;Grid.ColumnDefinitions&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;TextBlock Text&#x3D;&quot;⚪&quot; FontSize&#x3D;&quot;20&quot; HorizontalAlignment&#x3D;&quot;Center&quot; 														   VerticalAlignment&#x3D;&quot;Center&quot; &#x2F;&gt;</span><br><span class="line">                        &lt;StackPanel Grid.Column&#x3D;&quot;1&quot; VerticalAlignment&#x3D;&quot;Center&quot;&gt;</span><br><span class="line">                            &lt;TextBlock Text&#x3D;&quot;123456&quot; &#x2F;&gt;</span><br><span class="line">                            &lt;TextBlock Text&#x3D;&quot;任务&quot; &#x2F;&gt;</span><br><span class="line">                        &lt;&#x2F;StackPanel&gt;</span><br><span class="line">                        &lt;TextBlock Grid.Column&#x3D;&quot;2&quot; Text&#x3D;&quot;☆&quot; FontSize&#x3D;&quot;20&quot; HorizontalAlignment&#x3D;&quot;Center&quot; 										   VerticalAlignment&#x3D;&quot;Center&quot; &#x2F;&gt;</span><br><span class="line">                    &lt;&#x2F;Grid&gt;</span><br><span class="line">                &lt;&#x2F;Border&gt;</span><br><span class="line">            &lt;&#x2F;DataTemplate&gt;</span><br><span class="line">        &lt;&#x2F;ItemsControl.ItemTemplate&gt;</span><br><span class="line">    &lt;&#x2F;ItemsControl&gt;</span><br><span class="line">&lt;&#x2F;Grid&gt;</span><br></pre></td></tr></table></figure>
 <p>最终效果：</p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/image-20200110113158163.png"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/image-20200110113158163.png"></p>
 <h2 id="四、总结…"><a href="#四、总结…" class="headerlink" title="四、总结…"></a>四、总结…</h2><blockquote>
 <p>WPF模板的内容就简单的了解到这儿，使用这些模板的方式<strong>都是先定义一个模板，然后在把对应的key应用到控件对应的属性中。对于控件模板，应用的是控件的Template；对于数据模板，应用的是控件的ItemTemplate属性；对于面板模板，应用的是控件的ItemsPanel属性</strong></p>
 </blockquote>
@@ -848,7 +848,7 @@
   </entry>
   <entry>
     <title>WPF学习笔记(二)资源与触发器</title>
-    <url>/Faithdx/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E8%B5%84%E6%BA%90%E4%B8%8E%E8%A7%A6%E5%8F%91%E5%99%A8.html</url>
+    <url>/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E8%B5%84%E6%BA%90%E4%B8%8E%E8%A7%A6%E5%8F%91%E5%99%A8.html</url>
     <content><![CDATA[<h1 id="WPF学习笔记-二-资源与触发器"><a href="#WPF学习笔记-二-资源与触发器" class="headerlink" title="WPF学习笔记(二)资源与触发器"></a>WPF学习笔记(二)资源与触发器</h1><h2 id="一、WPF资源"><a href="#一、WPF资源" class="headerlink" title="一、WPF资源"></a>一、WPF资源</h2><blockquote>
 <p>WPF资源系统可以用来保存一些公有对象和样式，从而实现重用这些对象和样式的作用。而WPF样式是重用元素的格式的重要手段，可以理解样式就如CSS一样，尽管我们可以在每个控件中定义格式，但是如果多个控件都应用了多个格式的时候，我们就可以把这些格式封装成格式，然后在资源中定义这个格式，之前如果用到这个格式就可以直接使用这个样式，从而达到重用格式的手段。从中可以发现，WPF资源和WPF样式是相关的，我们经常把样式定义在资源中。</p>
 </blockquote>
@@ -858,7 +858,7 @@
 <p>具体的XAML代码如下所示：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Window x:Class&#x3D;&quot;WpfApp1.Execise&quot;</span><br><span class="line">        xmlns&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&#x2F;presentation&quot;</span><br><span class="line">        xmlns:x&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&quot;</span><br><span class="line">        xmlns:d&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;expression&#x2F;blend&#x2F;2008&quot;</span><br><span class="line">        xmlns:mc&#x3D;&quot;http:&#x2F;&#x2F;schemas.openxmlformats.org&#x2F;markup-compatibility&#x2F;2006&quot;</span><br><span class="line">        xmlns:local&#x3D;&quot;clr-namespace:WpfApp1&quot;</span><br><span class="line">        mc:Ignorable&#x3D;&quot;d&quot;</span><br><span class="line">        Title&#x3D;&quot;Execise&quot; Height&#x3D;&quot;450&quot; Width&#x3D;&quot;800&quot;&gt;</span><br><span class="line">    &lt;!--定义资源--&gt;</span><br><span class="line">    &lt;Window.Resources&gt;</span><br><span class="line">        &lt;SolidColorBrush x:Key&#x3D;&quot;Button1&quot; Color&#x3D;&quot;Red&quot; &#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;Window.Resources&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;Grid&gt;</span><br><span class="line">        &lt;!--通过资源key来对资源进行使用--&gt;</span><br><span class="line">        &lt;Button Foreground&#x3D;&quot;&#123;StaticResource Button1&#125;&quot; Width&#x3D;&quot;100&quot; Height&#x3D;&quot;100&quot; Content&#x3D;&quot;Hello&quot;&#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;Grid&gt;</span><br><span class="line">&lt;&#x2F;Window&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>效果图如下：</p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/wpf-0.png"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/wpf-0.png"></p>
 <h3 id="1-2-静态资源和动态资源的区别"><a href="#1-2-静态资源和动态资源的区别" class="headerlink" title="1.2 静态资源和动态资源的区别"></a>1.2 静态资源和动态资源的区别</h3><blockquote>
 <p>为了使用XAML标记中的资源，需要一种引用资源的方法，可以通过两个标记来进行引用资源：一个用于静态资源，另一个用于动态资源。在上面的XAML中，我们引用的方式就是静态资源的引用方式，因为我们指定了<strong>StaticResource。</strong></p>
 <p>对于静态资源在第一次创建窗口时，一次性地设置完毕；而对于动态资源，如果发生了改变，则会重新应用资源。</p>
@@ -866,7 +866,7 @@
 <p>例子：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Window.Resources&gt;</span><br><span class="line">    &lt;SolidColorBrush x:Key&#x3D;&quot;RedBrush&quot; Color&#x3D;&quot;Red&quot;&gt;&lt;&#x2F;SolidColorBrush&gt;</span><br><span class="line">&lt;&#x2F;Window.Resources&gt;</span><br><span class="line"></span><br><span class="line">&lt;StackPanel Margin&#x3D;&quot;5&quot;&gt;</span><br><span class="line">    &lt;Button Background&#x3D;&quot;&#123;StaticResource RedBrush&#125;&quot; Margin&#x3D;&quot;5&quot; FontSize&#x3D;&quot;14&quot; Content&#x3D;&quot;Use a Static Resource&quot;&#x2F;&gt;</span><br><span class="line">    &lt;Button Background&#x3D;&quot;&#123;DynamicResource RedBrush&#125;&quot; Margin&#x3D;&quot;5&quot; FontSize&#x3D;&quot;14&quot; Content&#x3D;&quot;Use a Dynamic Resource&quot;&#x2F;&gt;</span><br><span class="line">    &lt;Button Margin&#x3D;&quot;5&quot; FontSize&#x3D;&quot;14&quot; Content&#x3D;&quot;Change the RedBrush to Yellow&quot; Click&#x3D;&quot;ChangeBrushToYellow_Click&quot;&#x2F;&gt;</span><br><span class="line">&lt;&#x2F;StackPanel&gt;</span><br><span class="line"></span><br><span class="line">&lt;!--后台代码--&gt;</span><br><span class="line">private void ChangeBrushToYellow_Click(object sender, RoutedEventArgs e)</span><br><span class="line">&#123;</span><br><span class="line">    &#x2F;&#x2F; 改变资源</span><br><span class="line">    this.Resources[&quot;RedBrush&quot;] &#x3D; new SolidColorBrush(Colors.Yellow);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>点击按钮，只会改变动态引用资源的背景色，静态资源并没有改变。效果图如下：</p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/Snipaste_2020-01-06_15-54-31.png"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/Snipaste_2020-01-06_15-54-31.png"></p>
 <h3 id="1-3-资源字典"><a href="#1-3-资源字典" class="headerlink" title="1.3 资源字典"></a>1.3 资源字典</h3><blockquote>
 <p>每个<a href="http://msdn.microsoft.com/zh-cn/library/system.windows.frameworkelement.resources(v=vs.100).aspx">Resources</a>属性存储着一个资源字典集合。如果希望在多个项目之间共享资源的话，就可以创建一个资源字典。</p>
 </blockquote>
@@ -877,7 +877,7 @@
 <p>使用方式与引用资源的方式是一样的：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Window x:Class&#x3D;&quot;WpfApp1.Execise&quot;</span><br><span class="line">        xmlns&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&#x2F;presentation&quot;</span><br><span class="line">        xmlns:x&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&quot;</span><br><span class="line">        xmlns:d&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;expression&#x2F;blend&#x2F;2008&quot;</span><br><span class="line">        xmlns:mc&#x3D;&quot;http:&#x2F;&#x2F;schemas.openxmlformats.org&#x2F;markup-compatibility&#x2F;2006&quot;</span><br><span class="line">        xmlns:local&#x3D;&quot;clr-namespace:WpfApp1&quot;</span><br><span class="line">        mc:Ignorable&#x3D;&quot;d&quot;</span><br><span class="line">        Title&#x3D;&quot;Execise&quot; Height&#x3D;&quot;450&quot; Width&#x3D;&quot;800&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;Window.Resources&gt;</span><br><span class="line">        &lt;SolidColorBrush x:Key&#x3D;&quot;RedBrush&quot; Color&#x3D;&quot;Red&quot;&gt;&lt;&#x2F;SolidColorBrush&gt;</span><br><span class="line">    &lt;&#x2F;Window.Resources&gt;</span><br><span class="line"></span><br><span class="line">    &lt;StackPanel Margin&#x3D;&quot;5&quot;&gt;</span><br><span class="line">        &lt;!--使用资源字典中定义的资源--&gt;</span><br><span class="line">        &lt;Button  Margin&#x3D;&quot;10&quot; Background&#x3D;&quot;&#123;StaticResource blueBrush&#125;&quot; Content&#x3D;&quot;Blue Button&quot; FontWeight&#x3D;&quot;&#123;StaticResource fontWeight&#125;&quot;&#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;StackPanel&gt;</span><br><span class="line">&lt;&#x2F;Window&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>最终运行效果如下：</p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/wpf-02.png"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/wpf-02.png"></p>
 <h2 id="二、触发器Trigger"><a href="#二、触发器Trigger" class="headerlink" title="二、触发器Trigger"></a>二、触发器Trigger</h2><blockquote>
 <p>触发器，应用属性值或有条件地执行操作；<br> 1）触发源：控件；<br> 2）触发条件：某属性为某个值，或执行某个事件时；<br> 3）执行操作：更改某个属性值或执行某个事件；</p>
 </blockquote>
@@ -894,7 +894,7 @@
 <p>实例：当鼠标移动到按钮时，按钮内容变为红色</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Window.Resources&gt;</span><br><span class="line">    &lt;Style x:Key&#x3D;&quot;Buttonstyle&quot; TargetType&#x3D;&quot;Button&quot;&gt;</span><br><span class="line">        &lt;Style.Triggers&gt;</span><br><span class="line">            &lt;Trigger Property&#x3D;&quot;IsMouseOver&quot; Value&#x3D;&quot;True&quot;&gt;</span><br><span class="line">                &lt;Setter Property&#x3D;&quot;FontSize&quot; Value&#x3D;&quot;30&quot; &#x2F;&gt;</span><br><span class="line">                &lt;Setter Property&#x3D;&quot;Foreground&quot; Value&#x3D;&quot;Red&quot;&#x2F;&gt;</span><br><span class="line">            &lt;&#x2F;Trigger&gt;</span><br><span class="line">        &lt;&#x2F;Style.Triggers&gt;</span><br><span class="line">    &lt;&#x2F;Style&gt;</span><br><span class="line">&lt;&#x2F;Window.Resources&gt;</span><br><span class="line"></span><br><span class="line">&lt;StackPanel Margin&#x3D;&quot;5&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;Button Width&#x3D;&quot;200&quot; Height&#x3D;&quot;100&quot;  Margin&#x3D;&quot;10&quot; Content&#x3D;&quot;Hello WPF&quot; Style&#x3D;&quot;&#123;StaticResource Buttonstyle&#125;&quot;&#x2F;&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;StackPanel&gt;</span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/trriger.gif"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/trriger.gif"></p>
 <h3 id="3-2-DataTrigger"><a href="#3-2-DataTrigger" class="headerlink" title="3.2 DataTrigger"></a>3.2 DataTrigger</h3><blockquote>
 <p>该触发器使用数据绑定。与Trigger类似，只不过监视的是任意绑定数据的变化</p>
 </blockquote>
@@ -903,14 +903,14 @@
 </blockquote>
 <p>示例：触发一个动画事件，当鼠标移入的时候，字体变大</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Style.Triggers&gt;    </span><br><span class="line">    &lt;EventTrigger RoutedEvent&#x3D;&quot;Mouse.MouseEnter&quot;&gt;</span><br><span class="line">        &lt;!--异步的动画--&gt;</span><br><span class="line">        &lt;BeginStoryboard&gt;</span><br><span class="line">            &lt;Storyboard&gt;</span><br><span class="line">                &lt;DoubleAnimation Duration&#x3D;&quot;0:0:1&quot; Storyboard.TargetProperty&#x3D;&quot;FontSize&quot; 									 From&#x3D;&quot;10&quot; To&#x3D;&quot;30&quot; &#x2F;&gt;</span><br><span class="line">            &lt;&#x2F;Storyboard&gt;</span><br><span class="line">        &lt;&#x2F;BeginStoryboard&gt;</span><br><span class="line">    &lt;&#x2F;EventTrigger&gt;</span><br><span class="line">&lt;&#x2F;Style.Triggers&gt;</span><br></pre></td></tr></table></figure>
-<p>效果如下：<img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/trriger3.gif"></p>
+<p>效果如下：<img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/trriger3.gif"></p>
 <h3 id="3-4-MultiTrigger"><a href="#3-4-MultiTrigger" class="headerlink" title="3.4 MultiTrigger"></a>3.4 MultiTrigger</h3><blockquote>
 <p>与Trigger类似，但这种触发器联合了多个条件。只有满足了所有这些条件，才会启动触发器</p>
 </blockquote>
 <p>示例代码：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Window.Resources&gt;</span><br><span class="line">    &lt;Style x:Key&#x3D;&quot;Buttonstyle&quot; TargetType&#x3D;&quot;Button&quot;&gt;</span><br><span class="line">        &lt;Style.Triggers&gt;</span><br><span class="line">            &lt;MultiTrigger&gt;</span><br><span class="line">                &lt;MultiTrigger.Conditions&gt;</span><br><span class="line">                    &lt;Condition Property&#x3D;&quot;IsMouseOver&quot; Value&#x3D;&quot;True&quot;&#x2F;&gt;</span><br><span class="line">                    &lt;Condition Property&#x3D;&quot;IsFocused&quot; Value&#x3D;&quot;True&quot;&#x2F;&gt;</span><br><span class="line">                &lt;&#x2F;MultiTrigger.Conditions&gt;</span><br><span class="line">                &lt;MultiTrigger.Setters&gt;</span><br><span class="line">                    &lt;Setter Property&#x3D;&quot;Foreground&quot; Value&#x3D;&quot;Red&quot; &#x2F;&gt;</span><br><span class="line">                    &lt;Setter Property&#x3D;&quot;FontSize&quot; Value&#x3D;&quot;30&quot;&#x2F;&gt;</span><br><span class="line">                &lt;&#x2F;MultiTrigger.Setters&gt;</span><br><span class="line">            &lt;&#x2F;MultiTrigger&gt;</span><br><span class="line">            &lt;!--&lt;Trigger Property&#x3D;&quot;IsMouseOver&quot; Value&#x3D;&quot;True&quot;&gt;</span><br><span class="line">                    &lt;Setter Property&#x3D;&quot;FontSize&quot; Value&#x3D;&quot;30&quot; &#x2F;&gt;</span><br><span class="line">                    &lt;Setter Property&#x3D;&quot;Foreground&quot; Value&#x3D;&quot;Red&quot;&#x2F;&gt;</span><br><span class="line">                &lt;&#x2F;Trigger&gt;--&gt;</span><br><span class="line">        &lt;&#x2F;Style.Triggers&gt;</span><br><span class="line">    &lt;&#x2F;Style&gt;</span><br><span class="line">&lt;&#x2F;Window.Resources&gt;</span><br></pre></td></tr></table></figure>
 <p>当鼠标移入按钮，并获取焦点时，文字才会变红；效果如下：</p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/trriger2.gif"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/trriger2.gif"></p>
 <h3 id="3-5-MultiDataTrigger"><a href="#3-5-MultiDataTrigger" class="headerlink" title="3.5 MultiDataTrigger"></a>3.5 MultiDataTrigger</h3><blockquote>
 <p>联合多个数据触发器</p>
 </blockquote>
@@ -927,7 +927,7 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/Faithdx/hello-world.html</url>
+    <url>/hello-world.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a id="more"></a>
 <h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
@@ -948,7 +948,7 @@
   </entry>
   <entry>
     <title>hexo博客常用命令</title>
-    <url>/Faithdx/hexo%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4.html</url>
+    <url>/hexo%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4.html</url>
     <content><![CDATA[<h2 id="一-引言"><a href="#一-引言" class="headerlink" title="一. 引言"></a>一. 引言</h2><blockquote>
 <p>本文记录了Hexo博客搭建过程中常用的一些命令，以及自己平时写博客过程中频繁使用的几个命令。因为我发现自己偶尔会犯混，所以在此简洁的记录一下，防止日后又一顿虎操作。。。😔</p>
 </blockquote>
@@ -1111,7 +1111,7 @@
   </entry>
   <entry>
     <title>前端性能优化</title>
-    <url>/Faithdx/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.html</url>
+    <url>/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.html</url>
     <content><![CDATA[<h2 id="WEB前端性能优化总结"><a href="#WEB前端性能优化总结" class="headerlink" title="WEB前端性能优化总结"></a>WEB前端性能优化总结</h2><blockquote>
 <p>各种前端性能优化问题</p>
 </blockquote>
@@ -1211,7 +1211,7 @@
   </entry>
   <entry>
     <title>微软Blazor框架学习笔记(一)</title>
-    <url>/Faithdx/%E5%BE%AE%E8%BD%AFBlazor%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80.html</url>
+    <url>/%E5%BE%AE%E8%BD%AFBlazor%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80.html</url>
     <content><![CDATA[<h2 id="微软Blazor框架学习笔记-一"><a href="#微软Blazor框架学习笔记-一" class="headerlink" title="微软Blazor框架学习笔记(一)"></a>微软Blazor框架学习笔记(一)</h2><h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><p><strong>Blazor是一个用于使用 .NET生成交互式客户端 Web UI 的框架：</strong></p>
 <ul>
 <li>使用C#代替JavaScript来创建丰富的交互式UI；</li>
@@ -1311,9 +1311,9 @@
 </ul>
 <h3 id="事件处理"><a href="#事件处理" class="headerlink" title="事件处理"></a>事件处理</h3><ul>
 <li>@on{event}格式：onclick、onsubmit、onchange</li>
-<li><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/Image.png" alt="image.png"></li>
+<li><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/Image.png" alt="image.png"></li>
 <li><strong>Lambda表达式</strong></li>
-<li><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/Image2.png" alt="image2.png"></li>
+<li><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/Image2.png" alt="image2.png"></li>
 </ul>
 <h3 id="链式绑定"><a href="#链式绑定" class="headerlink" title="链式绑定"></a>链式绑定</h3><h3 id="捕获对组件的引用"><a href="#捕获对组件的引用" class="headerlink" title="捕获对组件的引用"></a>捕获对组件的引用</h3><blockquote>
 <p>组件引用提供了一种方法来引用组件实例，以便可以向该实例发出命令。捕获组件引用：</p>
@@ -1338,7 +1338,7 @@
   </entry>
   <entry>
     <title>我也不知道在写什么</title>
-    <url>/Faithdx/%E6%88%91%E4%B9%9F%E4%B8%8D%E7%9F%A5%E9%81%93%E5%9C%A8%E5%86%99%E4%BB%80%E4%B9%88.html</url>
+    <url>/%E6%88%91%E4%B9%9F%E4%B8%8D%E7%9F%A5%E9%81%93%E5%9C%A8%E5%86%99%E4%BB%80%E4%B9%88.html</url>
     <content><![CDATA[<h3 id="Singleton与Static的区别"><a href="#Singleton与Static的区别" class="headerlink" title="Singleton与Static的区别"></a>Singleton与Static的区别</h3><h3 id="1-singleton"><a href="#1-singleton" class="headerlink" title="1. singleton"></a>1. singleton</h3><ul>
 <li><p>单例模式</p>
 <ul>
@@ -1424,7 +1424,7 @@
   </entry>
   <entry>
     <title>我有属于我的天</title>
-    <url>/Faithdx/%E6%88%91%E6%9C%89%E5%B1%9E%E4%BA%8E%E6%88%91%E7%9A%84%E5%A4%A9.html</url>
+    <url>/%E6%88%91%E6%9C%89%E5%B1%9E%E4%BA%8E%E6%88%91%E7%9A%84%E5%A4%A9.html</url>
     <content><![CDATA[<h3 id="百度百科"><a href="#百度百科" class="headerlink" title="百度百科"></a>百度百科</h3><blockquote>
 <p>《蜗牛》是周杰伦在自己事业处于低潮时所创作的，当时周杰伦还未正式出道，整天就是帮其他人写歌，心情非常不好，于是决定写一首歌勉励一下自己，同时也为了鼓励年轻人能够像蜗牛一样为了自己的目标一步一步往前爬。之后许茹芸听了周杰伦为别人所创作的作品，感觉很特别，就联络公司跟周杰伦邀歌，于是周杰伦就把这首《蜗牛》给了许茹芸演唱。</p>
 </blockquote>
@@ -1454,7 +1454,7 @@
 <p><strong>我有属于我的天</strong></p>
 <p><strong>任风吹干流过的泪和汗</strong></p>
 <p><strong>总有一天我有属于我的天</strong></p>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/20191227181155.jpg" alt="我伦😊"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/20191227181155.jpg" alt="我伦😊"></p>
 ]]></content>
       <categories>
         <category>生活随笔</category>
@@ -1466,14 +1466,14 @@
   </entry>
   <entry>
     <title>我的第一篇博文</title>
-    <url>/Faithdx/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87.html</url>
+    <url>/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87.html</url>
     <content><![CDATA[<h2 id="新手写博客应该写些什么"><a href="#新手写博客应该写些什么" class="headerlink" title="新手写博客应该写些什么~"></a>新手写博客应该写些什么~</h2><p>最近刚搭建了这么个博客，奈何自己也是前端小白一枚，苦于不知道该写什么比较好。于是乎，各种问<a href="%5Bhttps://www.baidu.com%5D(https://www.baidu.com/)">度娘</a>，借鉴各种大神的作品，最终总结出如下适合自己目前状况的一种套路：</p>
 <blockquote>
 <p><strong><code>内容为王，拒绝copy</code></strong></p>
 <p><strong><code>一路坚持，总有收获</code></strong></p>
 </blockquote>
 <a id="more"></a>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-img-1259503129.cos.ap-beijing.myqcloud.com/%E4%B8%8B%E8%BD%BD.jpg" alt="你好啊"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-img-1259503129.cos.ap-beijing.myqcloud.com/%E4%B8%8B%E8%BD%BD.jpg" alt="你好啊"></p>
 <hr>
 <h2 id="博客内容"><a href="#博客内容" class="headerlink" title="博客内容"></a>博客内容</h2><h3 id="入门系列"><a href="#入门系列" class="headerlink" title="入门系列"></a>入门系列</h3><ol>
 <li><blockquote>
@@ -1530,7 +1530,7 @@
 <p>开源项目</p>
 </blockquote>
 </blockquote>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-img-1259503129.cos.ap-beijing.myqcloud.com/2227.jpg" alt="走你"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-img-1259503129.cos.ap-beijing.myqcloud.com/2227.jpg" alt="走你"></p>
 <hr>
 <p><strong>和大家一样，我也是刚刚开始，记录以上内容，希望能一起进步。</strong></p>
 <p><strong>路漫漫其修远兮，吾将上下而求索！</strong></p>
@@ -1549,13 +1549,13 @@
   </entry>
   <entry>
     <title>所求为何</title>
-    <url>/Faithdx/%E6%89%80%E6%B1%82%E4%B8%BA%E4%BD%95.html</url>
+    <url>/%E6%89%80%E6%B1%82%E4%B8%BA%E4%BD%95.html</url>
     <content><![CDATA[<h3 id="我是小妖怪"><a href="#我是小妖怪" class="headerlink" title="我是小妖怪"></a>我是小妖怪</h3><blockquote>
 <p>“我是小妖怪，逍遥又自在，杀人不眨眼，吃人不放盐！”，头疼的厉害，难道我命不久矣…？<del>&gt;_&lt;</del></p>
 <p>尽管丢了我伦的版权，但还是习惯了云村这个温暖的地方，为了不顾此失彼，我下了咪咕音乐😔，占块儿地方而已，皆大欢喜😊</p>
 </blockquote>
 <hr>
-<p><img src= "/Faithdx/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/top-cover_img/pages-cover/20191223173355.jpg" alt="333"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/top-cover_img/pages-cover/20191223173355.jpg" alt="333"></p>
 <h3 id="1-网易云热评《借我》"><a href="#1-网易云热评《借我》" class="headerlink" title="1. 网易云热评《借我》"></a>1. 网易云热评《借我》</h3><blockquote>
 <p>“你好，方便借一生说话吗？”</p>
 <p>“余生洗耳恭听。”</p>
@@ -1611,7 +1611,7 @@
   </entry>
   <entry>
     <title>移动端适配方案</title>
-    <url>/Faithdx/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88.html</url>
+    <url>/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88.html</url>
     <content><![CDATA[<h2 id="移动端自适应布局配置-vw-rem"><a href="#移动端自适应布局配置-vw-rem" class="headerlink" title="移动端自适应布局配置 vw + rem"></a>移动端自适应布局配置 vw + rem</h2><blockquote>
 <p>当我们写移动端页面时，会遇到自适应和兼容性等方面的问题，单纯的l指示利用<strong>rem</strong>或者<strong>vw/vh</strong>都不尽人意，有幸看见大神的设计思路，感觉很厉害，由此记录学习~</p>
 </blockquote>
@@ -1658,7 +1658,7 @@
   </entry>
   <entry>
     <title>缘来，你也走过这里</title>
-    <url>/Faithdx/%E7%BC%98%E6%9D%A5%EF%BC%8C%E4%BD%A0%E4%B9%9F%E8%B5%B0%E8%BF%87%E8%BF%99%E9%87%8C.html</url>
+    <url>/%E7%BC%98%E6%9D%A5%EF%BC%8C%E4%BD%A0%E4%B9%9F%E8%B5%B0%E8%BF%87%E8%BF%99%E9%87%8C.html</url>
     <content><![CDATA[<h4 id="为何"><a href="#为何" class="headerlink" title="为何"></a>为何</h4><blockquote>
 <p>又是平安夜，应该对这种节日从来不感冒的，但大冷天的，看着人来人往的街道，总会露出姨母般的笑容……😼😼😼</p>
 </blockquote>
