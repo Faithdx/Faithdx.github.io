@@ -3798,7 +3798,7 @@ _:future,
   color: var(--white);
 }
 #nav a {
-  color: var(--light-orange);
+  color: var(--light-grey);
 }
 #nav a:hover {
   color: var(--white);
