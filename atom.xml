@@ -360,11 +360,11 @@
     
     <category term="CSS" scheme="https://www.faithlch.com/tags/CSS/"/>
     
-    <category term="语法" scheme="https://www.faithlch.com/tags/%E8%AF%AD%E6%B3%95/"/>
-    
     <category term="2019" scheme="https://www.faithlch.com/tags/2019/"/>
     
     <category term="Sass" scheme="https://www.faithlch.com/tags/Sass/"/>
+    
+    <category term="语法" scheme="https://www.faithlch.com/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
@@ -460,9 +460,9 @@
     <category term="学习笔记" scheme="https://www.faithlch.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="Markdown" scheme="https://www.faithlch.com/tags/Markdown/"/>
-    
     <category term="语法" scheme="https://www.faithlch.com/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+    <category term="Markdown" scheme="https://www.faithlch.com/tags/Markdown/"/>
     
   </entry>
   
