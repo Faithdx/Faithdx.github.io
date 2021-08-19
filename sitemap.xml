@@ -489,13 +489,6 @@
   </url>
   
   <url>
-    <loc>https://www.faithlch.com/categories/%E5%A4%A7%E5%89%8D%E7%AB%AF/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</loc>
-    <lastmod>2021-08-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/WPF/</loc>
     <lastmod>2021-08-19</lastmod>
     <changefreq>daily</changefreq>
@@ -511,6 +504,13 @@
   
   <url>
     <loc>https://www.faithlch.com/categories/Microsoft%E4%B9%8B%E6%97%85/C/</loc>
+    <lastmod>2021-08-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.faithlch.com/categories/%E5%A4%A7%E5%89%8D%E7%AB%AF/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</loc>
     <lastmod>2021-08-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
