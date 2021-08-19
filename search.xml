@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CSS技巧(一)之隐藏滚动条</title>
+    <url>/CSS%E6%8A%80%E5%B7%A7-%E4%B8%80-%E4%B9%8B%E9%9A%90%E8%97%8F%E6%BB%9A%E5%8A%A8%E6%9D%A1.html</url>
+    <content><![CDATA[<h1 id="CSS实现隐藏滚动条的同时还可以滚动的三种方式"><a href="#CSS实现隐藏滚动条的同时还可以滚动的三种方式" class="headerlink" title="CSS实现隐藏滚动条的同时还可以滚动的三种方式"></a>CSS实现隐藏滚动条的同时还可以滚动的三种方式</h1><h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h2><blockquote>
+<p>平时会遇到很多有关CSS的特殊用法以及技巧，等哪天自己有用到了，就找不到是在哪儿见过，所以在此单独做一分类，专门将它们收藏在一起，方便自己日后翻阅调用…</p>
+</blockquote>
+<h3 id="1-1-关于该篇"><a href="#1-1-关于该篇" class="headerlink" title="1.1 关于该篇"></a>1.1 关于该篇</h3><blockquote>
+<p>该篇总结了纯CSS实现隐藏滚动条的同时又能保持滚动的几种方法，以下三种方法感觉很不错</p>
+</blockquote>
+<h2 id="2-方法一："><a href="#2-方法一：" class="headerlink" title="2. 方法一："></a>2. 方法一：</h2><h3 id="通过-webkit-scrollbar-伪元素"><a href="#通过-webkit-scrollbar-伪元素" class="headerlink" title="通过  ::-webkit-scrollbar 伪元素"></a>通过  ::-webkit-scrollbar 伪元素</h3><blockquote>
+<p>简单粗暴，但是兼容性不好，不兼容IE</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">//<span class="selector-tag">chrome</span> 和<span class="selector-tag">Safari</span></span><br><span class="line"><span class="selector-class">.inner-container</span><span class="selector-pseudo">::-webkit-scrollbar</span> &#123;</span><br><span class="line">    display: none;//width:0 !impotant;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"> //<span class="selector-tag">IE</span> 10+</span><br><span class="line"><span class="selector-class">.inner-container</span> &#123; <span class="attribute">-ms-overflow-style</span>: none; &#125;</span><br><span class="line"></span><br><span class="line"> //<span class="selector-tag">Firefox</span></span><br><span class="line"><span class="selector-class">.inner-container</span> &#123; <span class="attribute">overflow</span>: -moz-scrollbars-none; &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="3-方法二："><a href="#3-方法二：" class="headerlink" title="3. 方法二："></a>3. 方法二：</h2><h3 id="外层元素-overflow-hidden，-内层元素absolute定位"><a href="#外层元素-overflow-hidden，-内层元素absolute定位" class="headerlink" title="外层元素 overflow: hidden， 内层元素absolute定位"></a>外层元素 overflow: hidden， 内层元素absolute定位</h3><blockquote>
+<p>兼容性较好，绝对布局不用计算滚动条宽度</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// <span class="selector-tag">CSS</span> 样式</span><br><span class="line">&lt;<span class="selector-tag">style</span>&gt;</span><br><span class="line">    <span class="selector-class">.element</span>, <span class="selector-class">.outer-container</span> &#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">        <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.outer-container</span> &#123;</span><br><span class="line">        <span class="attribute">position</span>: relative;</span><br><span class="line">        <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.inner-container</span> &#123;</span><br><span class="line">        <span class="attribute">position</span>: absolute;</span><br><span class="line">        <span class="attribute">overflow-x</span>: hidden;</span><br><span class="line">        <span class="attribute">overflow-y</span>: scroll;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/<span class="selector-tag">style</span>&gt;</span><br><span class="line"></span><br><span class="line">// <span class="selector-tag">html</span> 结构</span><br><span class="line">&lt;div class=&quot;outer-container&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;inner-container&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;element&quot;&gt;</span><br><span class="line">            <span class="selector-tag">Lorem</span> <span class="selector-tag">ipsum</span> <span class="selector-tag">dolor</span> <span class="selector-tag">sit</span> <span class="selector-tag">amet</span>, <span class="selector-tag">consectetur</span> <span class="selector-tag">adipiscing</span> <span class="selector-tag">elit</span>.</span><br><span class="line">            ...</span><br><span class="line">        &lt;/<span class="selector-tag">div</span>&gt;</span><br><span class="line">    &lt;/<span class="selector-tag">div</span>&gt;</span><br><span class="line">&lt;/<span class="selector-tag">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="4-方法三："><a href="#4-方法三：" class="headerlink" title="4. 方法三："></a>4. 方法三：</h2><h3 id="父元素overflow-hidden-子元素宽度-100-滚动条宽度"><a href="#父元素overflow-hidden-子元素宽度-100-滚动条宽度" class="headerlink" title="父元素overflow: hidden, 子元素宽度 100% + 滚动条宽度"></a>父元素overflow: hidden, 子元素宽度 100% + 滚动条宽度</h3><blockquote>
+<p>兼容性好，但是需要计算滚动条的宽度    </p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">// CSS 样式</span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.parent</span> &#123;</span></span><br><span class="line">        width: 200px;</span><br><span class="line">        overflow: hidden;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-class">.child</span> &#123;</span></span><br><span class="line">        height: 200px;</span><br><span class="line">        width: calc(100% + 17px);</span><br><span class="line">        overflow: auto;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line">// html 结构</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;parent&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;child&quot;</span>&gt;</span></span><br><span class="line">        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br><span class="line">    ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. 总结</h2><ul>
+<li>以上三种方法其实都很好。方法一好像用过几次，虽然不兼容万恶的IE，但感觉真挺爽的。</li>
+</ul>
+<blockquote>
+<p>该类型的文章篇幅基本都会很小，但是数量会很多，以后会不定期的更新，统一放在《CSS技巧》这一分类中。平时的工作、学习中随时遇到随时记，虽然是很小的知识点，但积少成多，终有一日会水滴石穿~</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>大前端</category>
+        <category>CSS</category>
+        <category>CSS技巧收录</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Coding Pages申请SSL/TLS证书错误</title>
+    <url>/Coding-Pages%E7%94%B3%E8%AF%B7SSL-TLS%E8%AF%81%E4%B9%A6%E9%94%99%E8%AF%AF.html</url>
+    <content><![CDATA[<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>今天由于某种原因，我将我的个人站点部署到了Coding Pages上面，需要申请SSL/TLS证书，但是当我登陆进入Coding Pages服务的后台并点击申请证书时，竟然报错了！！！</p>
+<p>我重新点了申请，几秒后依然报错，并提示我半小时只能申请一次。我查看了下报错的提示信息，如下：</p>
+<blockquote>
+<p><a href="urn:acme:error:unauthorized:Invalid">urn:acme:error:unauthorized:Invalid</a> response from <a href="http://exmaple.com/.well-known/acme-challenge/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">http://exmaple.com/.well-known/acme-challenge/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a>: xxxxxxxxx</p>
+</blockquote>
+<p>好吧，本着有事就问度娘的一贯风格，百度了一下，发现了Coding Pages的官方文件：<a href="https://coding.net/help/faq/pages/coding-pages-faq.html">Coding Pages 常见问题</a></p>
+<p>这时候按照官方文件的指引，找到了和我差不多一样的错误信息的解决方案：</p>
+<blockquote>
+<p>错误原因：无法获取正确的域名验证信息<br>解决方式1：检查 DNS 的 CNAME 记录是否设置正确，静态 Pages 为 pages.coding.me，动态 Pages 为 pages.coding.io<br>解决方式2：检查域名的 DNS 是否将海外线路解析到 Coding Pages 的服务器</p>
+</blockquote>
+<p>因为Coding Pages的静态Pages是免费的，而动态Pages是收费的，对于用Hexo搭建的静态站点，自然是选择免费的静态Pages服务就足够了。</p>
+<p>于是解决方式1对我来说就不存在了，接着联想到之前我对部署在GitHub Pages上的个人站点进行了自定义域名绑定+域名解析设置，有些豁然开朗的感觉。</p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>由于考虑到站点访问速度，以及后期SEO的各种问题，因此我的个人站点是同时部署到GitHub Pages和Coding Pages上的，接着在腾讯云域名解析里进行了配置：默认的解析线路将我的域名指向<code>pages.coding.me</code>，国外的解析路线则是指向了<code>xxx.github.io</code>。</p>
+<p>之所以这样配置，是因为国内部分地区无法直接访问GitHub，自然就无法访问我部署在GitHub上的个人站点，于是我又选择了Coding.net的Pages服务，这样国内用户就可以快速访问到我部署在Coding Pages的个人站点，而国外用户则是快速访问到GitHub Pages上的个人站点。</p>
+<p>问题就出现在这里，因为我第一次申请SSL/TLS证书的时候，还没有解析境外的线路，所以很快就申请成功了。后来添加了国外线路的解析，这导致在Coding Pages的后台申请证书时无法通过验证，自然就申请失败了。</p>
+<p>分析到这里，我也基本知道怎么解决这个错误了。</p>
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>由于我是在腾讯云购买的域名，于是登陆到腾讯云域名解析的后台系统，打开个人域名的解析设置，<strong>暂停对于境外线路的解析</strong>。这里暂停就行了，一般来说大概需要5分钟左右的生效时间，毕竟DNS解析是存在缓存的。</p>
+<p>五分钟后，我又进入Coding Pages服务的后台，再一次申请SSL/TLS证书，果不其然，几秒钟后我申请证书成功了。</p>
+<p>最后，再次返回腾讯云域名解析的后台，将境外解析的线路再次启用，嗯，完美！！！</p>
+<h3 id="其他的申请错误"><a href="#其他的申请错误" class="headerlink" title="其他的申请错误"></a>其他的申请错误</h3><p>个人暂时就遇到这一个问题，有其他问题的伙伴可自行查阅官方文件<a href="https://coding.net/help/faq/pages/coding-pages-faq.html">Coding Pages 常见问题</a>。</p>
+<hr>
+<p>明日<a href="https://www.bilibili.com/bangumi/play/ep277090?spm_id_from=333.334.b_63686965665f7265636f6d6d656e64.7">灵笼</a>上线，喜欢的小伙伴一起啊~~</p>
+<p><img src="https://picgo-img-1259503129.cos.ap-beijing.myqcloud.com/%E7%81%B5%E7%AC%BC.jpg" alt="重磅来袭"></p>
+<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><ol>
+<li>Coding Pages的官方文件：<a href="https://coding.net/help/faq/pages/coding-pages-faq.html">Coding Pages 常见问题</a></li>
+<li><a href="https://www.cnblogs.com/yulinlewis/p/9595362.html">https://www.cnblogs.com/yulinlewis/p/9595362.html</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>踩坑记录</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>SSL/TLS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客升级</title>
     <url>/Hexo%E5%8D%9A%E5%AE%A2%E5%8D%87%E7%BA%A7.html</url>
     <content><![CDATA[<h2 id="Hexo博客升级"><a href="#Hexo博客升级" class="headerlink" title="Hexo博客升级"></a>Hexo博客升级</h2><blockquote>
@@ -51,46 +127,9 @@
         <category>Blog</category>
       </categories>
       <tags>
-        <tag>2020</tag>
         <tag>hexo</tag>
+        <tag>2020</tag>
         <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS技巧(一)之隐藏滚动条</title>
-    <url>/CSS%E6%8A%80%E5%B7%A7-%E4%B8%80-%E4%B9%8B%E9%9A%90%E8%97%8F%E6%BB%9A%E5%8A%A8%E6%9D%A1.html</url>
-    <content><![CDATA[<h1 id="CSS实现隐藏滚动条的同时还可以滚动的三种方式"><a href="#CSS实现隐藏滚动条的同时还可以滚动的三种方式" class="headerlink" title="CSS实现隐藏滚动条的同时还可以滚动的三种方式"></a>CSS实现隐藏滚动条的同时还可以滚动的三种方式</h1><h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h2><blockquote>
-<p>平时会遇到很多有关CSS的特殊用法以及技巧，等哪天自己有用到了，就找不到是在哪儿见过，所以在此单独做一分类，专门将它们收藏在一起，方便自己日后翻阅调用…</p>
-</blockquote>
-<h3 id="1-1-关于该篇"><a href="#1-1-关于该篇" class="headerlink" title="1.1 关于该篇"></a>1.1 关于该篇</h3><blockquote>
-<p>该篇总结了纯CSS实现隐藏滚动条的同时又能保持滚动的几种方法，以下三种方法感觉很不错</p>
-</blockquote>
-<h2 id="2-方法一："><a href="#2-方法一：" class="headerlink" title="2. 方法一："></a>2. 方法一：</h2><h3 id="通过-webkit-scrollbar-伪元素"><a href="#通过-webkit-scrollbar-伪元素" class="headerlink" title="通过  ::-webkit-scrollbar 伪元素"></a>通过  ::-webkit-scrollbar 伪元素</h3><blockquote>
-<p>简单粗暴，但是兼容性不好，不兼容IE</p>
-</blockquote>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">//<span class="selector-tag">chrome</span> 和<span class="selector-tag">Safari</span></span><br><span class="line"><span class="selector-class">.inner-container</span><span class="selector-pseudo">::-webkit-scrollbar</span> &#123;</span><br><span class="line">    display: none;//width:0 !impotant;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"> //<span class="selector-tag">IE</span> 10+</span><br><span class="line"><span class="selector-class">.inner-container</span> &#123; <span class="attribute">-ms-overflow-style</span>: none; &#125;</span><br><span class="line"></span><br><span class="line"> //<span class="selector-tag">Firefox</span></span><br><span class="line"><span class="selector-class">.inner-container</span> &#123; <span class="attribute">overflow</span>: -moz-scrollbars-none; &#125;</span><br></pre></td></tr></table></figure>
-<h2 id="3-方法二："><a href="#3-方法二：" class="headerlink" title="3. 方法二："></a>3. 方法二：</h2><h3 id="外层元素-overflow-hidden，-内层元素absolute定位"><a href="#外层元素-overflow-hidden，-内层元素absolute定位" class="headerlink" title="外层元素 overflow: hidden， 内层元素absolute定位"></a>外层元素 overflow: hidden， 内层元素absolute定位</h3><blockquote>
-<p>兼容性较好，绝对布局不用计算滚动条宽度</p>
-</blockquote>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// <span class="selector-tag">CSS</span> 样式</span><br><span class="line">&lt;<span class="selector-tag">style</span>&gt;</span><br><span class="line">    <span class="selector-class">.element</span>, <span class="selector-class">.outer-container</span> &#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">        <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.outer-container</span> &#123;</span><br><span class="line">        <span class="attribute">position</span>: relative;</span><br><span class="line">        <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.inner-container</span> &#123;</span><br><span class="line">        <span class="attribute">position</span>: absolute;</span><br><span class="line">        <span class="attribute">overflow-x</span>: hidden;</span><br><span class="line">        <span class="attribute">overflow-y</span>: scroll;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/<span class="selector-tag">style</span>&gt;</span><br><span class="line"></span><br><span class="line">// <span class="selector-tag">html</span> 结构</span><br><span class="line">&lt;div class=&quot;outer-container&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;inner-container&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;element&quot;&gt;</span><br><span class="line">            <span class="selector-tag">Lorem</span> <span class="selector-tag">ipsum</span> <span class="selector-tag">dolor</span> <span class="selector-tag">sit</span> <span class="selector-tag">amet</span>, <span class="selector-tag">consectetur</span> <span class="selector-tag">adipiscing</span> <span class="selector-tag">elit</span>.</span><br><span class="line">            ...</span><br><span class="line">        &lt;/<span class="selector-tag">div</span>&gt;</span><br><span class="line">    &lt;/<span class="selector-tag">div</span>&gt;</span><br><span class="line">&lt;/<span class="selector-tag">div</span>&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="4-方法三："><a href="#4-方法三：" class="headerlink" title="4. 方法三："></a>4. 方法三：</h2><h3 id="父元素overflow-hidden-子元素宽度-100-滚动条宽度"><a href="#父元素overflow-hidden-子元素宽度-100-滚动条宽度" class="headerlink" title="父元素overflow: hidden, 子元素宽度 100% + 滚动条宽度"></a>父元素overflow: hidden, 子元素宽度 100% + 滚动条宽度</h3><blockquote>
-<p>兼容性好，但是需要计算滚动条的宽度    </p>
-</blockquote>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">// CSS 样式</span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.parent</span> &#123;</span></span><br><span class="line">        width: 200px;</span><br><span class="line">        overflow: hidden;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-class">.child</span> &#123;</span></span><br><span class="line">        height: 200px;</span><br><span class="line">        width: calc(100% + 17px);</span><br><span class="line">        overflow: auto;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line">// html 结构</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;parent&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;child&quot;</span>&gt;</span></span><br><span class="line">        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br><span class="line">    ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. 总结</h2><ul>
-<li>以上三种方法其实都很好。方法一好像用过几次，虽然不兼容万恶的IE，但感觉真挺爽的。</li>
-</ul>
-<blockquote>
-<p>该类型的文章篇幅基本都会很小，但是数量会很多，以后会不定期的更新，统一放在《CSS技巧》这一分类中。平时的工作、学习中随时遇到随时记，虽然是很小的知识点，但积少成多，终有一日会水滴石穿~</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>大前端</category>
-        <category>CSS</category>
-        <category>CSS技巧收录</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -130,139 +169,6 @@
       </categories>
       <tags>
         <tag>-JavaScript -面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WPF学习笔记(四)字体图标的使用</title>
-    <url>/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E5%9B%9B)%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E7%9A%84%E4%BD%BF%E7%94%A8.html</url>
-    <content><![CDATA[<h2 id="WPF中字体图标的使用"><a href="#WPF中字体图标的使用" class="headerlink" title="WPF中字体图标的使用"></a>WPF中字体图标的使用</h2><h3 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h3><blockquote>
-<p>目前，前端开发，比如Android、Web等，对于图标字体运用是越来越广泛。本人目前因某些原因(生活所迫…😔)，不得不自学WPF，在这期间用到了这些知识，所以本文就WPF中字体图标的使用进行阐述。</p>
-</blockquote>
-<h3 id="二、图标字体"><a href="#二、图标字体" class="headerlink" title="二、图标字体"></a>二、图标字体</h3><h3 id="2-1-图标字体的优劣势"><a href="#2-1-图标字体的优劣势" class="headerlink" title="2.1 图标字体的优劣势"></a>2.1 图标字体的优劣势</h3><ul>
-<li><p>优势</p>
-<ol>
-<li><p>轻量级：一个图标字体要比一系列的图像要小。一旦字体加载了，图标就会马上渲染出来，不需要下载一个个图像。这样可以减少HTTP的请求数量，而且和HTML5的离线存储配合，可以对性能做出优化。</p>
-</li>
-<li><p>灵活性：不调字体可以像页面中的文字一样，通过font-size属性来对其进行大小的设置，而且还可以添加各种文字效果，如color、hover、filter、text-shadow、transform等效果。灵活的简直不像话！</p>
-</li>
-<li><p>兼容性：图标字体支持现代浏览器，甚至是低版本的IE浏览器，所以可以放心的使用它。</p>
-</li>
-<li><p>相比于位图放大图片会出现失真、缩小又会浪费掉像素点，图标字体不会出现这种情况。</p>
-</li>
-</ol>
-</li>
-<li><p>劣势</p>
-<ol>
-<li>图标字体只能被渲染成单色，或者是CSS3的渐变色</li>
-<li>版权上也有着对应的限制，当然还是有很多免费的图标字体可以供我们下载。</li>
-<li>当自己创作图标字体的时候，是比较耗费时间的，重构人员的后期维护成本也比较高</li>
-</ol>
-<blockquote>
-<p>字体图标其实就是将矢量图打包到字体文件中，就像使用一般外置字体一样来使用，因此在WinForm、WPF中也是可以使用的。所以，开干…</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="三、WPF中使用字体图标"><a href="#三、WPF中使用字体图标" class="headerlink" title="三、WPF中使用字体图标"></a>三、WPF中使用字体图标</h3><blockquote>
-<p>开源字体图标很多，很容易获取，项目开发中需要的绝大部分图标都可以找到，像<a href="http://www.fontawesome.com.cn/">Font Awesome</a>，<a href="https://www.iconfont.cn/">Iconfont</a>，<a href="https://material.io/resources/icons/?style=baseline">Material Design</a>等….</p>
-</blockquote>
-<h3 id="3-1-如何使用"><a href="#3-1-如何使用" class="headerlink" title="3.1 如何使用"></a>3.1 如何使用</h3><ol>
-<li><p>创建字体资源项目</p>
-<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/icon-2.png"></p>
-</li>
-<li><p>将字体文件加入到项目资源</p>
-<p>下载所需要的字体文件(后缀为.tff的文件)，添加到项目中，并设置生成操作为”Resource”，如下图：</p>
-</li>
-</ol>
-<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/icon-1.png"></p>
-<h3 id="3-2-使用方式"><a href="#3-2-使用方式" class="headerlink" title="3.2 使用方式"></a>3.2 使用方式</h3><ol>
-<li><p>定义样式</p>
-<p>使用TextBlock作为图标显示的容器，因此定义一个TextBlock的样式即可，其中iconfont为字体名称，可在创建字体图标项目时修改</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!--Ficon--&gt;</span><br><span class="line">&lt;Style x:Key&#x3D;&quot;Ficon&quot; TargetType&#x3D;&quot;&#123;x:Type TextBlock&#125;&quot;&gt;</span><br><span class="line">    &lt;Setter Property&#x3D;&quot;FontFamily&quot; Value&#x3D;&quot;Resources&#x2F;Fonts&#x2F;#iconfont&quot;&#x2F;&gt;</span><br><span class="line">    &lt;Setter Property&#x3D;&quot;FontSize&quot; Value&#x3D;&quot;26&quot;&#x2F;&gt;</span><br><span class="line">    &lt;Setter Property&#x3D;&quot;VerticalContentAlignment&quot; Value&#x3D;&quot;Center&quot;&#x2F;&gt;</span><br><span class="line">    &lt;Setter Property&#x3D;&quot;HorizontalContentAlignment&quot; Value&#x3D;&quot;Left&quot;&#x2F;&gt;</span><br><span class="line">    &lt;Setter Property&#x3D;&quot;BorderBrush&quot; Value&#x3D;&quot;Transparent&quot;&#x2F;&gt;</span><br><span class="line">&lt;&#x2F;Style&gt;</span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ol>
-<ol start="2">
-<li><p>XAML中使用</p>
-<p>直接在TextBlock 中使用即可：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;StackPanel Orientation&#x3D;&quot;Horizontal&quot;&gt;</span><br><span class="line">    &lt;TextBlock Text&#x3D;&quot;&amp;#xe624;&quot; FontSize&#x3D;&quot;50&quot; FontFamily&#x3D;&quot;Resources&#x2F;Fonts&#x2F;#iconfont&quot; Margin&#x3D;&quot;50 0 0 0&quot; VerticalAlignment&#x3D;&quot;Center&quot; Foreground&#x3D;&quot;Red&quot; &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;TextBlock Text&#x3D;&quot;&amp;#xe6e1;&quot; FontSize&#x3D;&quot;50&quot; FontFamily&#x3D;&quot;Resources&#x2F;Fonts&#x2F;#iconfont&quot; Margin&#x3D;&quot;50 0 0 0&quot; VerticalAlignment&#x3D;&quot;Center&quot; Foreground&#x3D;&quot;Black&quot;&#x2F;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;TextBlock Text&#x3D;&quot;&amp;#xe623;&quot; FontSize&#x3D;&quot;40&quot; FontFamily&#x3D;&quot;Resources&#x2F;Fonts&#x2F;#iconfont&quot; Margin&#x3D;&quot;50 0 0 0&quot; VerticalAlignment&#x3D;&quot;Center&quot; Foreground&#x3D;&quot;Green&quot;&#x2F;&gt;</span><br><span class="line">&lt;&#x2F;StackPanel&gt;</span><br></pre></td></tr></table></figure>
-<p>效果如下：</p>
-<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/icon-4.png"></p>
-</li>
-</ol>
-<ol start="3">
-<li><p>C#代码使用示例</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">//代码设置字体图标</span></span><br><span class="line"><span class="keyword">this</span> .ticon1.Text = <span class="string">&quot;&amp;#xe624;&quot;</span> ;</span><br><span class="line"><span class="keyword">this</span> .ticon2.Text = <span class="string">&quot;&amp;#xe624;&quot;</span> ;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="四、如何下载字体文件"><a href="#四、如何下载字体文件" class="headerlink" title="四、如何下载字体文件"></a>四、如何下载字体文件</h3><blockquote>
-<p>以Iconfont来举例说明</p>
-</blockquote>
-<h3 id="4-1关于Iconfont"><a href="#4-1关于Iconfont" class="headerlink" title="4.1关于Iconfont"></a>4.1关于Iconfont</h3><blockquote>
-<p>IconFont-阿里巴巴体验团队倾力打造，功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。</p>
-<p>官网链接：<a href="https://www.iconfont.cn/">https://www.iconfont.cn/</a></p>
-</blockquote>
-<h3 id="4-2-基本操作"><a href="#4-2-基本操作" class="headerlink" title="4.2 基本操作"></a>4.2 基本操作</h3><ol>
-<li>登录Iconfont官网：<a href="https://www.iconfont.cn/">https://www.iconfont.cn/</a></li>
-<li>新建项目，将自己所需的icon添加到项目</li>
-<li>然后下载到本地</li>
-<li>将后缀为.tff的文件引入WPF项目</li>
-</ol>
-<h3 id="五、总结…"><a href="#五、总结…" class="headerlink" title="五、总结…"></a>五、总结…</h3><blockquote>
-<p>前端路茫茫，我还是好好学习吧…😭</p>
-<p>本站点所有内容仅记录自己一路走来的学习历程，如有错误，请多指正…😊</p>
-</blockquote>
-<h3 id="【参考链接】"><a href="#【参考链接】" class="headerlink" title="【参考链接】"></a>【参考链接】</h3><ul>
-<li><a href="https://blog.csdn.net/mybelief321/article/details/102461597">WPF使用教程</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Microsoft之旅</category>
-        <category>WPF</category>
-      </categories>
-      <tags>
-        <tag>WPF</tag>
-        <tag>Iconfont</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Coding Pages申请SSL/TLS证书错误</title>
-    <url>/Coding-Pages%E7%94%B3%E8%AF%B7SSL-TLS%E8%AF%81%E4%B9%A6%E9%94%99%E8%AF%AF.html</url>
-    <content><![CDATA[<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>今天由于某种原因，我将我的个人站点部署到了Coding Pages上面，需要申请SSL/TLS证书，但是当我登陆进入Coding Pages服务的后台并点击申请证书时，竟然报错了！！！</p>
-<p>我重新点了申请，几秒后依然报错，并提示我半小时只能申请一次。我查看了下报错的提示信息，如下：</p>
-<blockquote>
-<p><a href="urn:acme:error:unauthorized:Invalid">urn:acme:error:unauthorized:Invalid</a> response from <a href="http://exmaple.com/.well-known/acme-challenge/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">http://exmaple.com/.well-known/acme-challenge/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a>: xxxxxxxxx</p>
-</blockquote>
-<p>好吧，本着有事就问度娘的一贯风格，百度了一下，发现了Coding Pages的官方文件：<a href="https://coding.net/help/faq/pages/coding-pages-faq.html">Coding Pages 常见问题</a></p>
-<p>这时候按照官方文件的指引，找到了和我差不多一样的错误信息的解决方案：</p>
-<blockquote>
-<p>错误原因：无法获取正确的域名验证信息<br>解决方式1：检查 DNS 的 CNAME 记录是否设置正确，静态 Pages 为 pages.coding.me，动态 Pages 为 pages.coding.io<br>解决方式2：检查域名的 DNS 是否将海外线路解析到 Coding Pages 的服务器</p>
-</blockquote>
-<p>因为Coding Pages的静态Pages是免费的，而动态Pages是收费的，对于用Hexo搭建的静态站点，自然是选择免费的静态Pages服务就足够了。</p>
-<p>于是解决方式1对我来说就不存在了，接着联想到之前我对部署在GitHub Pages上的个人站点进行了自定义域名绑定+域名解析设置，有些豁然开朗的感觉。</p>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>由于考虑到站点访问速度，以及后期SEO的各种问题，因此我的个人站点是同时部署到GitHub Pages和Coding Pages上的，接着在腾讯云域名解析里进行了配置：默认的解析线路将我的域名指向<code>pages.coding.me</code>，国外的解析路线则是指向了<code>xxx.github.io</code>。</p>
-<p>之所以这样配置，是因为国内部分地区无法直接访问GitHub，自然就无法访问我部署在GitHub上的个人站点，于是我又选择了Coding.net的Pages服务，这样国内用户就可以快速访问到我部署在Coding Pages的个人站点，而国外用户则是快速访问到GitHub Pages上的个人站点。</p>
-<p>问题就出现在这里，因为我第一次申请SSL/TLS证书的时候，还没有解析境外的线路，所以很快就申请成功了。后来添加了国外线路的解析，这导致在Coding Pages的后台申请证书时无法通过验证，自然就申请失败了。</p>
-<p>分析到这里，我也基本知道怎么解决这个错误了。</p>
-<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>由于我是在腾讯云购买的域名，于是登陆到腾讯云域名解析的后台系统，打开个人域名的解析设置，<strong>暂停对于境外线路的解析</strong>。这里暂停就行了，一般来说大概需要5分钟左右的生效时间，毕竟DNS解析是存在缓存的。</p>
-<p>五分钟后，我又进入Coding Pages服务的后台，再一次申请SSL/TLS证书，果不其然，几秒钟后我申请证书成功了。</p>
-<p>最后，再次返回腾讯云域名解析的后台，将境外解析的线路再次启用，嗯，完美！！！</p>
-<h3 id="其他的申请错误"><a href="#其他的申请错误" class="headerlink" title="其他的申请错误"></a>其他的申请错误</h3><p>个人暂时就遇到这一个问题，有其他问题的伙伴可自行查阅官方文件<a href="https://coding.net/help/faq/pages/coding-pages-faq.html">Coding Pages 常见问题</a>。</p>
-<hr>
-<p>明日<a href="https://www.bilibili.com/bangumi/play/ep277090?spm_id_from=333.334.b_63686965665f7265636f6d6d656e64.7">灵笼</a>上线，喜欢的小伙伴一起啊~~</p>
-<p><img src="https://picgo-img-1259503129.cos.ap-beijing.myqcloud.com/%E7%81%B5%E7%AC%BC.jpg" alt="重磅来袭"></p>
-<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><ol>
-<li>Coding Pages的官方文件：<a href="https://coding.net/help/faq/pages/coding-pages-faq.html">Coding Pages 常见问题</a></li>
-<li><a href="https://www.cnblogs.com/yulinlewis/p/9595362.html">https://www.cnblogs.com/yulinlewis/p/9595362.html</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>踩坑记录</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>SSL/TLS</tag>
       </tags>
   </entry>
   <entry>
@@ -610,24 +516,97 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/hello-world.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a id="more"></a>
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>
+    <title>WPF学习笔记(四)字体图标的使用</title>
+    <url>/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E5%9B%9B)%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E7%9A%84%E4%BD%BF%E7%94%A8.html</url>
+    <content><![CDATA[<h2 id="WPF中字体图标的使用"><a href="#WPF中字体图标的使用" class="headerlink" title="WPF中字体图标的使用"></a>WPF中字体图标的使用</h2><h3 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h3><blockquote>
+<p>目前，前端开发，比如Android、Web等，对于图标字体运用是越来越广泛。本人目前因某些原因(生活所迫…😔)，不得不自学WPF，在这期间用到了这些知识，所以本文就WPF中字体图标的使用进行阐述。</p>
+</blockquote>
+<h3 id="二、图标字体"><a href="#二、图标字体" class="headerlink" title="二、图标字体"></a>二、图标字体</h3><h3 id="2-1-图标字体的优劣势"><a href="#2-1-图标字体的优劣势" class="headerlink" title="2.1 图标字体的优劣势"></a>2.1 图标字体的优劣势</h3><ul>
+<li><p>优势</p>
+<ol>
+<li><p>轻量级：一个图标字体要比一系列的图像要小。一旦字体加载了，图标就会马上渲染出来，不需要下载一个个图像。这样可以减少HTTP的请求数量，而且和HTML5的离线存储配合，可以对性能做出优化。</p>
+</li>
+<li><p>灵活性：不调字体可以像页面中的文字一样，通过font-size属性来对其进行大小的设置，而且还可以添加各种文字效果，如color、hover、filter、text-shadow、transform等效果。灵活的简直不像话！</p>
+</li>
+<li><p>兼容性：图标字体支持现代浏览器，甚至是低版本的IE浏览器，所以可以放心的使用它。</p>
+</li>
+<li><p>相比于位图放大图片会出现失真、缩小又会浪费掉像素点，图标字体不会出现这种情况。</p>
+</li>
+</ol>
+</li>
+<li><p>劣势</p>
+<ol>
+<li>图标字体只能被渲染成单色，或者是CSS3的渐变色</li>
+<li>版权上也有着对应的限制，当然还是有很多免费的图标字体可以供我们下载。</li>
+<li>当自己创作图标字体的时候，是比较耗费时间的，重构人员的后期维护成本也比较高</li>
+</ol>
+<blockquote>
+<p>字体图标其实就是将矢量图打包到字体文件中，就像使用一般外置字体一样来使用，因此在WinForm、WPF中也是可以使用的。所以，开干…</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="三、WPF中使用字体图标"><a href="#三、WPF中使用字体图标" class="headerlink" title="三、WPF中使用字体图标"></a>三、WPF中使用字体图标</h3><blockquote>
+<p>开源字体图标很多，很容易获取，项目开发中需要的绝大部分图标都可以找到，像<a href="http://www.fontawesome.com.cn/">Font Awesome</a>，<a href="https://www.iconfont.cn/">Iconfont</a>，<a href="https://material.io/resources/icons/?style=baseline">Material Design</a>等….</p>
+</blockquote>
+<h3 id="3-1-如何使用"><a href="#3-1-如何使用" class="headerlink" title="3.1 如何使用"></a>3.1 如何使用</h3><ol>
+<li><p>创建字体资源项目</p>
+<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/icon-2.png"></p>
+</li>
+<li><p>将字体文件加入到项目资源</p>
+<p>下载所需要的字体文件(后缀为.tff的文件)，添加到项目中，并设置生成操作为”Resource”，如下图：</p>
+</li>
+</ol>
+<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/icon-1.png"></p>
+<h3 id="3-2-使用方式"><a href="#3-2-使用方式" class="headerlink" title="3.2 使用方式"></a>3.2 使用方式</h3><ol>
+<li><p>定义样式</p>
+<p>使用TextBlock作为图标显示的容器，因此定义一个TextBlock的样式即可，其中iconfont为字体名称，可在创建字体图标项目时修改</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!--Ficon--&gt;</span><br><span class="line">&lt;Style x:Key&#x3D;&quot;Ficon&quot; TargetType&#x3D;&quot;&#123;x:Type TextBlock&#125;&quot;&gt;</span><br><span class="line">    &lt;Setter Property&#x3D;&quot;FontFamily&quot; Value&#x3D;&quot;Resources&#x2F;Fonts&#x2F;#iconfont&quot;&#x2F;&gt;</span><br><span class="line">    &lt;Setter Property&#x3D;&quot;FontSize&quot; Value&#x3D;&quot;26&quot;&#x2F;&gt;</span><br><span class="line">    &lt;Setter Property&#x3D;&quot;VerticalContentAlignment&quot; Value&#x3D;&quot;Center&quot;&#x2F;&gt;</span><br><span class="line">    &lt;Setter Property&#x3D;&quot;HorizontalContentAlignment&quot; Value&#x3D;&quot;Left&quot;&#x2F;&gt;</span><br><span class="line">    &lt;Setter Property&#x3D;&quot;BorderBrush&quot; Value&#x3D;&quot;Transparent&quot;&#x2F;&gt;</span><br><span class="line">&lt;&#x2F;Style&gt;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<ol start="2">
+<li><p>XAML中使用</p>
+<p>直接在TextBlock 中使用即可：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;StackPanel Orientation&#x3D;&quot;Horizontal&quot;&gt;</span><br><span class="line">    &lt;TextBlock Text&#x3D;&quot;&amp;#xe624;&quot; FontSize&#x3D;&quot;50&quot; FontFamily&#x3D;&quot;Resources&#x2F;Fonts&#x2F;#iconfont&quot; Margin&#x3D;&quot;50 0 0 0&quot; VerticalAlignment&#x3D;&quot;Center&quot; Foreground&#x3D;&quot;Red&quot; &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;TextBlock Text&#x3D;&quot;&amp;#xe6e1;&quot; FontSize&#x3D;&quot;50&quot; FontFamily&#x3D;&quot;Resources&#x2F;Fonts&#x2F;#iconfont&quot; Margin&#x3D;&quot;50 0 0 0&quot; VerticalAlignment&#x3D;&quot;Center&quot; Foreground&#x3D;&quot;Black&quot;&#x2F;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;TextBlock Text&#x3D;&quot;&amp;#xe623;&quot; FontSize&#x3D;&quot;40&quot; FontFamily&#x3D;&quot;Resources&#x2F;Fonts&#x2F;#iconfont&quot; Margin&#x3D;&quot;50 0 0 0&quot; VerticalAlignment&#x3D;&quot;Center&quot; Foreground&#x3D;&quot;Green&quot;&#x2F;&gt;</span><br><span class="line">&lt;&#x2F;StackPanel&gt;</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/icon-4.png"></p>
+</li>
+</ol>
+<ol start="3">
+<li><p>C#代码使用示例</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">//代码设置字体图标</span></span><br><span class="line"><span class="keyword">this</span> .ticon1.Text = <span class="string">&quot;&amp;#xe624;&quot;</span> ;</span><br><span class="line"><span class="keyword">this</span> .ticon2.Text = <span class="string">&quot;&amp;#xe624;&quot;</span> ;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="四、如何下载字体文件"><a href="#四、如何下载字体文件" class="headerlink" title="四、如何下载字体文件"></a>四、如何下载字体文件</h3><blockquote>
+<p>以Iconfont来举例说明</p>
+</blockquote>
+<h3 id="4-1关于Iconfont"><a href="#4-1关于Iconfont" class="headerlink" title="4.1关于Iconfont"></a>4.1关于Iconfont</h3><blockquote>
+<p>IconFont-阿里巴巴体验团队倾力打造，功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。</p>
+<p>官网链接：<a href="https://www.iconfont.cn/">https://www.iconfont.cn/</a></p>
+</blockquote>
+<h3 id="4-2-基本操作"><a href="#4-2-基本操作" class="headerlink" title="4.2 基本操作"></a>4.2 基本操作</h3><ol>
+<li>登录Iconfont官网：<a href="https://www.iconfont.cn/">https://www.iconfont.cn/</a></li>
+<li>新建项目，将自己所需的icon添加到项目</li>
+<li>然后下载到本地</li>
+<li>将后缀为.tff的文件引入WPF项目</li>
+</ol>
+<h3 id="五、总结…"><a href="#五、总结…" class="headerlink" title="五、总结…"></a>五、总结…</h3><blockquote>
+<p>前端路茫茫，我还是好好学习吧…😭</p>
+<p>本站点所有内容仅记录自己一路走来的学习历程，如有错误，请多指正…😊</p>
+</blockquote>
+<h3 id="【参考链接】"><a href="#【参考链接】" class="headerlink" title="【参考链接】"></a>【参考链接】</h3><ul>
+<li><a href="https://blog.csdn.net/mybelief321/article/details/102461597">WPF使用教程</a></li>
+</ul>
 ]]></content>
       <categories>
-        <category>Blog</category>
+        <category>Microsoft之旅</category>
+        <category>WPF</category>
       </categories>
       <tags>
-        <tag>blog</tag>
+        <tag>WPF</tag>
+        <tag>Iconfont</tag>
       </tags>
   </entry>
   <entry>
@@ -825,6 +804,85 @@
       </tags>
   </entry>
   <entry>
+    <title>WPF学习笔记(二)资源与触发器</title>
+    <url>/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E8%B5%84%E6%BA%90%E4%B8%8E%E8%A7%A6%E5%8F%91%E5%99%A8.html</url>
+    <content><![CDATA[<h1 id="WPF学习笔记-二-资源与触发器"><a href="#WPF学习笔记-二-资源与触发器" class="headerlink" title="WPF学习笔记(二)资源与触发器"></a>WPF学习笔记(二)资源与触发器</h1><h2 id="一、WPF资源"><a href="#一、WPF资源" class="headerlink" title="一、WPF资源"></a>一、WPF资源</h2><blockquote>
+<p>WPF资源系统可以用来保存一些公有对象和样式，从而实现重用这些对象和样式的作用。而WPF样式是重用元素的格式的重要手段，可以理解样式就如CSS一样，尽管我们可以在每个控件中定义格式，但是如果多个控件都应用了多个格式的时候，我们就可以把这些格式封装成格式，然后在资源中定义这个格式，之前如果用到这个格式就可以直接使用这个样式，从而达到重用格式的手段。从中可以发现，WPF资源和WPF样式是相关的，我们经常把样式定义在资源中。</p>
+</blockquote>
+<h3 id="1-1-资源基础介绍"><a href="#1-1-资源基础介绍" class="headerlink" title="1.1 资源基础介绍"></a>1.1 资源基础介绍</h3><blockquote>
+<p>我们可以在代码中创建和操作资源，但通常都是以XAML标签的形式定义资源的。</p>
+</blockquote>
+<p>具体的XAML代码如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Window x:Class&#x3D;&quot;WpfApp1.Execise&quot;</span><br><span class="line">        xmlns&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&#x2F;presentation&quot;</span><br><span class="line">        xmlns:x&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&quot;</span><br><span class="line">        xmlns:d&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;expression&#x2F;blend&#x2F;2008&quot;</span><br><span class="line">        xmlns:mc&#x3D;&quot;http:&#x2F;&#x2F;schemas.openxmlformats.org&#x2F;markup-compatibility&#x2F;2006&quot;</span><br><span class="line">        xmlns:local&#x3D;&quot;clr-namespace:WpfApp1&quot;</span><br><span class="line">        mc:Ignorable&#x3D;&quot;d&quot;</span><br><span class="line">        Title&#x3D;&quot;Execise&quot; Height&#x3D;&quot;450&quot; Width&#x3D;&quot;800&quot;&gt;</span><br><span class="line">    &lt;!--定义资源--&gt;</span><br><span class="line">    &lt;Window.Resources&gt;</span><br><span class="line">        &lt;SolidColorBrush x:Key&#x3D;&quot;Button1&quot; Color&#x3D;&quot;Red&quot; &#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;Window.Resources&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;Grid&gt;</span><br><span class="line">        &lt;!--通过资源key来对资源进行使用--&gt;</span><br><span class="line">        &lt;Button Foreground&#x3D;&quot;&#123;StaticResource Button1&#125;&quot; Width&#x3D;&quot;100&quot; Height&#x3D;&quot;100&quot; Content&#x3D;&quot;Hello&quot;&#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;Grid&gt;</span><br><span class="line">&lt;&#x2F;Window&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>效果图如下：</p>
+<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/wpf-0.png"></p>
+<h3 id="1-2-静态资源和动态资源的区别"><a href="#1-2-静态资源和动态资源的区别" class="headerlink" title="1.2 静态资源和动态资源的区别"></a>1.2 静态资源和动态资源的区别</h3><blockquote>
+<p>为了使用XAML标记中的资源，需要一种引用资源的方法，可以通过两个标记来进行引用资源：一个用于静态资源，另一个用于动态资源。在上面的XAML中，我们引用的方式就是静态资源的引用方式，因为我们指定了<strong>StaticResource。</strong></p>
+<p>对于静态资源在第一次创建窗口时，一次性地设置完毕；而对于动态资源，如果发生了改变，则会重新应用资源。</p>
+</blockquote>
+<p>例子：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Window.Resources&gt;</span><br><span class="line">    &lt;SolidColorBrush x:Key&#x3D;&quot;RedBrush&quot; Color&#x3D;&quot;Red&quot;&gt;&lt;&#x2F;SolidColorBrush&gt;</span><br><span class="line">&lt;&#x2F;Window.Resources&gt;</span><br><span class="line"></span><br><span class="line">&lt;StackPanel Margin&#x3D;&quot;5&quot;&gt;</span><br><span class="line">    &lt;Button Background&#x3D;&quot;&#123;StaticResource RedBrush&#125;&quot; Margin&#x3D;&quot;5&quot; FontSize&#x3D;&quot;14&quot; Content&#x3D;&quot;Use a Static Resource&quot;&#x2F;&gt;</span><br><span class="line">    &lt;Button Background&#x3D;&quot;&#123;DynamicResource RedBrush&#125;&quot; Margin&#x3D;&quot;5&quot; FontSize&#x3D;&quot;14&quot; Content&#x3D;&quot;Use a Dynamic Resource&quot;&#x2F;&gt;</span><br><span class="line">    &lt;Button Margin&#x3D;&quot;5&quot; FontSize&#x3D;&quot;14&quot; Content&#x3D;&quot;Change the RedBrush to Yellow&quot; Click&#x3D;&quot;ChangeBrushToYellow_Click&quot;&#x2F;&gt;</span><br><span class="line">&lt;&#x2F;StackPanel&gt;</span><br><span class="line"></span><br><span class="line">&lt;!--后台代码--&gt;</span><br><span class="line">private void ChangeBrushToYellow_Click(object sender, RoutedEventArgs e)</span><br><span class="line">&#123;</span><br><span class="line">    &#x2F;&#x2F; 改变资源</span><br><span class="line">    this.Resources[&quot;RedBrush&quot;] &#x3D; new SolidColorBrush(Colors.Yellow);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>点击按钮，只会改变动态引用资源的背景色，静态资源并没有改变。效果图如下：</p>
+<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/Snipaste_2020-01-06_15-54-31.png"></p>
+<h3 id="1-3-资源字典"><a href="#1-3-资源字典" class="headerlink" title="1.3 资源字典"></a>1.3 资源字典</h3><blockquote>
+<p>每个<a href="http://msdn.microsoft.com/zh-cn/library/system.windows.frameworkelement.resources(v=vs.100).aspx">Resources</a>属性存储着一个资源字典集合。如果希望在多个项目之间共享资源的话，就可以创建一个资源字典。</p>
+</blockquote>
+<p>资源字段是一个简单的XAML文档，该文档就是用于存储资源的，可以通过右键项目-&gt;添加资源字典的方式来添加一个资源字典文件:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;ResourceDictionary xmlns&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&#x2F;presentation&quot;</span><br><span class="line">                    xmlns:x&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&quot;</span><br><span class="line">                    xmlns:local&#x3D;&quot;clr-namespace:WpfApp1&quot;&gt;</span><br><span class="line">    &lt;SolidColorBrush x:Key&#x3D;&quot;blueBrush&quot; Color&#x3D;&quot;Blue&quot;&#x2F;&gt;</span><br><span class="line">    &lt;FontWeight x:Key&#x3D;&quot;fontWeight&quot;&gt;Bold&lt;&#x2F;FontWeight&gt;</span><br><span class="line">&lt;&#x2F;ResourceDictionary&gt;</span><br></pre></td></tr></table></figure>
+<p>为了使用资源字典，需要将其合并到应用程序中资源集合位置，当然你也可以合并到窗口资源集合中，但是通常是合并到应用程序资源集合中，因为资源字典的目的就是在于多个窗体中共享，具体的XAML代码如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Application x:Class&#x3D;&quot;WpfApp1.App&quot;</span><br><span class="line">             xmlns&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&#x2F;presentation&quot;</span><br><span class="line">             xmlns:x&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&quot;</span><br><span class="line">             xmlns:local&#x3D;&quot;clr-namespace:WpfApp1&quot;</span><br><span class="line">             StartupUri&#x3D;&quot;Execise.xaml&quot;&gt;</span><br><span class="line">    &lt;Application.Resources&gt;</span><br><span class="line">        &lt;!--合并资源字典到Application.Resources中--&gt;</span><br><span class="line">        &lt;ResourceDictionary&gt;</span><br><span class="line">            &lt;ResourceDictionary.MergedDictionaries&gt;</span><br><span class="line">                &lt;ResourceDictionary Source&#x3D;&quot;Dictionary1.xaml&quot;&#x2F;&gt;</span><br><span class="line">            &lt;&#x2F;ResourceDictionary.MergedDictionaries&gt;</span><br><span class="line">        &lt;&#x2F;ResourceDictionary&gt;</span><br><span class="line">    &lt;&#x2F;Application.Resources&gt;</span><br><span class="line">&lt;&#x2F;Application&gt;</span><br></pre></td></tr></table></figure>
+<p>使用方式与引用资源的方式是一样的：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Window x:Class&#x3D;&quot;WpfApp1.Execise&quot;</span><br><span class="line">        xmlns&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&#x2F;presentation&quot;</span><br><span class="line">        xmlns:x&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&quot;</span><br><span class="line">        xmlns:d&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;expression&#x2F;blend&#x2F;2008&quot;</span><br><span class="line">        xmlns:mc&#x3D;&quot;http:&#x2F;&#x2F;schemas.openxmlformats.org&#x2F;markup-compatibility&#x2F;2006&quot;</span><br><span class="line">        xmlns:local&#x3D;&quot;clr-namespace:WpfApp1&quot;</span><br><span class="line">        mc:Ignorable&#x3D;&quot;d&quot;</span><br><span class="line">        Title&#x3D;&quot;Execise&quot; Height&#x3D;&quot;450&quot; Width&#x3D;&quot;800&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;Window.Resources&gt;</span><br><span class="line">        &lt;SolidColorBrush x:Key&#x3D;&quot;RedBrush&quot; Color&#x3D;&quot;Red&quot;&gt;&lt;&#x2F;SolidColorBrush&gt;</span><br><span class="line">    &lt;&#x2F;Window.Resources&gt;</span><br><span class="line"></span><br><span class="line">    &lt;StackPanel Margin&#x3D;&quot;5&quot;&gt;</span><br><span class="line">        &lt;!--使用资源字典中定义的资源--&gt;</span><br><span class="line">        &lt;Button  Margin&#x3D;&quot;10&quot; Background&#x3D;&quot;&#123;StaticResource blueBrush&#125;&quot; Content&#x3D;&quot;Blue Button&quot; FontWeight&#x3D;&quot;&#123;StaticResource fontWeight&#125;&quot;&#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;StackPanel&gt;</span><br><span class="line">&lt;&#x2F;Window&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>最终运行效果如下：</p>
+<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/wpf-02.png"></p>
+<h2 id="二、触发器Trigger"><a href="#二、触发器Trigger" class="headerlink" title="二、触发器Trigger"></a>二、触发器Trigger</h2><blockquote>
+<p>触发器，应用属性值或有条件地执行操作；<br> 1）触发源：控件；<br> 2）触发条件：某属性为某个值，或执行某个事件时；<br> 3）执行操作：更改某个属性值或执行某个事件；</p>
+</blockquote>
+<blockquote>
+<p> 触发器是通过Style.Triggers集合链接到样式。每个样式都可以有任意多个触发器，而且每个触发器都是System.Windows.TriggerBase的派生类的集合。</p>
+</blockquote>
+<h2 id="三、触发器的分类"><a href="#三、触发器的分类" class="headerlink" title="三、触发器的分类"></a>三、触发器的分类</h2><blockquote>
+<p>1）根据触发器的触发条件，在 WPF 中，触发器的形态可以是：Trigger、DataTrigger、EventTrigger；</p>
+<p>2）以及由 Trigger 延伸的 MultiTrigger 和由 DataTrigger 延伸的 MultiDataTrigger；</p>
+</blockquote>
+<h3 id="3-1-Trigger"><a href="#3-1-Trigger" class="headerlink" title="3.1 Trigger"></a>3.1 Trigger</h3><blockquote>
+<p>Trigger 是最简单的触发器，主要用于监测依赖项属性的变化，然后使用设置器改变样式</p>
+</blockquote>
+<p>实例：当鼠标移动到按钮时，按钮内容变为红色</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Window.Resources&gt;</span><br><span class="line">    &lt;Style x:Key&#x3D;&quot;Buttonstyle&quot; TargetType&#x3D;&quot;Button&quot;&gt;</span><br><span class="line">        &lt;Style.Triggers&gt;</span><br><span class="line">            &lt;Trigger Property&#x3D;&quot;IsMouseOver&quot; Value&#x3D;&quot;True&quot;&gt;</span><br><span class="line">                &lt;Setter Property&#x3D;&quot;FontSize&quot; Value&#x3D;&quot;30&quot; &#x2F;&gt;</span><br><span class="line">                &lt;Setter Property&#x3D;&quot;Foreground&quot; Value&#x3D;&quot;Red&quot;&#x2F;&gt;</span><br><span class="line">            &lt;&#x2F;Trigger&gt;</span><br><span class="line">        &lt;&#x2F;Style.Triggers&gt;</span><br><span class="line">    &lt;&#x2F;Style&gt;</span><br><span class="line">&lt;&#x2F;Window.Resources&gt;</span><br><span class="line"></span><br><span class="line">&lt;StackPanel Margin&#x3D;&quot;5&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;Button Width&#x3D;&quot;200&quot; Height&#x3D;&quot;100&quot;  Margin&#x3D;&quot;10&quot; Content&#x3D;&quot;Hello WPF&quot; Style&#x3D;&quot;&#123;StaticResource Buttonstyle&#125;&quot;&#x2F;&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;StackPanel&gt;</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/trriger.gif"></p>
+<h3 id="3-2-DataTrigger"><a href="#3-2-DataTrigger" class="headerlink" title="3.2 DataTrigger"></a>3.2 DataTrigger</h3><blockquote>
+<p>该触发器使用数据绑定。与Trigger类似，只不过监视的是任意绑定数据的变化</p>
+</blockquote>
+<h3 id="3-3-EventTrigger"><a href="#3-3-EventTrigger" class="headerlink" title="3.3 EventTrigger"></a>3.3 EventTrigger</h3><blockquote>
+<p>这是最复杂的触发器，当事件发生时，这种触发器应用动画</p>
+</blockquote>
+<p>示例：触发一个动画事件，当鼠标移入的时候，字体变大</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Style.Triggers&gt;    </span><br><span class="line">    &lt;EventTrigger RoutedEvent&#x3D;&quot;Mouse.MouseEnter&quot;&gt;</span><br><span class="line">        &lt;!--异步的动画--&gt;</span><br><span class="line">        &lt;BeginStoryboard&gt;</span><br><span class="line">            &lt;Storyboard&gt;</span><br><span class="line">                &lt;DoubleAnimation Duration&#x3D;&quot;0:0:1&quot; Storyboard.TargetProperty&#x3D;&quot;FontSize&quot; 									 From&#x3D;&quot;10&quot; To&#x3D;&quot;30&quot; &#x2F;&gt;</span><br><span class="line">            &lt;&#x2F;Storyboard&gt;</span><br><span class="line">        &lt;&#x2F;BeginStoryboard&gt;</span><br><span class="line">    &lt;&#x2F;EventTrigger&gt;</span><br><span class="line">&lt;&#x2F;Style.Triggers&gt;</span><br></pre></td></tr></table></figure>
+<p>效果如下：<img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/trriger3.gif"></p>
+<h3 id="3-4-MultiTrigger"><a href="#3-4-MultiTrigger" class="headerlink" title="3.4 MultiTrigger"></a>3.4 MultiTrigger</h3><blockquote>
+<p>与Trigger类似，但这种触发器联合了多个条件。只有满足了所有这些条件，才会启动触发器</p>
+</blockquote>
+<p>示例代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Window.Resources&gt;</span><br><span class="line">    &lt;Style x:Key&#x3D;&quot;Buttonstyle&quot; TargetType&#x3D;&quot;Button&quot;&gt;</span><br><span class="line">        &lt;Style.Triggers&gt;</span><br><span class="line">            &lt;MultiTrigger&gt;</span><br><span class="line">                &lt;MultiTrigger.Conditions&gt;</span><br><span class="line">                    &lt;Condition Property&#x3D;&quot;IsMouseOver&quot; Value&#x3D;&quot;True&quot;&#x2F;&gt;</span><br><span class="line">                    &lt;Condition Property&#x3D;&quot;IsFocused&quot; Value&#x3D;&quot;True&quot;&#x2F;&gt;</span><br><span class="line">                &lt;&#x2F;MultiTrigger.Conditions&gt;</span><br><span class="line">                &lt;MultiTrigger.Setters&gt;</span><br><span class="line">                    &lt;Setter Property&#x3D;&quot;Foreground&quot; Value&#x3D;&quot;Red&quot; &#x2F;&gt;</span><br><span class="line">                    &lt;Setter Property&#x3D;&quot;FontSize&quot; Value&#x3D;&quot;30&quot;&#x2F;&gt;</span><br><span class="line">                &lt;&#x2F;MultiTrigger.Setters&gt;</span><br><span class="line">            &lt;&#x2F;MultiTrigger&gt;</span><br><span class="line">            &lt;!--&lt;Trigger Property&#x3D;&quot;IsMouseOver&quot; Value&#x3D;&quot;True&quot;&gt;</span><br><span class="line">                    &lt;Setter Property&#x3D;&quot;FontSize&quot; Value&#x3D;&quot;30&quot; &#x2F;&gt;</span><br><span class="line">                    &lt;Setter Property&#x3D;&quot;Foreground&quot; Value&#x3D;&quot;Red&quot;&#x2F;&gt;</span><br><span class="line">                &lt;&#x2F;Trigger&gt;--&gt;</span><br><span class="line">        &lt;&#x2F;Style.Triggers&gt;</span><br><span class="line">    &lt;&#x2F;Style&gt;</span><br><span class="line">&lt;&#x2F;Window.Resources&gt;</span><br></pre></td></tr></table></figure>
+<p>当鼠标移入按钮，并获取焦点时，文字才会变红；效果如下：</p>
+<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/trriger2.gif"></p>
+<h3 id="3-5-MultiDataTrigger"><a href="#3-5-MultiDataTrigger" class="headerlink" title="3.5 MultiDataTrigger"></a>3.5 MultiDataTrigger</h3><blockquote>
+<p>联合多个数据触发器</p>
+</blockquote>
+<h2 id="链接…"><a href="#链接…" class="headerlink" title="链接…"></a>链接…</h2><p>B站视频：<a href="https://www.bilibili.com/video/av70392459?p=4">https://www.bilibili.com/video/av70392459?p=4</a></p>
+]]></content>
+      <categories>
+        <category>Microsoft之旅</category>
+        <category>WPF</category>
+      </categories>
+      <tags>
+        <tag>WPF</tag>
+        <tag>Microsoft</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo博客常用命令</title>
     <url>/hexo%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4.html</url>
     <content><![CDATA[<h2 id="一-引言"><a href="#一-引言" class="headerlink" title="一. 引言"></a>一. 引言</h2><blockquote>
@@ -988,82 +1046,24 @@
       </tags>
   </entry>
   <entry>
-    <title>WPF学习笔记(二)资源与触发器</title>
-    <url>/WPF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E8%B5%84%E6%BA%90%E4%B8%8E%E8%A7%A6%E5%8F%91%E5%99%A8.html</url>
-    <content><![CDATA[<h1 id="WPF学习笔记-二-资源与触发器"><a href="#WPF学习笔记-二-资源与触发器" class="headerlink" title="WPF学习笔记(二)资源与触发器"></a>WPF学习笔记(二)资源与触发器</h1><h2 id="一、WPF资源"><a href="#一、WPF资源" class="headerlink" title="一、WPF资源"></a>一、WPF资源</h2><blockquote>
-<p>WPF资源系统可以用来保存一些公有对象和样式，从而实现重用这些对象和样式的作用。而WPF样式是重用元素的格式的重要手段，可以理解样式就如CSS一样，尽管我们可以在每个控件中定义格式，但是如果多个控件都应用了多个格式的时候，我们就可以把这些格式封装成格式，然后在资源中定义这个格式，之前如果用到这个格式就可以直接使用这个样式，从而达到重用格式的手段。从中可以发现，WPF资源和WPF样式是相关的，我们经常把样式定义在资源中。</p>
-</blockquote>
-<h3 id="1-1-资源基础介绍"><a href="#1-1-资源基础介绍" class="headerlink" title="1.1 资源基础介绍"></a>1.1 资源基础介绍</h3><blockquote>
-<p>我们可以在代码中创建和操作资源，但通常都是以XAML标签的形式定义资源的。</p>
-</blockquote>
-<p>具体的XAML代码如下所示：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Window x:Class&#x3D;&quot;WpfApp1.Execise&quot;</span><br><span class="line">        xmlns&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&#x2F;presentation&quot;</span><br><span class="line">        xmlns:x&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&quot;</span><br><span class="line">        xmlns:d&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;expression&#x2F;blend&#x2F;2008&quot;</span><br><span class="line">        xmlns:mc&#x3D;&quot;http:&#x2F;&#x2F;schemas.openxmlformats.org&#x2F;markup-compatibility&#x2F;2006&quot;</span><br><span class="line">        xmlns:local&#x3D;&quot;clr-namespace:WpfApp1&quot;</span><br><span class="line">        mc:Ignorable&#x3D;&quot;d&quot;</span><br><span class="line">        Title&#x3D;&quot;Execise&quot; Height&#x3D;&quot;450&quot; Width&#x3D;&quot;800&quot;&gt;</span><br><span class="line">    &lt;!--定义资源--&gt;</span><br><span class="line">    &lt;Window.Resources&gt;</span><br><span class="line">        &lt;SolidColorBrush x:Key&#x3D;&quot;Button1&quot; Color&#x3D;&quot;Red&quot; &#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;Window.Resources&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;Grid&gt;</span><br><span class="line">        &lt;!--通过资源key来对资源进行使用--&gt;</span><br><span class="line">        &lt;Button Foreground&#x3D;&quot;&#123;StaticResource Button1&#125;&quot; Width&#x3D;&quot;100&quot; Height&#x3D;&quot;100&quot; Content&#x3D;&quot;Hello&quot;&#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;Grid&gt;</span><br><span class="line">&lt;&#x2F;Window&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>效果图如下：</p>
-<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/wpf-0.png"></p>
-<h3 id="1-2-静态资源和动态资源的区别"><a href="#1-2-静态资源和动态资源的区别" class="headerlink" title="1.2 静态资源和动态资源的区别"></a>1.2 静态资源和动态资源的区别</h3><blockquote>
-<p>为了使用XAML标记中的资源，需要一种引用资源的方法，可以通过两个标记来进行引用资源：一个用于静态资源，另一个用于动态资源。在上面的XAML中，我们引用的方式就是静态资源的引用方式，因为我们指定了<strong>StaticResource。</strong></p>
-<p>对于静态资源在第一次创建窗口时，一次性地设置完毕；而对于动态资源，如果发生了改变，则会重新应用资源。</p>
-</blockquote>
-<p>例子：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Window.Resources&gt;</span><br><span class="line">    &lt;SolidColorBrush x:Key&#x3D;&quot;RedBrush&quot; Color&#x3D;&quot;Red&quot;&gt;&lt;&#x2F;SolidColorBrush&gt;</span><br><span class="line">&lt;&#x2F;Window.Resources&gt;</span><br><span class="line"></span><br><span class="line">&lt;StackPanel Margin&#x3D;&quot;5&quot;&gt;</span><br><span class="line">    &lt;Button Background&#x3D;&quot;&#123;StaticResource RedBrush&#125;&quot; Margin&#x3D;&quot;5&quot; FontSize&#x3D;&quot;14&quot; Content&#x3D;&quot;Use a Static Resource&quot;&#x2F;&gt;</span><br><span class="line">    &lt;Button Background&#x3D;&quot;&#123;DynamicResource RedBrush&#125;&quot; Margin&#x3D;&quot;5&quot; FontSize&#x3D;&quot;14&quot; Content&#x3D;&quot;Use a Dynamic Resource&quot;&#x2F;&gt;</span><br><span class="line">    &lt;Button Margin&#x3D;&quot;5&quot; FontSize&#x3D;&quot;14&quot; Content&#x3D;&quot;Change the RedBrush to Yellow&quot; Click&#x3D;&quot;ChangeBrushToYellow_Click&quot;&#x2F;&gt;</span><br><span class="line">&lt;&#x2F;StackPanel&gt;</span><br><span class="line"></span><br><span class="line">&lt;!--后台代码--&gt;</span><br><span class="line">private void ChangeBrushToYellow_Click(object sender, RoutedEventArgs e)</span><br><span class="line">&#123;</span><br><span class="line">    &#x2F;&#x2F; 改变资源</span><br><span class="line">    this.Resources[&quot;RedBrush&quot;] &#x3D; new SolidColorBrush(Colors.Yellow);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>点击按钮，只会改变动态引用资源的背景色，静态资源并没有改变。效果图如下：</p>
-<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/Snipaste_2020-01-06_15-54-31.png"></p>
-<h3 id="1-3-资源字典"><a href="#1-3-资源字典" class="headerlink" title="1.3 资源字典"></a>1.3 资源字典</h3><blockquote>
-<p>每个<a href="http://msdn.microsoft.com/zh-cn/library/system.windows.frameworkelement.resources(v=vs.100).aspx">Resources</a>属性存储着一个资源字典集合。如果希望在多个项目之间共享资源的话，就可以创建一个资源字典。</p>
-</blockquote>
-<p>资源字段是一个简单的XAML文档，该文档就是用于存储资源的，可以通过右键项目-&gt;添加资源字典的方式来添加一个资源字典文件:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;ResourceDictionary xmlns&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&#x2F;presentation&quot;</span><br><span class="line">                    xmlns:x&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&quot;</span><br><span class="line">                    xmlns:local&#x3D;&quot;clr-namespace:WpfApp1&quot;&gt;</span><br><span class="line">    &lt;SolidColorBrush x:Key&#x3D;&quot;blueBrush&quot; Color&#x3D;&quot;Blue&quot;&#x2F;&gt;</span><br><span class="line">    &lt;FontWeight x:Key&#x3D;&quot;fontWeight&quot;&gt;Bold&lt;&#x2F;FontWeight&gt;</span><br><span class="line">&lt;&#x2F;ResourceDictionary&gt;</span><br></pre></td></tr></table></figure>
-<p>为了使用资源字典，需要将其合并到应用程序中资源集合位置，当然你也可以合并到窗口资源集合中，但是通常是合并到应用程序资源集合中，因为资源字典的目的就是在于多个窗体中共享，具体的XAML代码如下所示：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Application x:Class&#x3D;&quot;WpfApp1.App&quot;</span><br><span class="line">             xmlns&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&#x2F;presentation&quot;</span><br><span class="line">             xmlns:x&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&quot;</span><br><span class="line">             xmlns:local&#x3D;&quot;clr-namespace:WpfApp1&quot;</span><br><span class="line">             StartupUri&#x3D;&quot;Execise.xaml&quot;&gt;</span><br><span class="line">    &lt;Application.Resources&gt;</span><br><span class="line">        &lt;!--合并资源字典到Application.Resources中--&gt;</span><br><span class="line">        &lt;ResourceDictionary&gt;</span><br><span class="line">            &lt;ResourceDictionary.MergedDictionaries&gt;</span><br><span class="line">                &lt;ResourceDictionary Source&#x3D;&quot;Dictionary1.xaml&quot;&#x2F;&gt;</span><br><span class="line">            &lt;&#x2F;ResourceDictionary.MergedDictionaries&gt;</span><br><span class="line">        &lt;&#x2F;ResourceDictionary&gt;</span><br><span class="line">    &lt;&#x2F;Application.Resources&gt;</span><br><span class="line">&lt;&#x2F;Application&gt;</span><br></pre></td></tr></table></figure>
-<p>使用方式与引用资源的方式是一样的：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Window x:Class&#x3D;&quot;WpfApp1.Execise&quot;</span><br><span class="line">        xmlns&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&#x2F;presentation&quot;</span><br><span class="line">        xmlns:x&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;winfx&#x2F;2006&#x2F;xaml&quot;</span><br><span class="line">        xmlns:d&#x3D;&quot;http:&#x2F;&#x2F;schemas.microsoft.com&#x2F;expression&#x2F;blend&#x2F;2008&quot;</span><br><span class="line">        xmlns:mc&#x3D;&quot;http:&#x2F;&#x2F;schemas.openxmlformats.org&#x2F;markup-compatibility&#x2F;2006&quot;</span><br><span class="line">        xmlns:local&#x3D;&quot;clr-namespace:WpfApp1&quot;</span><br><span class="line">        mc:Ignorable&#x3D;&quot;d&quot;</span><br><span class="line">        Title&#x3D;&quot;Execise&quot; Height&#x3D;&quot;450&quot; Width&#x3D;&quot;800&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;Window.Resources&gt;</span><br><span class="line">        &lt;SolidColorBrush x:Key&#x3D;&quot;RedBrush&quot; Color&#x3D;&quot;Red&quot;&gt;&lt;&#x2F;SolidColorBrush&gt;</span><br><span class="line">    &lt;&#x2F;Window.Resources&gt;</span><br><span class="line"></span><br><span class="line">    &lt;StackPanel Margin&#x3D;&quot;5&quot;&gt;</span><br><span class="line">        &lt;!--使用资源字典中定义的资源--&gt;</span><br><span class="line">        &lt;Button  Margin&#x3D;&quot;10&quot; Background&#x3D;&quot;&#123;StaticResource blueBrush&#125;&quot; Content&#x3D;&quot;Blue Button&quot; FontWeight&#x3D;&quot;&#123;StaticResource fontWeight&#125;&quot;&#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;StackPanel&gt;</span><br><span class="line">&lt;&#x2F;Window&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>最终运行效果如下：</p>
-<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/wpf-02.png"></p>
-<h2 id="二、触发器Trigger"><a href="#二、触发器Trigger" class="headerlink" title="二、触发器Trigger"></a>二、触发器Trigger</h2><blockquote>
-<p>触发器，应用属性值或有条件地执行操作；<br> 1）触发源：控件；<br> 2）触发条件：某属性为某个值，或执行某个事件时；<br> 3）执行操作：更改某个属性值或执行某个事件；</p>
-</blockquote>
-<blockquote>
-<p> 触发器是通过Style.Triggers集合链接到样式。每个样式都可以有任意多个触发器，而且每个触发器都是System.Windows.TriggerBase的派生类的集合。</p>
-</blockquote>
-<h2 id="三、触发器的分类"><a href="#三、触发器的分类" class="headerlink" title="三、触发器的分类"></a>三、触发器的分类</h2><blockquote>
-<p>1）根据触发器的触发条件，在 WPF 中，触发器的形态可以是：Trigger、DataTrigger、EventTrigger；</p>
-<p>2）以及由 Trigger 延伸的 MultiTrigger 和由 DataTrigger 延伸的 MultiDataTrigger；</p>
-</blockquote>
-<h3 id="3-1-Trigger"><a href="#3-1-Trigger" class="headerlink" title="3.1 Trigger"></a>3.1 Trigger</h3><blockquote>
-<p>Trigger 是最简单的触发器，主要用于监测依赖项属性的变化，然后使用设置器改变样式</p>
-</blockquote>
-<p>实例：当鼠标移动到按钮时，按钮内容变为红色</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Window.Resources&gt;</span><br><span class="line">    &lt;Style x:Key&#x3D;&quot;Buttonstyle&quot; TargetType&#x3D;&quot;Button&quot;&gt;</span><br><span class="line">        &lt;Style.Triggers&gt;</span><br><span class="line">            &lt;Trigger Property&#x3D;&quot;IsMouseOver&quot; Value&#x3D;&quot;True&quot;&gt;</span><br><span class="line">                &lt;Setter Property&#x3D;&quot;FontSize&quot; Value&#x3D;&quot;30&quot; &#x2F;&gt;</span><br><span class="line">                &lt;Setter Property&#x3D;&quot;Foreground&quot; Value&#x3D;&quot;Red&quot;&#x2F;&gt;</span><br><span class="line">            &lt;&#x2F;Trigger&gt;</span><br><span class="line">        &lt;&#x2F;Style.Triggers&gt;</span><br><span class="line">    &lt;&#x2F;Style&gt;</span><br><span class="line">&lt;&#x2F;Window.Resources&gt;</span><br><span class="line"></span><br><span class="line">&lt;StackPanel Margin&#x3D;&quot;5&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;Button Width&#x3D;&quot;200&quot; Height&#x3D;&quot;100&quot;  Margin&#x3D;&quot;10&quot; Content&#x3D;&quot;Hello WPF&quot; Style&#x3D;&quot;&#123;StaticResource Buttonstyle&#125;&quot;&#x2F;&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;StackPanel&gt;</span><br></pre></td></tr></table></figure>
-<p>效果如下：</p>
-<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/trriger.gif"></p>
-<h3 id="3-2-DataTrigger"><a href="#3-2-DataTrigger" class="headerlink" title="3.2 DataTrigger"></a>3.2 DataTrigger</h3><blockquote>
-<p>该触发器使用数据绑定。与Trigger类似，只不过监视的是任意绑定数据的变化</p>
-</blockquote>
-<h3 id="3-3-EventTrigger"><a href="#3-3-EventTrigger" class="headerlink" title="3.3 EventTrigger"></a>3.3 EventTrigger</h3><blockquote>
-<p>这是最复杂的触发器，当事件发生时，这种触发器应用动画</p>
-</blockquote>
-<p>示例：触发一个动画事件，当鼠标移入的时候，字体变大</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Style.Triggers&gt;    </span><br><span class="line">    &lt;EventTrigger RoutedEvent&#x3D;&quot;Mouse.MouseEnter&quot;&gt;</span><br><span class="line">        &lt;!--异步的动画--&gt;</span><br><span class="line">        &lt;BeginStoryboard&gt;</span><br><span class="line">            &lt;Storyboard&gt;</span><br><span class="line">                &lt;DoubleAnimation Duration&#x3D;&quot;0:0:1&quot; Storyboard.TargetProperty&#x3D;&quot;FontSize&quot; 									 From&#x3D;&quot;10&quot; To&#x3D;&quot;30&quot; &#x2F;&gt;</span><br><span class="line">            &lt;&#x2F;Storyboard&gt;</span><br><span class="line">        &lt;&#x2F;BeginStoryboard&gt;</span><br><span class="line">    &lt;&#x2F;EventTrigger&gt;</span><br><span class="line">&lt;&#x2F;Style.Triggers&gt;</span><br></pre></td></tr></table></figure>
-<p>效果如下：<img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/trriger3.gif"></p>
-<h3 id="3-4-MultiTrigger"><a href="#3-4-MultiTrigger" class="headerlink" title="3.4 MultiTrigger"></a>3.4 MultiTrigger</h3><blockquote>
-<p>与Trigger类似，但这种触发器联合了多个条件。只有满足了所有这些条件，才会启动触发器</p>
-</blockquote>
-<p>示例代码：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Window.Resources&gt;</span><br><span class="line">    &lt;Style x:Key&#x3D;&quot;Buttonstyle&quot; TargetType&#x3D;&quot;Button&quot;&gt;</span><br><span class="line">        &lt;Style.Triggers&gt;</span><br><span class="line">            &lt;MultiTrigger&gt;</span><br><span class="line">                &lt;MultiTrigger.Conditions&gt;</span><br><span class="line">                    &lt;Condition Property&#x3D;&quot;IsMouseOver&quot; Value&#x3D;&quot;True&quot;&#x2F;&gt;</span><br><span class="line">                    &lt;Condition Property&#x3D;&quot;IsFocused&quot; Value&#x3D;&quot;True&quot;&#x2F;&gt;</span><br><span class="line">                &lt;&#x2F;MultiTrigger.Conditions&gt;</span><br><span class="line">                &lt;MultiTrigger.Setters&gt;</span><br><span class="line">                    &lt;Setter Property&#x3D;&quot;Foreground&quot; Value&#x3D;&quot;Red&quot; &#x2F;&gt;</span><br><span class="line">                    &lt;Setter Property&#x3D;&quot;FontSize&quot; Value&#x3D;&quot;30&quot;&#x2F;&gt;</span><br><span class="line">                &lt;&#x2F;MultiTrigger.Setters&gt;</span><br><span class="line">            &lt;&#x2F;MultiTrigger&gt;</span><br><span class="line">            &lt;!--&lt;Trigger Property&#x3D;&quot;IsMouseOver&quot; Value&#x3D;&quot;True&quot;&gt;</span><br><span class="line">                    &lt;Setter Property&#x3D;&quot;FontSize&quot; Value&#x3D;&quot;30&quot; &#x2F;&gt;</span><br><span class="line">                    &lt;Setter Property&#x3D;&quot;Foreground&quot; Value&#x3D;&quot;Red&quot;&#x2F;&gt;</span><br><span class="line">                &lt;&#x2F;Trigger&gt;--&gt;</span><br><span class="line">        &lt;&#x2F;Style.Triggers&gt;</span><br><span class="line">    &lt;&#x2F;Style&gt;</span><br><span class="line">&lt;&#x2F;Window.Resources&gt;</span><br></pre></td></tr></table></figure>
-<p>当鼠标移入按钮，并获取焦点时，文字才会变红；效果如下：</p>
-<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/trriger2.gif"></p>
-<h3 id="3-5-MultiDataTrigger"><a href="#3-5-MultiDataTrigger" class="headerlink" title="3.5 MultiDataTrigger"></a>3.5 MultiDataTrigger</h3><blockquote>
-<p>联合多个数据触发器</p>
-</blockquote>
-<h2 id="链接…"><a href="#链接…" class="headerlink" title="链接…"></a>链接…</h2><p>B站视频：<a href="https://www.bilibili.com/video/av70392459?p=4">https://www.bilibili.com/video/av70392459?p=4</a></p>
+    <title>Hello World</title>
+    <url>/hello-world.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a id="more"></a>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
-        <category>Microsoft之旅</category>
-        <category>WPF</category>
+        <category>Blog</category>
       </categories>
       <tags>
-        <tag>WPF</tag>
-        <tag>Microsoft</tag>
+        <tag>blog</tag>
       </tags>
   </entry>
   <entry>
@@ -1380,6 +1380,48 @@
       </tags>
   </entry>
   <entry>
+    <title>我有属于我的天</title>
+    <url>/%E6%88%91%E6%9C%89%E5%B1%9E%E4%BA%8E%E6%88%91%E7%9A%84%E5%A4%A9.html</url>
+    <content><![CDATA[<h3 id="百度百科"><a href="#百度百科" class="headerlink" title="百度百科"></a>百度百科</h3><blockquote>
+<p>《蜗牛》是周杰伦在自己事业处于低潮时所创作的，当时周杰伦还未正式出道，整天就是帮其他人写歌，心情非常不好，于是决定写一首歌勉励一下自己，同时也为了鼓励年轻人能够像蜗牛一样为了自己的目标一步一步往前爬。之后许茹芸听了周杰伦为别人所创作的作品，感觉很特别，就联络公司跟周杰伦邀歌，于是周杰伦就把这首《蜗牛》给了许茹芸演唱。</p>
+</blockquote>
+<hr>
+<p><strong>《蜗牛》</strong></p>
+<p><strong>作词：周杰伦</strong></p>
+<p><strong>作曲：周杰伦</strong></p>
+<p><strong>演唱：周杰伦</strong> </p>
+<p><strong>该不该搁下重重的壳</strong></p>
+<p><strong>寻找到底哪里有蓝天</strong></p>
+<p><strong>随着轻轻的风轻轻的飘</strong></p>
+<p><strong>历经的伤都不感觉疼</strong></p>
+<p><strong>我要一步一步往上爬</strong></p>
+<p><strong>等待阳光静静看着它的脸</strong></p>
+<p><strong>小小的天有大大的梦想</strong></p>
+<p><strong>重重的壳挂着轻轻的仰望</strong></p>
+<p><strong>我要一步一步往上爬</strong></p>
+<p><strong>在最高点乘着叶片往前飞</strong></p>
+<p><strong>小小的天流过的泪和汗</strong></p>
+<p><strong>总有一天我有属于我的天</strong></p>
+<p><strong>我要一步一步往上爬</strong></p>
+<p><strong>在最高点乘着叶片往前飞</strong></p>
+<p><strong>任风吹干流过的泪和汗</strong></p>
+<p><strong>我要一步一步往上爬</strong></p>
+<p><strong>等待阳光静静看着它的脸</strong></p>
+<p><strong>小小的天有大大的梦想</strong></p>
+<p><strong>我有属于我的天</strong></p>
+<p><strong>任风吹干流过的泪和汗</strong></p>
+<p><strong>总有一天我有属于我的天</strong></p>
+<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/20191227181155.jpg" alt="我伦😊"></p>
+]]></content>
+      <categories>
+        <category>生活随笔</category>
+      </categories>
+      <tags>
+        <tag>Jay</tag>
+        <tag>music</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的第一篇博文</title>
     <url>/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87.html</url>
     <content><![CDATA[<h2 id="新手写博客应该写些什么"><a href="#新手写博客应该写些什么" class="headerlink" title="新手写博客应该写些什么~"></a>新手写博客应该写些什么~</h2><p>最近刚搭建了这么个博客，奈何自己也是前端小白一枚，苦于不知道该写什么比较好。于是乎，各种问<a href="%5Bhttps://www.baidu.com%5D(https://www.baidu.com/)">度娘</a>，借鉴各种大神的作品，最终总结出如下适合自己目前状况的一种套路：</p>
@@ -1463,95 +1505,6 @@
       </tags>
   </entry>
   <entry>
-    <title>移动端适配方案</title>
-    <url>/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88.html</url>
-    <content><![CDATA[<h2 id="移动端自适应布局配置-vw-rem"><a href="#移动端自适应布局配置-vw-rem" class="headerlink" title="移动端自适应布局配置 vw + rem"></a>移动端自适应布局配置 vw + rem</h2><blockquote>
-<p>当我们写移动端页面时，会遇到自适应和兼容性等方面的问题，单纯的l指示利用<strong>rem</strong>或者<strong>vw/vh</strong>都不尽人意，有幸看见大神的设计思路，感觉很厉害，由此记录学习~</p>
-</blockquote>
-<hr>
-<h3 id="1-原理"><a href="#1-原理" class="headerlink" title="1. 原理"></a>1. 原理</h3><h4 id="1-1-rem布局与vw-vh"><a href="#1-1-rem布局与vw-vh" class="headerlink" title="1.1 rem布局与vw/vh"></a>1.1 rem布局与vw/vh</h4><ul>
-<li><p><strong>rem：</strong>相对于<strong>根元素html</strong>的字体大小的单位</p>
-</li>
-<li><p><strong>rem布局原理：</strong>根据屏幕分辨率的不同，动态修改根字体的大小，让所有用<strong>rem</strong>为单位的元素跟着屏幕尺寸一起缩放，从而达到自适应的效果。</p>
-</li>
-<li><blockquote>
-<p>例如：宽度为750px的设计稿，尺寸可以这样设定</p>
-</blockquote>
-</li>
-<li><pre><code class="css">html &#123;
-    font-size: calc(100vw / 7.5);//除以的7.5是根据设计稿的屏幕宽度来定的，这样750px宽度下根元素字体大小则为750px/7.5=100px=1rem
-&#125; 
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">#### 1.2 设计思路</span><br><span class="line"></span><br><span class="line">* **根据设计稿将html的gont-size设置为100px；比如750px的设计稿就除以7.5。此时100px&#x3D;1rem，后续计算起来会方便很多。**</span><br><span class="line"></span><br><span class="line">* &gt; 以上设计思路的**最大优点**就是：**方便计算**。</span><br><span class="line"></span><br><span class="line">### 2. 优化</span><br><span class="line"></span><br><span class="line">#### 2.1 重置默认字体</span><br><span class="line"></span><br><span class="line">**考虑到不改变浏览器默认字体大小的展示，因此要重置页面页面字体大小为浏览器默认的大小**</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;css</span><br><span class="line">html &#123;</span><br><span class="line">    font-size: calc(100vw &#x2F; 7.5);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#app &#123;</span><br><span class="line">    font-size: initial; &#x2F;&#x2F;重置页面字体大小恢复为浏览器默认16px，否则就显示成50px了</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-#### 2.2 限制根元素字体大小的最大值、最小值
-</code></pre>
-</li>
-</ul>
-<p><strong><code>上面的设计的页面虽然看起来适配得很好，但是你会发现它会无限制放大，在大屏上很不好看。可以通过给根元素字体大小限制最大最小值，以及 body 也增加最大最小宽度限制，这样就可以改善用户体验了。</code></strong></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">    </span><br><span class="line">    //设置根字体大小单位为vw，页面元素的尺寸单位都设为rem，搭配vw和rem，可实现布局根据视口变化而变化</span><br><span class="line">    <span class="selector-tag">font-size</span>: <span class="selector-tag">calc</span>(100<span class="selector-tag">vw</span> / 7.5);</span><br><span class="line">    // 同时，通过<span class="selector-tag">Media</span> <span class="selector-tag">Queries</span> 限制根元素字体最大最小值</span><br><span class="line">    <span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width:</span> <span class="number">320px</span>) &#123;</span><br><span class="line">        <span class="selector-tag">font-size</span>: 64<span class="selector-tag">px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">min-width:</span> <span class="number">540px</span>) &#123;</span><br><span class="line">        <span class="selector-tag">font-size</span>: 108<span class="selector-tag">px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">// <span class="selector-tag">body</span> 也增加最大最小宽度限制，避免默认100%宽度的 <span class="selector-tag">block</span> 元素跟随 <span class="selector-tag">body</span> 而过大过小</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">max-width</span>: <span class="number">540px</span>;</span><br><span class="line">    <span class="attribute">min-width</span>: <span class="number">320px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#app</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: initial;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h3><blockquote>
-<p>该设计方法简介方便，增加了最大最小宽度的限制，用户视觉体验更好。</p>
-</blockquote>
-<hr>
-<h3 id="原文链接："><a href="#原文链接：" class="headerlink" title="原文链接："></a>原文链接：</h3><ul>
-<li><a href="https://juejin.im/post/5de72b1f51882512360d3910#heading-13">基于Vue的移动端h5项目总结</a></li>
-<li><a href="https://aotu.io/notes/2017/04/28/2017-4-28-CSS-viewport-units/index.html">利用视口单位实现适配布局</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>大前端</category>
-        <category>移动端</category>
-      </categories>
-      <tags>
-        <tag>2019</tag>
-        <tag>H5</tag>
-        <tag>大前端</tag>
-        <tag>移动端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我有属于我的天</title>
-    <url>/%E6%88%91%E6%9C%89%E5%B1%9E%E4%BA%8E%E6%88%91%E7%9A%84%E5%A4%A9.html</url>
-    <content><![CDATA[<h3 id="百度百科"><a href="#百度百科" class="headerlink" title="百度百科"></a>百度百科</h3><blockquote>
-<p>《蜗牛》是周杰伦在自己事业处于低潮时所创作的，当时周杰伦还未正式出道，整天就是帮其他人写歌，心情非常不好，于是决定写一首歌勉励一下自己，同时也为了鼓励年轻人能够像蜗牛一样为了自己的目标一步一步往前爬。之后许茹芸听了周杰伦为别人所创作的作品，感觉很特别，就联络公司跟周杰伦邀歌，于是周杰伦就把这首《蜗牛》给了许茹芸演唱。</p>
-</blockquote>
-<hr>
-<p><strong>《蜗牛》</strong></p>
-<p><strong>作词：周杰伦</strong></p>
-<p><strong>作曲：周杰伦</strong></p>
-<p><strong>演唱：周杰伦</strong> </p>
-<p><strong>该不该搁下重重的壳</strong></p>
-<p><strong>寻找到底哪里有蓝天</strong></p>
-<p><strong>随着轻轻的风轻轻的飘</strong></p>
-<p><strong>历经的伤都不感觉疼</strong></p>
-<p><strong>我要一步一步往上爬</strong></p>
-<p><strong>等待阳光静静看着它的脸</strong></p>
-<p><strong>小小的天有大大的梦想</strong></p>
-<p><strong>重重的壳挂着轻轻的仰望</strong></p>
-<p><strong>我要一步一步往上爬</strong></p>
-<p><strong>在最高点乘着叶片往前飞</strong></p>
-<p><strong>小小的天流过的泪和汗</strong></p>
-<p><strong>总有一天我有属于我的天</strong></p>
-<p><strong>我要一步一步往上爬</strong></p>
-<p><strong>在最高点乘着叶片往前飞</strong></p>
-<p><strong>任风吹干流过的泪和汗</strong></p>
-<p><strong>我要一步一步往上爬</strong></p>
-<p><strong>等待阳光静静看着它的脸</strong></p>
-<p><strong>小小的天有大大的梦想</strong></p>
-<p><strong>我有属于我的天</strong></p>
-<p><strong>任风吹干流过的泪和汗</strong></p>
-<p><strong>总有一天我有属于我的天</strong></p>
-<p><img src="https://picgo-blog-1259503129.cos.ap-beijing.myqcloud.com/post_img/20191227181155.jpg" alt="我伦😊"></p>
-]]></content>
-      <categories>
-        <category>生活随笔</category>
-      </categories>
-      <tags>
-        <tag>Jay</tag>
-        <tag>music</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>所求为何</title>
     <url>/%E6%89%80%E6%B1%82%E4%B8%BA%E4%BD%95.html</url>
     <content><![CDATA[<h3 id="我是小妖怪"><a href="#我是小妖怪" class="headerlink" title="我是小妖怪"></a>我是小妖怪</h3><blockquote>
@@ -1611,6 +1564,53 @@
       </categories>
       <tags>
         <tag>热评</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>移动端适配方案</title>
+    <url>/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88.html</url>
+    <content><![CDATA[<h2 id="移动端自适应布局配置-vw-rem"><a href="#移动端自适应布局配置-vw-rem" class="headerlink" title="移动端自适应布局配置 vw + rem"></a>移动端自适应布局配置 vw + rem</h2><blockquote>
+<p>当我们写移动端页面时，会遇到自适应和兼容性等方面的问题，单纯的l指示利用<strong>rem</strong>或者<strong>vw/vh</strong>都不尽人意，有幸看见大神的设计思路，感觉很厉害，由此记录学习~</p>
+</blockquote>
+<hr>
+<h3 id="1-原理"><a href="#1-原理" class="headerlink" title="1. 原理"></a>1. 原理</h3><h4 id="1-1-rem布局与vw-vh"><a href="#1-1-rem布局与vw-vh" class="headerlink" title="1.1 rem布局与vw/vh"></a>1.1 rem布局与vw/vh</h4><ul>
+<li><p><strong>rem：</strong>相对于<strong>根元素html</strong>的字体大小的单位</p>
+</li>
+<li><p><strong>rem布局原理：</strong>根据屏幕分辨率的不同，动态修改根字体的大小，让所有用<strong>rem</strong>为单位的元素跟着屏幕尺寸一起缩放，从而达到自适应的效果。</p>
+</li>
+<li><blockquote>
+<p>例如：宽度为750px的设计稿，尺寸可以这样设定</p>
+</blockquote>
+</li>
+<li><pre><code class="css">html &#123;
+    font-size: calc(100vw / 7.5);//除以的7.5是根据设计稿的屏幕宽度来定的，这样750px宽度下根元素字体大小则为750px/7.5=100px=1rem
+&#125; 
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">#### 1.2 设计思路</span><br><span class="line"></span><br><span class="line">* **根据设计稿将html的gont-size设置为100px；比如750px的设计稿就除以7.5。此时100px&#x3D;1rem，后续计算起来会方便很多。**</span><br><span class="line"></span><br><span class="line">* &gt; 以上设计思路的**最大优点**就是：**方便计算**。</span><br><span class="line"></span><br><span class="line">### 2. 优化</span><br><span class="line"></span><br><span class="line">#### 2.1 重置默认字体</span><br><span class="line"></span><br><span class="line">**考虑到不改变浏览器默认字体大小的展示，因此要重置页面页面字体大小为浏览器默认的大小**</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;css</span><br><span class="line">html &#123;</span><br><span class="line">    font-size: calc(100vw &#x2F; 7.5);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#app &#123;</span><br><span class="line">    font-size: initial; &#x2F;&#x2F;重置页面字体大小恢复为浏览器默认16px，否则就显示成50px了</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+#### 2.2 限制根元素字体大小的最大值、最小值
+</code></pre>
+</li>
+</ul>
+<p><strong><code>上面的设计的页面虽然看起来适配得很好，但是你会发现它会无限制放大，在大屏上很不好看。可以通过给根元素字体大小限制最大最小值，以及 body 也增加最大最小宽度限制，这样就可以改善用户体验了。</code></strong></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">    </span><br><span class="line">    //设置根字体大小单位为vw，页面元素的尺寸单位都设为rem，搭配vw和rem，可实现布局根据视口变化而变化</span><br><span class="line">    <span class="selector-tag">font-size</span>: <span class="selector-tag">calc</span>(100<span class="selector-tag">vw</span> / 7.5);</span><br><span class="line">    // 同时，通过<span class="selector-tag">Media</span> <span class="selector-tag">Queries</span> 限制根元素字体最大最小值</span><br><span class="line">    <span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width:</span> <span class="number">320px</span>) &#123;</span><br><span class="line">        <span class="selector-tag">font-size</span>: 64<span class="selector-tag">px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">min-width:</span> <span class="number">540px</span>) &#123;</span><br><span class="line">        <span class="selector-tag">font-size</span>: 108<span class="selector-tag">px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">// <span class="selector-tag">body</span> 也增加最大最小宽度限制，避免默认100%宽度的 <span class="selector-tag">block</span> 元素跟随 <span class="selector-tag">body</span> 而过大过小</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">max-width</span>: <span class="number">540px</span>;</span><br><span class="line">    <span class="attribute">min-width</span>: <span class="number">320px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#app</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: initial;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h3><blockquote>
+<p>该设计方法简介方便，增加了最大最小宽度的限制，用户视觉体验更好。</p>
+</blockquote>
+<hr>
+<h3 id="原文链接："><a href="#原文链接：" class="headerlink" title="原文链接："></a>原文链接：</h3><ul>
+<li><a href="https://juejin.im/post/5de72b1f51882512360d3910#heading-13">基于Vue的移动端h5项目总结</a></li>
+<li><a href="https://aotu.io/notes/2017/04/28/2017-4-28-CSS-viewport-units/index.html">利用视口单位实现适配布局</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>大前端</category>
+        <category>移动端</category>
+      </categories>
+      <tags>
+        <tag>2019</tag>
+        <tag>H5</tag>
+        <tag>大前端</tag>
+        <tag>移动端</tag>
       </tags>
   </entry>
   <entry>
